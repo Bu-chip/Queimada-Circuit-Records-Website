@@ -1,0 +1,1 @@
+vale aahroa la pagian de perfil de cachalote emcanico es sun proeycto surgido de todo el ruido reuinod ene queimada,e s  un proyecot aniamnimo de un acachalote cybor g que quiero devovler todo elr ruido antorpogenco quqlos huansoo dieron al mar entonces tiel rpeimrm proyeccto es aaah y leugo a raiz de esodesarrolal
