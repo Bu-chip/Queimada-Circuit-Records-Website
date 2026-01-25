@@ -1,5 +1,5 @@
 ---
-title: "Marijaia o el fin del verano [ambient soundscape]"
+title: Marijaia o el fin del verano [ambient soundscape]
 date: 2025-11-30
 tags:
   - track
@@ -8,13 +8,13 @@ tags:
   - melancholic
   - minimalism
   - buenos-dias-ansiedad
-album: "[[Buenos-dias-Ansiedad]]"
-duracion: "06:32"
+album: "[[Buenos días, Ansiedad]]"
+duracion: 06:32
 ---
 
 ## Contexto
 
-Tema del álbum [[Buenos-dias-Ansiedad]], grabado durante 2024 como parte del proceso de lidiar con la ansiedad mediante composición ambient.
+Tema del álbum [[Buenos días, Ansiedad]], grabado durante 2024 como parte del proceso de lidiar con la ansiedad mediante composición ambient.
 
 ## Historia
 
@@ -46,7 +46,7 @@ La Marijaia es la figura gigante que preside las fiestas de Bilbao (Aste Nagusia
 ## Enlaces
 
 - [Escuchar en Bandcamp](https://queimada-circuit-records.bandcamp.com/track/marijaia-o-el-fin-del-verano-ambient-soundscape)
-- Parte de: [[Buenos-dias-Ansiedad]]
+- Parte de: [[Buenos días, Ansiedad]]
 
 ---
-[[Buenos-dias-Ansiedad|Volver al álbum]]
+[[Buenos días, Ansiedad|Volver al álbum]]

@@ -1,5 +1,5 @@
 ---
-title: "Abismo, carente de límites [dark ambient soundscape]"
+title: Abismo, carente de límites [dark ambient soundscape]
 date: 2025-11-16
 tags:
   - track
@@ -8,13 +8,13 @@ tags:
   - solaris
   - electroacoustic
   - buenos-dias-ansiedad
-album: "[[Buenos-dias-Ansiedad]]"
-duracion: "07:46"
+album: "[[Buenos días, Ansiedad]]"
+duracion: 07:46
 ---
 
 ## Contexto
 
-Tema del álbum [[Buenos-dias-Ansiedad]], grabado durante 2024 como parte del proceso de lidiar con la ansiedad mediante composición ambient.
+Tema del álbum [[Buenos días, Ansiedad]], grabado durante 2024 como parte del proceso de lidiar con la ansiedad mediante composición ambient.
 
 ## Historia
 
@@ -47,7 +47,7 @@ De ahí salió el tema.
 ## Enlaces
 
 - [Escuchar en Bandcamp](https://queimada-circuit-records.bandcamp.com/track/abismo-carente-de-l-mites-dark-ambient-soundscape)
-- Parte de: [[Buenos-dias-Ansiedad]]
+- Parte de: [[Buenos días, Ansiedad]]
 
 ---
-[[Buenos-dias-Ansiedad|Volver al álbum]]
+[[Buenos días, Ansiedad|Volver al álbum]]

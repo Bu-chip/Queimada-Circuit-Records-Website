@@ -1,5 +1,5 @@
 ---
-title: "Lluvia y piano [ambient soundscape]"
+title: Lluvia y piano [ambient soundscape]
 date: 2025-10-02
 tags:
   - track
@@ -7,13 +7,13 @@ tags:
   - piano
   - field-recording
   - buenos-dias-ansiedad
-album: "[[Buenos-dias-Ansiedad]]"
-duracion: "08:52"
+album: "[[Buenos días, Ansiedad]]"
+duracion: 08:52
 ---
 
 ## Contexto
 
-Tema del álbum [[Buenos-dias-Ansiedad]], grabado durante 2024 como parte del proceso de lidiar con la ansiedad mediante composición ambient.
+Tema del álbum [[Buenos días, Ansiedad]], grabado durante 2024 como parte del proceso de lidiar con la ansiedad mediante composición ambient.
 
 ## Historia
 
@@ -44,7 +44,7 @@ Le di a grabar sin pensarlo. Y ese rato quedó grabado así.
 ## Enlaces
 
 - [Escuchar en Bandcamp](https://queimada-circuit-records.bandcamp.com/track/lluvia-y-piano-ambient-soundscape)
-- Parte de: [[Buenos-dias-Ansiedad]]
+- Parte de: [[Buenos días, Ansiedad]]
 
 ---
-[[Buenos-dias-Ansiedad|Volver al álbum]]
+[[Buenos días, Ansiedad|Volver al álbum]]

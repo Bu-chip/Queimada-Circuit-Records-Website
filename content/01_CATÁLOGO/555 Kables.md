@@ -25,7 +25,7 @@ Sesiones en vivo sin ensayo previo. Partimos de algunas estructuras hechas y jug
 
 ## Discografía en Queimada
 
-- [[Live_jam_Aketxe]] (2025) - Primera sesión grabada, sala de ensayo Aketxe, Bilbao
+- [[Aketxe]] (2025) - Primera sesión grabada, sala de ensayo Aketxe, Bilbao
 
 ## Próximos Lanzamientos
 

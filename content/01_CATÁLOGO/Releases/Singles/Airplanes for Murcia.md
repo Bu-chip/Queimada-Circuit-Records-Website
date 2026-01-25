@@ -1,5 +1,5 @@
 ---
-title: "Airplanes for Murcia [ambient soundscape]"
+title: Airplanes for Murcia [ambient soundscape]
 date: 2025-11-09
 tags:
   - track
@@ -7,13 +7,13 @@ tags:
   - field-recording
   - brian-eno
   - buenos-dias-ansiedad
-album: "[[Buenos-dias-Ansiedad]]"
-duracion: "08:45"
+album: "[[Buenos días, Ansiedad]]"
+duracion: 08:45
 ---
 
 ## Contexto
 
-Tema del álbum [[Buenos-dias-Ansiedad]], grabado durante 2024 como parte del proceso de lidiar con la ansiedad mediante composición ambient.
+Tema del álbum [[Buenos días, Ansiedad]], grabado durante 2024 como parte del proceso de lidiar con la ansiedad mediante composición ambient.
 
 ## Historia
 
@@ -42,7 +42,7 @@ Supongo que ese vacío del avión se coló dentro de la música.
 ## Enlaces
 
 - [Escuchar en Bandcamp](https://queimada-circuit-records.bandcamp.com/track/airplanes-for-murcia-ambient-soundscape)
-- Parte de: [[Buenos-dias-Ansiedad]]
+- Parte de: [[Buenos días, Ansiedad]]
 
 ---
-[[Buenos-dias-Ansiedad|Volver al álbum]]
+[[Buenos días, Ansiedad|Volver al álbum]]

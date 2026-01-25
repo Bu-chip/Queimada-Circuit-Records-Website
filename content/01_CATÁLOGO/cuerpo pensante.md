@@ -22,12 +22,12 @@ El proceso de [[cuerpo pensante]] se basa en la exploración de formatos híbrid
 - [[Txus-Space|Txus Space]] - Desarrollo de sonido a través de imágenes generadas por IA, incluyendo fotografías y diálogos con amigos sobre cómo veían esas imágenes
 - [[Aberración Bológica|Aberración Biológica]] - Pruebas de automatizaciones que derivaron en una animación con texto representando el escenario sonoro
 - [[Corto-Naiara|Corto Naiara]] - Banda sonora para corto de animación (encargo TFM)
-- [[Buenos-dias-Ansiedad|Buenos días, Ansiedad]] - Exploración del ambient como proceso de escucha profunda y gestión de la ansiedad. Su último álbum hasta la fecha.
+- [[Buenos días, Ansiedad|Buenos días, Ansiedad]] - Exploración del ambient como proceso de escucha profunda y gestión de la ansiedad. Su último álbum hasta la fecha.
 
 ## Discografía en Queimada
 
 ### Álbumes
-- [[Buenos-dias-Ansiedad|Buenos días, Ansiedad]] (2025) - Ambient + Fanzine
+- [[Buenos días, Ansiedad|Buenos días, Ansiedad]] (2025) - Ambient + Fanzine
 - [[Acto-I|Buchi.buchip - Acto I]] (2024) - IDM Conceptual + Fanzine
 
 ### Singles

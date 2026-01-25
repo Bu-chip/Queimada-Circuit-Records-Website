@@ -1,5 +1,5 @@
 ---
-title: "¿Cómo calmar a una supernova? [ambient space soundscape]"
+title: ¿Cómo calmar a una supernova? [ambient space soundscape]
 date: 2025-11-23
 tags:
   - track
@@ -9,13 +9,13 @@ tags:
   - nasa
   - minecraft
   - buenos-dias-ansiedad
-album: "[[Buenos-dias-Ansiedad]]"
-duracion: "04:42"
+album: "[[Buenos días, Ansiedad]]"
+duracion: 04:42
 ---
 
 ## Contexto
 
-Tema del álbum [[Buenos-dias-Ansiedad]], grabado durante 2024 como parte del proceso de lidiar con la ansiedad mediante composición ambient.
+Tema del álbum [[Buenos días, Ansiedad]], grabado durante 2024 como parte del proceso de lidiar con la ansiedad mediante composición ambient.
 
 ## Historia
 
@@ -49,7 +49,7 @@ Luego hice una cosa. Los mezclé con gritos de... [*el texto se corta aquí en B
 ## Enlaces
 
 - [Escuchar en Bandcamp](https://queimada-circuit-records.bandcamp.com/track/c-mo-calmar-a-una-supernova-ambient-space-soundscape)
-- Parte de: [[Buenos-dias-Ansiedad]]
+- Parte de: [[Buenos días, Ansiedad]]
 
 ---
-[[Buenos-dias-Ansiedad|Volver al álbum]]
+[[Buenos días, Ansiedad|Volver al álbum]]

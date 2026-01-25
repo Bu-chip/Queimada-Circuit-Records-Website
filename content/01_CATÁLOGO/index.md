@@ -9,10 +9,10 @@ Archivo cronológico de todo lo que ha salido bajo Queimada Circuit Records, col
 
 ## 2026
 
-[[cachalote mecánico]] | [[AAAAH]]** [Noise]  
+[[cachalote mecánico]] | [[AAAAH]] [Noise]  
 Publicado en Delirium Psychosis Productions.
 
-[[cuerpo pensante]] | **[[Buenos-dias-Ansiedad|Buenos días, Ansiedad]]** [Álbum Ambient + Fanzine + Videos]  
+[[cuerpo pensante]] | **[[Buenos días, Ansiedad]]** [Álbum Ambient + Fanzine + Videos]  
 Cinco temas sobre ansiedad mediante escucha profunda. Incluye fanzine *Cinco Ríos* y cinco videos semanales. Pauline Oliveros, Brian Eno.
 
 ---
@@ -21,13 +21,11 @@ Cinco temas sobre ansiedad mediante escucha profunda. Incluye fanzine *Cinco Rí
 **[[Conversacion-ChatGPT-4am]]** [Fanzine]  
 Reflexión sobre productividad y proyectos. Madrugada de insomnio.
 
-[[cachalote mecánico]] | [[Holy-Humpback-Whale|Holy Humpback Wale]] [Harsh Noise + Video]  
+[[cachalote mecánico]] | [[Holy Humpback Whale]] [Harsh Noise + Video]  
 Próxima publicación. cuerpo pensante.
 
-[[555 Kables]] | [[Live_jam_Aketxe|Aketxe]] [Live Jam + Video]  
+[[555 Kables]] | [[Aketxe]] [Live Jam + Video]  
 Sesión en vivo 555 Kables. Novation Circuit, TR-6S, Crave. Video completo en YouTube.
-
-
 
 [[cuerpo pensante]] | [[Aberración Bológica|Aberración Biológica]]  [Single Hard IDM + Video]  
 Glitchy percussion TR-6S. Publicado en Dirty Tapes.
