@@ -13,7 +13,6 @@ sello: "Dirty Tapes"
 duracion: "04:44"
 ---
 
-![Aberración Biológica](/images/releases/aberracion-biologica.jpg)
 
 ## Contexto
 
