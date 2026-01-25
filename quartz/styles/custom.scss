@@ -1,0 +1,779 @@
+@use "./base.scss";
+@use "./variables.scss" as *;
+
+// ============================================
+// QUEIMADA CIRCUIT RECORDS - CUSTOM STYLES
+// Aesthetic: Dark underground, DIY fanzine,
+// experimental music label from Bilbao
+// ============================================
+
+// --------------------------------------------
+// ROOT & GLOBAL OVERRIDES
+// --------------------------------------------
+:root {
+  --titleFont: "Space Mono", monospace;
+  --headerFont: "Space Mono", monospace;
+  --bodyFont: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --codeFont: "JetBrains Mono", monospace;
+}
+
+html {
+  background-color: #0a0a0a;
+}
+
+body {
+  background-color: #0a0a0a;
+  min-height: 100vh;
+}
+
+// Remove any grid/pattern backgrounds
+.page,
+body,
+html {
+  background-image: none !important;
+}
+
+// --------------------------------------------
+// VERTICAL PAGE TITLE - COMPACT STYLE
+// --------------------------------------------
+.page-title {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 1rem !important;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  font-weight: 700;
+  max-height: 35vh;
+  overflow: hidden;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+
+  a {
+    color: var(--secondary) !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 0 transparent;
+
+    &:hover {
+      color: var(--tertiary) !important;
+      text-shadow: 0 0 20px var(--secondary);
+    }
+  }
+
+  @media all and ($mobile) {
+    writing-mode: horizontal-tb;
+    text-orientation: initial;
+    font-size: 0.9rem !important;
+    letter-spacing: 0.1em;
+    max-height: unset;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto 1rem;
+  }
+}
+
+// --------------------------------------------
+// SIDEBAR STYLING
+// --------------------------------------------
+.sidebar.left {
+  padding-top: 3rem !important;
+
+  @media all and ($mobile) {
+    padding-top: 1rem !important;
+  }
+}
+
+// --------------------------------------------
+// LINKS - PURPLE TO PINK TRANSITIONS
+// --------------------------------------------
+a {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+
+  &:hover {
+    color: var(--tertiary);
+  }
+
+  &.internal {
+    background-color: rgba(168, 85, 247, 0.1);
+    border-radius: 3px;
+    padding: 0.1em 0.3em;
+
+    &:hover {
+      background-color: rgba(236, 72, 153, 0.15);
+      color: var(--tertiary);
+    }
+  }
+}
+
+// Article content links
+article a:not(.internal):not([role="anchor"]) {
+  border-bottom: 1px solid var(--secondary);
+
+  &:hover {
+    border-bottom-color: var(--tertiary);
+  }
+}
+
+// --------------------------------------------
+// HEADINGS
+// --------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headerFont);
+  color: var(--dark);
+
+  &::before {
+    color: var(--secondary);
+    opacity: 0.5;
+  }
+}
+
+h1 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--lightgray);
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  color: var(--secondary);
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+// Article title
+.article-title {
+  font-family: var(--headerFont);
+  color: var(--secondary) !important;
+  font-size: 1.75rem !important;
+  margin-bottom: 0.5rem;
+
+  h1 {
+    color: var(--secondary);
+    border: none;
+    padding: 0;
+  }
+}
+
+// --------------------------------------------
+// EXPLORER - MINIMAL AESTHETIC
+// --------------------------------------------
+.explorer {
+  .explorer-toggle {
+    background: transparent;
+    border: none;
+
+    &:hover {
+      background-color: rgba(168, 85, 247, 0.1);
+    }
+
+    h2 {
+      font-size: 0.9rem;
+      color: var(--secondary);
+      font-weight: 600;
+    }
+
+    svg {
+      color: var(--secondary);
+    }
+  }
+
+  .explorer-content {
+    background-color: rgba(10, 10, 10, 0.95);
+    border-radius: 4px;
+
+    ul {
+      padding-left: 0.5rem;
+    }
+
+    li {
+      margin: 0.2rem 0;
+
+      a {
+        color: var(--darkgray);
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+        border-radius: 3px;
+        display: block;
+        transition: all 0.15s ease;
+
+        &:hover {
+          color: var(--tertiary);
+          background-color: rgba(168, 85, 247, 0.1);
+          padding-left: 0.8rem;
+        }
+      }
+    }
+
+    .folder-container {
+      .folder-button {
+        background: transparent;
+        border: none;
+        color: var(--secondary);
+        font-weight: 600;
+        font-size: 0.85rem;
+        cursor: pointer;
+        padding: 0.3rem 0;
+        transition: color 0.15s ease;
+
+        &:hover {
+          color: var(--tertiary);
+        }
+      }
+
+      .folder-icon {
+        color: var(--secondary);
+        transition: transform 0.2s ease;
+      }
+    }
+  }
+}
+
+// Mobile hamburger menu
+.mobile-explorer {
+  svg {
+    stroke: var(--secondary);
+  }
+
+  &:hover svg {
+    stroke: var(--tertiary);
+  }
+}
+
+// --------------------------------------------
+// GRAPH - PURPLE AESTHETIC
+// --------------------------------------------
+.graph {
+  h3 {
+    color: var(--secondary);
+    font-family: var(--headerFont);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .graph-outer {
+    border: 1px solid var(--lightgray) !important;
+    border-radius: 4px;
+    background-color: rgba(10, 10, 10, 0.5);
+
+    .global-graph-icon {
+      color: var(--secondary);
+
+      &:hover {
+        background-color: rgba(168, 85, 247, 0.2);
+        color: var(--tertiary);
+      }
+    }
+  }
+
+  .global-graph-outer {
+    .global-graph-container {
+      border: 2px solid var(--secondary) !important;
+      background-color: #0a0a0a !important;
+      box-shadow: 0 0 40px rgba(168, 85, 247, 0.2);
+    }
+  }
+}
+
+// Graph node colors (applied via JS but we ensure CSS vars are correct)
+// The actual node styling is in the graph.inline.ts script
+
+// --------------------------------------------
+// SEARCH
+// --------------------------------------------
+.search {
+  .search-button {
+    border-color: var(--lightgray);
+    background-color: transparent;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: var(--secondary);
+      background-color: rgba(168, 85, 247, 0.05);
+    }
+
+    p {
+      color: var(--gray);
+    }
+
+    svg .search-path {
+      stroke: var(--gray);
+    }
+
+    &:hover svg .search-path {
+      stroke: var(--secondary);
+    }
+  }
+
+  .search-container {
+    background-color: rgba(10, 10, 10, 0.9);
+
+    .search-space {
+      input {
+        background-color: #0a0a0a;
+        border-color: var(--secondary);
+        color: var(--dark);
+
+        &::placeholder {
+          color: var(--gray);
+        }
+
+        &:focus {
+          border-color: var(--tertiary);
+          box-shadow: 0 0 10px rgba(168, 85, 247, 0.2);
+        }
+      }
+
+      .search-layout {
+        background-color: #0a0a0a;
+        border-color: var(--lightgray);
+
+        .result-card {
+          border-bottom-color: var(--lightgray);
+
+          &:hover,
+          &.focus {
+            background-color: rgba(168, 85, 247, 0.1);
+          }
+
+          h3 {
+            color: var(--secondary);
+          }
+        }
+      }
+    }
+  }
+}
+
+// --------------------------------------------
+// TABLE OF CONTENTS
+// --------------------------------------------
+.toc {
+  .toc-header {
+    font-family: var(--headerFont);
+    color: var(--secondary);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+  }
+
+  .toc-link {
+    color: var(--gray);
+    transition: all 0.15s ease;
+
+    &:hover {
+      color: var(--tertiary);
+    }
+
+    &.in-view {
+      color: var(--secondary);
+    }
+  }
+
+  .depth-1 { padding-left: 0; }
+  .depth-2 { padding-left: 1rem; }
+  .depth-3 { padding-left: 2rem; }
+}
+
+// --------------------------------------------
+// BACKLINKS
+// --------------------------------------------
+.backlinks {
+  h3 {
+    color: var(--secondary);
+    font-family: var(--headerFont);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  ul li a {
+    color: var(--gray);
+
+    &:hover {
+      color: var(--tertiary);
+    }
+  }
+}
+
+// --------------------------------------------
+// CONTENT META (dates, reading time)
+// Hide on index pages, show subtle on others
+// --------------------------------------------
+.content-meta {
+  color: var(--gray);
+  font-size: 0.85rem;
+  opacity: 0.7;
+  font-family: var(--codeFont);
+}
+
+// Hide meta on index
+.page-header:has(+ .center article[data-slug="index"]) .content-meta {
+  display: none;
+}
+
+// --------------------------------------------
+// TAGS
+// --------------------------------------------
+.tag-link,
+a.tag-link {
+  background-color: rgba(168, 85, 247, 0.15) !important;
+  color: var(--secondary) !important;
+  font-size: 0.8rem;
+  padding: 0.2em 0.5em;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: rgba(236, 72, 153, 0.2) !important;
+    color: var(--tertiary) !important;
+  }
+
+  &::before {
+    content: "#";
+    opacity: 0.6;
+  }
+}
+
+// --------------------------------------------
+// FOOTER - CUSTOM FOR RECORD LABEL
+// --------------------------------------------
+footer {
+  border-top: 1px solid var(--lightgray);
+  padding-top: 2rem;
+  margin-top: 3rem;
+
+  p {
+    color: var(--gray);
+    font-size: 0.8rem;
+    font-family: var(--codeFont);
+
+    // Hide "Created with Quartz" but keep year
+    a[href*="quartz.jzhao.xyz"] {
+      display: none;
+    }
+
+    &::before {
+      content: "QUEIMADA CIRCUIT RECORDS ";
+    }
+  }
+
+  ul {
+    gap: 1.5rem;
+
+    a {
+      color: var(--secondary);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+
+      &:hover {
+        color: var(--tertiary);
+      }
+    }
+  }
+}
+
+// --------------------------------------------
+// BREADCRUMBS
+// --------------------------------------------
+.breadcrumb-container {
+  font-family: var(--codeFont);
+  font-size: 0.8rem;
+
+  a {
+    color: var(--gray);
+
+    &:hover {
+      color: var(--secondary);
+    }
+  }
+
+  .breadcrumb-element::before {
+    color: var(--gray);
+    opacity: 0.5;
+  }
+}
+
+// --------------------------------------------
+// CODE BLOCKS
+// --------------------------------------------
+pre {
+  background-color: #0f0f0f !important;
+  border-color: var(--lightgray);
+}
+
+code {
+  background-color: rgba(168, 85, 247, 0.1);
+  color: var(--secondary);
+}
+
+// --------------------------------------------
+// BLOCKQUOTES
+// --------------------------------------------
+blockquote {
+  border-left-color: var(--secondary);
+  background-color: rgba(168, 85, 247, 0.05);
+  padding: 1rem;
+  border-radius: 0 4px 4px 0;
+
+  p {
+    margin: 0;
+  }
+}
+
+// --------------------------------------------
+// LISTS - CUSTOM BULLETS
+// --------------------------------------------
+article ul:not(.tags):not(.overflow) {
+  list-style: none;
+  padding-left: 1.5rem;
+
+  li {
+    position: relative;
+
+    &::before {
+      content: ">";
+      position: absolute;
+      left: -1.2rem;
+      color: var(--secondary);
+      font-family: var(--codeFont);
+      font-weight: bold;
+    }
+  }
+}
+
+// Nested lists
+article ul ul li::before {
+  content: "-";
+  color: var(--tertiary);
+}
+
+// --------------------------------------------
+// IMAGES
+// --------------------------------------------
+img {
+  border-radius: 4px;
+  border: 1px solid var(--lightgray);
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-color: var(--secondary);
+  }
+}
+
+// Image captions
+p > img + em,
+figure figcaption {
+  font-size: 0.85rem;
+  color: var(--gray);
+  font-style: italic;
+  text-align: center;
+  display: block;
+}
+
+// --------------------------------------------
+// TABLES
+// --------------------------------------------
+table {
+  border-collapse: collapse;
+
+  th {
+    background-color: rgba(168, 85, 247, 0.1);
+    color: var(--secondary);
+    font-family: var(--headerFont);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+  }
+
+  tr {
+    border-bottom-color: var(--lightgray);
+
+    &:hover {
+      background-color: rgba(168, 85, 247, 0.05);
+    }
+  }
+}
+
+// --------------------------------------------
+// HORIZONTAL RULE
+// --------------------------------------------
+hr {
+  background: linear-gradient(90deg, transparent, var(--secondary), transparent);
+  height: 1px;
+  border: none;
+}
+
+// --------------------------------------------
+// SELECTION
+// --------------------------------------------
+::selection {
+  background-color: rgba(168, 85, 247, 0.4);
+  color: var(--dark);
+}
+
+// --------------------------------------------
+// SCROLLBAR (for webkit browsers)
+// --------------------------------------------
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--lightgray);
+  border-radius: 4px;
+
+  &:hover {
+    background: var(--secondary);
+  }
+}
+
+// Firefox scrollbar
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--lightgray) #0a0a0a;
+}
+
+// --------------------------------------------
+// DARKMODE TOGGLE - Hide (always dark)
+// --------------------------------------------
+.darkmode {
+  display: none !important;
+}
+
+// --------------------------------------------
+// READER MODE - Style if used
+// --------------------------------------------
+.reader-mode {
+  svg {
+    color: var(--gray);
+  }
+
+  &:hover svg {
+    color: var(--secondary);
+  }
+}
+
+// --------------------------------------------
+// CALLOUTS (Obsidian style)
+// --------------------------------------------
+.callout {
+  border-left-color: var(--secondary);
+  background-color: rgba(168, 85, 247, 0.05);
+
+  .callout-title {
+    color: var(--secondary);
+    font-family: var(--headerFont);
+  }
+
+  &[data-callout="warning"] {
+    border-left-color: #f59e0b;
+    background-color: rgba(245, 158, 11, 0.05);
+
+    .callout-title {
+      color: #f59e0b;
+    }
+  }
+
+  &[data-callout="danger"],
+  &[data-callout="error"] {
+    border-left-color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.05);
+
+    .callout-title {
+      color: #ef4444;
+    }
+  }
+
+  &[data-callout="success"],
+  &[data-callout="done"] {
+    border-left-color: #22c55e;
+    background-color: rgba(34, 197, 94, 0.05);
+
+    .callout-title {
+      color: #22c55e;
+    }
+  }
+}
+
+// --------------------------------------------
+// POPOVERS
+// --------------------------------------------
+.popover {
+  background-color: #0f0f0f;
+  border: 1px solid var(--secondary);
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.15);
+
+  .popover-inner {
+    background-color: #0f0f0f;
+  }
+}
+
+// --------------------------------------------
+// PAGE LIST (folder pages, tag pages)
+// --------------------------------------------
+.page-listing {
+  .section-li {
+    border-bottom: 1px solid var(--lightgray);
+    padding: 1rem 0;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+      background-color: rgba(168, 85, 247, 0.05);
+    }
+
+    .section {
+      color: var(--secondary);
+      font-family: var(--headerFont);
+    }
+
+    .meta {
+      color: var(--gray);
+      font-size: 0.8rem;
+    }
+  }
+}
+
+// --------------------------------------------
+// ANIMATIONS & TRANSITIONS
+// --------------------------------------------
+* {
+  transition-timing-function: ease;
+}
+
+// Subtle fade-in for content
+.center {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Hover lift effect for interactive elements
+.result-card,
+.section-li,
+.page-listing li {
+  transition: transform 0.15s ease, background-color 0.15s ease;
+
+  &:hover {
+    transform: translateX(3px);
+  }
+}
