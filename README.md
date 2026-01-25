@@ -5,7 +5,7 @@ Web del sello discográfico experimental desde Bilbao.
 URLs
 
 * **Web Actual (Despliegue):** [https://bu-chip.github.io/Queimada-Circuit-Records-Website/](https://bu-chip.github.io/Queimada-Circuit-Records-Website/)
-* **Dominio Oficial:** queimadacircuitrecords.com *(Próximamente)*
+
 
 Stack
 
