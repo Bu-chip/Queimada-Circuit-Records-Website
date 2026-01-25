@@ -6,6 +6,8 @@ title: ⧉ Queimada Circuit Records
 
 **Any subgenre is accepted.**
 
+
+
 ---
 
 ### ⬣ NAVEGACIÓN_SISTEMA
@@ -13,8 +15,9 @@ title: ⧉ Queimada Circuit Records
 * ⬡ **[[01_CATÁLOGO/index|Catálogo]]** ⟢ Archivo de lanzamientos, fanzines y media.
 * ⬡ **[[02_ARTISTAS/index|Artistas]]** ⟢ Perfiles de operarios y colectivos vinculados.
 * ⬡ **[[03_EVENTOS/index|Eventos]]** ⟢ Registro de directos, carteles y sesiones.
-* ⬡ **[[LAB/index|LAB]]** ⟢ Ingeniería, worldbuilding y procesos DIY.
-* ⬡ **[[BLOG/index|BLOG]]** ⟢ Bitácora de desarrollo y volcados de datos.
+* ⬡ **[[04_LAB/index|Lab]]** ⟢ Ingeniería, worldbuilding y procesos DIY.
+* ⬡ **[[05_BLOG/index|Blog]]** ⟢ Bitácora de desarrollo y volcados de datos.
+
 
 ---
 
@@ -22,7 +25,8 @@ title: ⧉ Queimada Circuit Records
 
 * ⧉ **Curator:** [@cuerpopensante](https://instagram.com/cuerpopensante)
 * ⧉ **Instagram:** [@queimada.circuit.records](https://instagram.com/queimada.circuit.records)
-* ⧉ **Bandcamp:** [D-Stream](https://queimada-circuit-records.bandcamp.com)
+* ⧉ **Bandcamp:** [aquí](https://queimada-circuit-records.bandcamp.com)
+
 
 ---
 
