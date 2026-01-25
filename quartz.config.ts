@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "es-ES",
-    baseUrl: "queimadacircuit.com",
+    baseUrl: "bu-chip.github.io/Queimada-Circuit-Records-Website",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
