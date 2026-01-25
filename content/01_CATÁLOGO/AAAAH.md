@@ -22,9 +22,6 @@ Track publicado en el compilatorio **Digital Intifada Vol.2** del sello Delirium
 Un tema que desarrolla sonidos y procesos de ruido intentando expresar la frustración y la hostilidad de vivir en un mundo capitalista. 
 
 Primeras exploraciones de harsh noise y noisecore, usando la voz como instrumento sin que tenga forma explícita - gritos procesados, capas de distorsión, noise abrasivo.
-
-Vi el sello, conecté con su energía política y envié la copia.
-
 ## Escuchar
 
 <div style="max-width: 350px; margin: 2rem auto;">
