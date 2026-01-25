@@ -19,9 +19,17 @@ El formato es directo: Eneko construye pads y líneas de bajo con la Novation Ci
 - **Eneko (@anarkoeneko):** Novation Circuit (pads, bajos, estructuras)
 - **Miguel (@cuerpopensante):** TR-6S, Digital Delay, Crave (ritmos glitches, capas)
 
+  ┌────────────────┐                      ┌────────  ────────┐
+  │ NOVATION_CKT   │──(SYNC)──▶│ ROLAND_TR-6S     │
+  └────────────────┘                       └──────── ────────┘
+      │                                                             │
+     ▼                                                            ▼
+  ┌────────────────────────────────────────────┐
+  │                              MIXER_OUTPUT                        │
+  └────────────────────────────────────────────┘
 ## Proceso
 
-Sesiones en vivo sin ensayo previo. Partimos de algunas estructuras hechas y jugamos a cambiarlas, desmontar el set, reconstruirlo. La idea es jam puro: exploración, error, ruido, groove.
+Sesiones en vivo sin ensayo previo. Partimos de algunas estructuras hechas y jugamos a cambiarlas, desmontar el set, recoSnstruirlo. La idea es jam puro: exploración, error, ruido, groove.
 
 ## Discografía en Queimada
 
