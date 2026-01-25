@@ -10,9 +10,9 @@ title: ⧉ Queimada Circuit Records
 
 ### ⬣ NAVEGACIÓN_SISTEMA
 
-* ⬡ **[[CATALOGO/index|CATÁLOGO]]** ⟢ Archivo de lanzamientos, fanzines y media.
-* ⬡ **[[ARTISTAS/index|ARTISTAS]]** ⟢ Perfiles de operarios y colectivos vinculados.
-* ⬡ **[[EVENTOS/index|EVENTOS]]** ⟢ Registro de directos, carteles y sesiones.
+* ⬡ **[[01_CATÁLOGO/index|Catálogo]]** ⟢ Archivo de lanzamientos, fanzines y media.
+* ⬡ **[[02_ARTISTAS/index|Artistas]]** ⟢ Perfiles de operarios y colectivos vinculados.
+* ⬡ **[[03_EVENTOS/index|Eventos]]** ⟢ Registro de directos, carteles y sesiones.
 * ⬡ **[[LAB/index|LAB]]** ⟢ Ingeniería, worldbuilding y procesos DIY.
 * ⬡ **[[BLOG/index|BLOG]]** ⟢ Bitácora de desarrollo y volcados de datos.
 
