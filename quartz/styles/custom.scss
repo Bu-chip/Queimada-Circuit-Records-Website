@@ -34,27 +34,40 @@ html {
 }
 
 // --------------------------------------------
-// VERTICAL PAGE TITLE - STACKED WORDS
-// Each word on its own line, reading top to bottom
+// HEADER - HORIZONTAL TOP BAR
 // --------------------------------------------
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--lightgray);
+  gap: 1rem;
+
+  @media all and ($mobile) {
+    padding: 0.75rem 0;
+    flex-wrap: wrap;
+  }
+}
+
+// Page Title - Horizontal in header
 .page-title {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  transform: rotate(180deg);
-  font-size: 0.85rem !important;
-  letter-spacing: 0.05em;
+  font-size: 0.9rem !important;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--secondary);
   font-weight: 700;
-  line-height: 1.4;
   white-space: nowrap;
-  padding: 0;
   margin: 0;
+  padding: 0;
 
   a {
     color: var(--secondary) !important;
     text-decoration: none;
     transition: all 0.3s ease;
+    background: none !important;
+    padding: 0 !important;
 
     &:hover {
       color: var(--tertiary) !important;
@@ -63,64 +76,42 @@ html {
   }
 
   @media all and ($mobile) {
-    writing-mode: horizontal-tb;
-    transform: none;
-    font-size: 0.8rem !important;
-    text-align: center;
-    white-space: normal;
-    padding: 0.5rem 0;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.05em;
   }
 }
 
-// --------------------------------------------
-// MOBILE HEADER - Centered, compact
-// --------------------------------------------
-@media all and ($mobile) {
-  .page > #quartz-body > .sidebar.left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.75rem 1rem !important;
-    width: 100%;
-    gap: 0.5rem;
+// Search in header - compact style
+header .search {
+  .search-button {
+    padding: 0.4rem 0.8rem;
+    border-color: var(--lightgray);
+    background-color: transparent;
 
-    .page-title {
-      flex: 1;
-      text-align: center;
-      order: 2;
-    }
+    @media all and ($mobile) {
+      padding: 0.3rem;
+      min-width: unset;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
 
-    .explorer {
-      order: 1;
-      flex-shrink: 0;
-    }
-
-    .search {
-      order: 3;
-      flex-shrink: 0;
-    }
-  }
-
-  // Compact search button on mobile - just icon
-  .search .search-button {
-    padding: 0.4rem !important;
-    min-width: unset !important;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-
-    p, span:not(:has(svg)) {
-      display: none !important;
+      p {
+        display: none;
+      }
     }
   }
 }
 
+// Spacer in header
+header .spacer {
+  flex: 1;
+}
+
 // --------------------------------------------
-// SIDEBAR STYLING
+// SIDEBAR LEFT - Just Explorer
 // --------------------------------------------
 .sidebar.left {
-  padding-top: 2rem !important;
+  padding-top: 1rem !important;
 
   @media all and ($mobile) {
     padding-top: 0 !important;
