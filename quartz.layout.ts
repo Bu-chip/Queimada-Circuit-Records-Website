@@ -39,10 +39,32 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      folderDefaultState: "collapsed",
+      folderClickBehavior: "link",
+    }),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({
+      localGraph: {
+        depth: 2,
+        scale: 1.2,
+        repelForce: 1,
+        centerForce: 0.3,
+        linkDistance: 40,
+        fontSize: 0.5,
+        showTags: false,
+      },
+      globalGraph: {
+        depth: -1,
+        scale: 0.8,
+        repelForce: 0.8,
+        centerForce: 0.3,
+        linkDistance: 50,
+        fontSize: 0.5,
+        showTags: false,
+      },
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
@@ -63,7 +85,31 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      folderDefaultState: "collapsed",
+      folderClickBehavior: "link",
+    }),
   ],
-  right: [],
+  right: [
+    Component.Graph({
+      localGraph: {
+        depth: 2,
+        scale: 1.2,
+        repelForce: 1,
+        centerForce: 0.3,
+        linkDistance: 40,
+        fontSize: 0.5,
+        showTags: false,
+      },
+      globalGraph: {
+        depth: -1,
+        scale: 0.8,
+        repelForce: 0.8,
+        centerForce: 0.3,
+        linkDistance: 50,
+        fontSize: 0.5,
+        showTags: false,
+      },
+    }),
+  ],
 }
