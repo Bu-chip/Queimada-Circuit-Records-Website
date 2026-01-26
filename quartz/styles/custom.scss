@@ -34,42 +34,85 @@ html {
 }
 
 // --------------------------------------------
-// VERTICAL PAGE TITLE - COMPACT STYLE
+// VERTICAL PAGE TITLE - STACKED WORDS
+// Each word on its own line, reading top to bottom
 // --------------------------------------------
 .page-title {
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  font-size: 1rem !important;
-  letter-spacing: 0.15em;
+  transform: rotate(180deg);
+  font-size: 0.85rem !important;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--secondary);
   font-weight: 700;
-  max-height: 35vh;
-  overflow: hidden;
-  padding-left: 0.5rem;
-  margin-bottom: 1rem;
+  line-height: 1.4;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
 
   a {
     color: var(--secondary) !important;
     text-decoration: none;
     transition: all 0.3s ease;
-    text-shadow: 0 0 0 transparent;
 
     &:hover {
       color: var(--tertiary) !important;
-      text-shadow: 0 0 20px var(--secondary);
+      text-shadow: 0 0 15px var(--secondary);
     }
   }
 
   @media all and ($mobile) {
     writing-mode: horizontal-tb;
-    text-orientation: initial;
-    font-size: 0.9rem !important;
-    letter-spacing: 0.1em;
-    max-height: unset;
+    transform: none;
+    font-size: 0.8rem !important;
     text-align: center;
-    padding: 0;
-    margin: 0 auto 1rem;
+    white-space: normal;
+    padding: 0.5rem 0;
+  }
+}
+
+// --------------------------------------------
+// MOBILE HEADER - Centered, compact
+// --------------------------------------------
+@media all and ($mobile) {
+  .page > #quartz-body > .sidebar.left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem !important;
+    width: 100%;
+    gap: 0.5rem;
+
+    .page-title {
+      flex: 1;
+      text-align: center;
+      order: 2;
+    }
+
+    .explorer {
+      order: 1;
+      flex-shrink: 0;
+    }
+
+    .search {
+      order: 3;
+      flex-shrink: 0;
+    }
+  }
+
+  // Compact search button on mobile - just icon
+  .search .search-button {
+    padding: 0.4rem !important;
+    min-width: unset !important;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+
+    p, span:not(:has(svg)) {
+      display: none !important;
+    }
   }
 }
 
@@ -77,15 +120,50 @@ html {
 // SIDEBAR STYLING
 // --------------------------------------------
 .sidebar.left {
-  padding-top: 3rem !important;
+  padding-top: 2rem !important;
 
   @media all and ($mobile) {
-    padding-top: 1rem !important;
+    padding-top: 0 !important;
   }
 }
 
 // --------------------------------------------
-// LINKS - PURPLE TO PINK TRANSITIONS
+// CONTENT SPACING
+// --------------------------------------------
+article {
+  padding-bottom: 3rem;
+
+  > * + * {
+    margin-top: 1.5rem;
+  }
+
+  > h2 {
+    margin-top: 3rem;
+  }
+
+  > h3 {
+    margin-top: 2.5rem;
+  }
+
+  > ul, > ol {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  > p {
+    line-height: 1.8;
+  }
+}
+
+// Add spacing before footer
+.page-footer {
+  margin-top: 4rem !important;
+  padding-top: 2rem;
+  border-top: 1px solid var(--lightgray);
+}
+
+// --------------------------------------------
+// LINKS - PURPLE TO LIME GREEN TRANSITIONS
 // --------------------------------------------
 a {
   color: var(--secondary);
@@ -102,7 +180,7 @@ a {
     padding: 0.1em 0.3em;
 
     &:hover {
-      background-color: rgba(236, 72, 153, 0.15);
+      background-color: rgba(163, 230, 53, 0.15);
       color: var(--tertiary);
     }
   }
@@ -150,7 +228,7 @@ h3 {
   font-family: var(--headerFont);
   color: var(--secondary) !important;
   font-size: 1.75rem !important;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 
   h1 {
     color: var(--secondary);
@@ -183,20 +261,21 @@ h3 {
   }
 
   .explorer-content {
-    background-color: rgba(10, 10, 10, 0.95);
+    background-color: rgba(10, 10, 10, 0.98);
     border-radius: 4px;
+    border: 1px solid var(--lightgray);
 
     ul {
       padding-left: 0.5rem;
     }
 
     li {
-      margin: 0.2rem 0;
+      margin: 0.3rem 0;
 
       a {
         color: var(--darkgray);
         font-size: 0.9rem;
-        padding: 0.3rem 0.5rem;
+        padding: 0.4rem 0.6rem;
         border-radius: 3px;
         display: block;
         transition: all 0.15s ease;
@@ -204,7 +283,7 @@ h3 {
         &:hover {
           color: var(--tertiary);
           background-color: rgba(168, 85, 247, 0.1);
-          padding-left: 0.8rem;
+          padding-left: 1rem;
         }
       }
     }
@@ -217,7 +296,7 @@ h3 {
         font-weight: 600;
         font-size: 0.85rem;
         cursor: pointer;
-        padding: 0.3rem 0;
+        padding: 0.4rem 0;
         transition: color 0.15s ease;
 
         &:hover {
@@ -245,7 +324,7 @@ h3 {
 }
 
 // --------------------------------------------
-// GRAPH - PURPLE AESTHETIC
+// GRAPH - LARGER, BETTER SPACING
 // --------------------------------------------
 .graph {
   h3 {
@@ -260,9 +339,17 @@ h3 {
     border: 1px solid var(--lightgray) !important;
     border-radius: 4px;
     background-color: rgba(10, 10, 10, 0.5);
+    min-height: 250px;
+
+    #graph-container {
+      min-height: 250px;
+    }
 
     .global-graph-icon {
       color: var(--secondary);
+      background: rgba(10, 10, 10, 0.8);
+      border-radius: 4px;
+      padding: 4px;
 
       &:hover {
         background-color: rgba(168, 85, 247, 0.2);
@@ -280,8 +367,10 @@ h3 {
   }
 }
 
-// Graph node colors (applied via JS but we ensure CSS vars are correct)
-// The actual node styling is in the graph.inline.ts script
+// Graph appears on all pages in right sidebar
+.sidebar.right .graph {
+  display: block !important;
+}
 
 // --------------------------------------------
 // SEARCH
@@ -311,7 +400,7 @@ h3 {
   }
 
   .search-container {
-    background-color: rgba(10, 10, 10, 0.9);
+    background-color: rgba(10, 10, 10, 0.95);
 
     .search-space {
       input {
@@ -403,7 +492,6 @@ h3 {
 
 // --------------------------------------------
 // CONTENT META (dates, reading time)
-// Hide on index pages, show subtle on others
 // --------------------------------------------
 .content-meta {
   color: var(--gray);
@@ -429,7 +517,7 @@ a.tag-link {
   border-radius: 3px;
 
   &:hover {
-    background-color: rgba(236, 72, 153, 0.2) !important;
+    background-color: rgba(163, 230, 53, 0.2) !important;
     color: var(--tertiary) !important;
   }
 
@@ -440,39 +528,52 @@ a.tag-link {
 }
 
 // --------------------------------------------
-// FOOTER - CUSTOM FOR RECORD LABEL
+// FOOTER - CONSISTENT FOR ALL PAGES
 // --------------------------------------------
 footer {
   border-top: 1px solid var(--lightgray);
-  padding-top: 2rem;
+  padding: 2rem 0;
   margin-top: 3rem;
+  text-align: center;
 
   p {
     color: var(--gray);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-family: var(--codeFont);
+    margin-bottom: 1rem;
 
-    // Hide "Created with Quartz" but keep year
+    // Hide "Created with Quartz" link
     a[href*="quartz.jzhao.xyz"] {
       display: none;
     }
 
     &::before {
-      content: "QUEIMADA CIRCUIT RECORDS ";
+      content: "QUEIMADA CIRCUIT RECORDS // BILBAO ";
     }
   }
 
   ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
     a {
       color: var(--secondary);
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 0.05em;
+      padding: 0.3rem 0.6rem;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      transition: all 0.2s ease;
 
       &:hover {
         color: var(--tertiary);
+        border-color: var(--tertiary);
       }
     }
   }
@@ -535,6 +636,7 @@ article ul:not(.tags):not(.overflow) {
 
   li {
     position: relative;
+    margin-bottom: 0.5rem;
 
     &::before {
       content: ">";
@@ -607,6 +709,7 @@ hr {
   background: linear-gradient(90deg, transparent, var(--secondary), transparent);
   height: 1px;
   border: none;
+  margin: 2rem 0;
 }
 
 // --------------------------------------------
@@ -697,11 +800,11 @@ hr {
 
   &[data-callout="success"],
   &[data-callout="done"] {
-    border-left-color: #22c55e;
-    background-color: rgba(34, 197, 94, 0.05);
+    border-left-color: var(--tertiary);
+    background-color: rgba(163, 230, 53, 0.05);
 
     .callout-title {
-      color: #22c55e;
+      color: var(--tertiary);
     }
   }
 }
@@ -725,7 +828,7 @@ hr {
 .page-listing {
   .section-li {
     border-bottom: 1px solid var(--lightgray);
-    padding: 1rem 0;
+    padding: 1.25rem 0;
     transition: background-color 0.15s ease;
 
     &:hover {
