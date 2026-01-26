@@ -52,7 +52,7 @@ Incluye animación con texto representando el escenario sonoro.
 
 - [Escuchar en Bandcamp](https://queimada-circuit-records.bandcamp.com/track/aberraci-n-biol-gica-hard-idm-single)
 - Parte de: VARIAS ARTISTAS VOL.2
-- [[Dirty-Tapes|Dirty Tapes]] (sello)
+- [Dirty tapes](https://dirtytapesxxx.bandcamp.com)
 
 ---
 
