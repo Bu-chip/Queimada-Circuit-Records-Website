@@ -777,3 +777,57 @@ hr {
     transform: translateX(3px);
   }
 }
+
+// ============================================
+// LAYOUT - ALIGN EXPLORER, CONTENT, GRAPH
+// ============================================
+
+// Contenido principal con espaciado correcto
+.center {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  min-height: 100%;
+
+  article {
+    padding-top: 0 !important;
+
+    > h1:first-of-type {
+      margin-top: 0 !important;
+      margin-bottom: 1.5rem !important;
+    }
+
+    > p:first-of-type {
+      margin-top: 0.5rem !important;
+    }
+  }
+}
+
+// Explorador alineado
+.sidebar.left {
+  align-self: start;
+}
+
+// Gráfico alineado
+.sidebar.right {
+  align-self: start;
+}
+
+// ============================================
+// MOBILE MENU - OPAQUE BACKGROUND
+// ============================================
+@media all and ($mobile) {
+  .mobile-only {
+    .explorer {
+      background-color: #0a0a0a !important;
+      backdrop-filter: none !important;
+    }
+
+    .explorer-toggle[aria-expanded="true"] + .explorer-content {
+      background-color: #0a0a0a !important;
+    }
+  }
+
+  .explorer ul {
+    background-color: #0a0a0a !important;
+  }
+}
