@@ -1,5 +1,5 @@
 ---
-title: ######
+title: 000000
 ---
 
 Sello discográfico experimental. Bilbao.  
