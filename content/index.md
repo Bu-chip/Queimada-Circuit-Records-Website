@@ -66,24 +66,20 @@ function windowResized() {
 }
 </script>
 
-<div style="position: relative; z-index: 1; color: white; text-align: center; padding-top: 40vh;">
+Sello discográfico experimental desde Bilbao. Ruido, ambient, electrónica marginal y otras derivas sonoras.
 
-# Queimada Circuit Records
+## Secciones
 
-Sello discográfico experimental. Bilbao.
-**Any subgenre is accepted.**
-
-Curator: [@cuerpopensante](https://instagram.com/cuerpopensante)
-Instagram: [@queimada.circuit.records](https://instagram.com/queimada.circuit.records)
+- [[01_CATÁLOGO/index|Catálogo]] - Discografía completa
+- [[02_ARTISTAS/index|Artistas]] - Proyectos y colaboradores
+- [[05_BLOG/index|Blog]] - Notas y reflexiones
+- [[04_LAB/index|Lab]] - Hardware y cacharros
+- [[03_EVENTOS/index|Eventos]] - Conciertos y sesiones
 
 ---
 
-## Navegar
+## Explorar
 
-- [[01_CATÁLOGO/index|Catálogo]]
-- [[02_ARTISTAS/index|Artistas]]
-- [[03_EVENTOS/index|Eventos]]
-- [[04_LAB/index|Lab]]
-- [[05_BLOG/index|Blog]]
+Usa el grafo de nodos (arriba a la derecha) para navegar entre proyectos conectados.
 
-</div>
+Todos los lanzamientos disponibles en [Bandcamp](https://queimadacircuit.bandcamp.com).
