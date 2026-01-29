@@ -34,93 +34,84 @@ html {
 }
 
 // --------------------------------------------
-// VERTICAL PAGE TITLE - STACKED WORDS
-// Each word on its own line, reading top to bottom
+// HEADER - HORIZONTAL TOP BAR
 // --------------------------------------------
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--lightgray);
+  gap: 1rem;
+
+  @media all and ($mobile) {
+    padding: 0.75rem 0;
+    flex-wrap: wrap;
+  }
+}
+
+// Page Title - Horizontal in header (LIME GREEN)
 .page-title {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  transform: rotate(180deg);
-  font-size: 0.85rem !important;
-  letter-spacing: 0.05em;
+  font-size: 0.9rem !important;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--secondary);
+  color: var(--tertiary);
   font-weight: 700;
-  line-height: 1.4;
   white-space: nowrap;
-  padding: 0;
   margin: 0;
+  padding: 0;
 
   a {
-    color: var(--secondary) !important;
+    color: var(--tertiary) !important;
     text-decoration: none;
     transition: all 0.3s ease;
+    background: none !important;
+    padding: 0 !important;
 
     &:hover {
-      color: var(--tertiary) !important;
-      text-shadow: 0 0 15px var(--secondary);
+      color: var(--dark) !important;
+      text-shadow: 0 0 20px var(--tertiary);
     }
   }
 
   @media all and ($mobile) {
-    writing-mode: horizontal-tb;
-    transform: none;
-    font-size: 0.8rem !important;
-    text-align: center;
-    white-space: normal;
-    padding: 0.5rem 0;
+    font-size: 0.7rem !important;
+    letter-spacing: 0.08em;
   }
 }
 
-// --------------------------------------------
-// MOBILE HEADER - Centered, compact
-// --------------------------------------------
-@media all and ($mobile) {
-  .page > #quartz-body > .sidebar.left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.75rem 1rem !important;
-    width: 100%;
-    gap: 0.5rem;
+// Search in header - compact style
+header .search {
+  .search-button {
+    padding: 0.4rem 0.8rem;
+    border-color: var(--lightgray);
+    background-color: transparent;
 
-    .page-title {
-      flex: 1;
-      text-align: center;
-      order: 2;
-    }
+    @media all and ($mobile) {
+      padding: 0.3rem;
+      min-width: unset;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
 
-    .explorer {
-      order: 1;
-      flex-shrink: 0;
-    }
-
-    .search {
-      order: 3;
-      flex-shrink: 0;
-    }
-  }
-
-  // Compact search button on mobile - just icon
-  .search .search-button {
-    padding: 0.4rem !important;
-    min-width: unset !important;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-
-    p, span:not(:has(svg)) {
-      display: none !important;
+      p {
+        display: none;
+      }
     }
   }
 }
 
+// Spacer in header
+header .spacer {
+  flex: 1;
+}
+
 // --------------------------------------------
-// SIDEBAR STYLING
+// SIDEBAR LEFT - Just Explorer
 // --------------------------------------------
 .sidebar.left {
-  padding-top: 2rem !important;
+  padding-top: 1rem !important;
 
   @media all and ($mobile) {
     padding-top: 0 !important;
@@ -238,76 +229,104 @@ h3 {
 }
 
 // --------------------------------------------
-// EXPLORER - MINIMAL AESTHETIC
+// EXPLORER - CLEAN, NO BORDERS
 // --------------------------------------------
 .explorer {
   .explorer-toggle {
     background: transparent;
     border: none;
+    padding: 0.5rem 0;
 
     &:hover {
-      background-color: rgba(168, 85, 247, 0.1);
+      background-color: transparent;
     }
 
     h2 {
-      font-size: 0.9rem;
-      color: var(--secondary);
+      font-size: 0.85rem;
+      color: var(--tertiary);
       font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
 
     svg {
-      color: var(--secondary);
+      color: var(--tertiary);
     }
   }
 
   .explorer-content {
-    background-color: rgba(10, 10, 10, 0.98);
-    border-radius: 4px;
-    border: 1px solid var(--lightgray);
+    background-color: transparent;
+    border: none !important;
+    border-radius: 0;
+    padding: 0;
 
     ul {
-      padding-left: 0.5rem;
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
     }
 
     li {
-      margin: 0.3rem 0;
+      margin: 0;
+      border-left: 2px solid transparent;
+      transition: border-color 0.15s ease;
+
+      &:hover {
+        border-left-color: var(--tertiary);
+      }
 
       a {
         color: var(--darkgray);
-        font-size: 0.9rem;
-        padding: 0.4rem 0.6rem;
-        border-radius: 3px;
+        font-size: 0.85rem;
+        padding: 0.5rem 0.75rem;
         display: block;
         transition: all 0.15s ease;
+        background: none !important;
 
         &:hover {
           color: var(--tertiary);
-          background-color: rgba(168, 85, 247, 0.1);
+          background: none !important;
           padding-left: 1rem;
         }
       }
     }
 
     .folder-container {
+      border-left: 2px solid transparent;
+      transition: border-color 0.15s ease;
+
+      &:hover {
+        border-left-color: var(--tertiary);
+      }
+
       .folder-button {
         background: transparent;
         border: none;
-        color: var(--secondary);
+        color: var(--tertiary);
         font-weight: 600;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         cursor: pointer;
-        padding: 0.4rem 0;
+        padding: 0.5rem 0.75rem;
         transition: color 0.15s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
 
         &:hover {
-          color: var(--tertiary);
+          color: var(--dark);
         }
       }
 
       .folder-icon {
-        color: var(--secondary);
+        color: var(--tertiary);
         transition: transform 0.2s ease;
       }
+    }
+
+    // Nested items
+    .folder-outer ul {
+      padding-left: 1rem;
+      border-left: 1px solid var(--lightgray);
+      margin-left: 0.5rem;
     }
   }
 }
@@ -315,11 +334,11 @@ h3 {
 // Mobile hamburger menu
 .mobile-explorer {
   svg {
-    stroke: var(--secondary);
+    stroke: var(--tertiary);
   }
 
   &:hover svg {
-    stroke: var(--tertiary);
+    stroke: var(--dark);
   }
 }
 
