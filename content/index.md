@@ -1,5 +1,5 @@
 ---
-title: ⧉ Queimada Circuit Records
+title: 
 ---
 ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓
 
