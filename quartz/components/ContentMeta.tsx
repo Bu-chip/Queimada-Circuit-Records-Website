@@ -1,8 +1,7 @@
-import { Date, getDate } from "./Date"
+import { getDate } from "./Date"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import readingTime from "reading-time"
 import { classNames } from "../util/lang"
-import { i18n } from "../i18n"
 import { JSX } from "preact"
 import style from "./styles/contentMeta.scss"
 
@@ -16,7 +15,7 @@ interface ContentMetaOptions {
 
 const defaultOptions: ContentMetaOptions = {
   showReadingTime: true,
-  showComma: true,
+  showComma: false,
 }
 
 export default ((opts?: Partial<ContentMetaOptions>) => {
@@ -30,15 +29,20 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       const segments: (string | JSX.Element)[] = []
 
       if (fileData.dates) {
-        segments.push(<Date date={getDate(cfg, fileData)!} locale={cfg.locale} />)
+        const date = getDate(cfg, fileData)!
+        const day = date.getDate().toString().padStart(2, "0")
+        const month = (date.getMonth() + 1).toString().padStart(2, "0")
+        const year = date.getFullYear().toString().slice(-2)
+        segments.push(<span>{`${day}.${month}.${year}`}</span>)
       }
 
       // Display reading time if enabled
       if (options.showReadingTime) {
-        const { minutes, words: _words } = readingTime(text)
-        const displayedTime = i18n(cfg.locale).components.contentMeta.readingTime({
-          minutes: Math.ceil(minutes),
-        })
+        const { minutes } = readingTime(text)
+        const displayedTime = `${Math.ceil(minutes)}min`
+        if (segments.length > 0) {
+          segments.push(<span> · </span>)
+        }
         segments.push(<span>{displayedTime}</span>)
       }
 

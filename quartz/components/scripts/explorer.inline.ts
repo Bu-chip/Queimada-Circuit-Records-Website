@@ -21,12 +21,12 @@ type FolderState = {
 
 let currentExplorerState: Array<FolderState>
 function toggleExplorer(this: HTMLElement) {
-  const nearestExplorer = this.closest(".explorer") as HTMLElement
-  if (!nearestExplorer) return
-  const explorerCollapsed = nearestExplorer.classList.toggle("collapsed")
-  nearestExplorer.setAttribute(
+  const explorerContainer = document.querySelector(".explorer") as HTMLElement
+  if (!explorerContainer) return
+  const explorerCollapsed = explorerContainer.classList.toggle("collapsed")
+  explorerContainer.setAttribute(
     "aria-expanded",
-    nearestExplorer.getAttribute("aria-expanded") === "true" ? "false" : "true",
+    explorerContainer.getAttribute("aria-expanded") === "true" ? "false" : "true",
   )
 
   if (!explorerCollapsed) {
@@ -49,9 +49,9 @@ function toggleFolder(evt: MouseEvent) {
   const folderContainer = (
     isSvg
       ? // svg -> div.folder-container
-        target.parentElement
+      target.parentElement
       : // button.folder-button -> div -> div.folder-container
-        target.parentElement?.parentElement
+      target.parentElement?.parentElement
   ) as MaybeHTMLElement
   if (!folderContainer) return
   const childFolderContainer = folderContainer.nextElementSibling as MaybeHTMLElement
@@ -241,6 +241,15 @@ async function setupExplorer(currentSlug: FullSlug) {
       window.addCleanup(() => button.removeEventListener("click", toggleExplorer))
     }
 
+    // Set up close button handlers
+    const closeButtons = explorer.getElementsByClassName(
+      "explorer-close",
+    ) as HTMLCollectionOf<HTMLElement>
+    for (const button of closeButtons) {
+      button.addEventListener("click", toggleExplorer)
+      window.addCleanup(() => button.removeEventListener("click", toggleExplorer))
+    }
+
     // Set up folder click handlers
     if (opts.folderClickBehavior === "collapse") {
       const folderButtons = explorer.getElementsByClassName(
@@ -273,21 +282,18 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   const currentSlug = e.detail.url
   await setupExplorer(currentSlug)
 
-  // if mobile hamburger is visible, collapse by default
-  for (const explorer of document.getElementsByClassName("explorer")) {
-    const mobileExplorer = explorer.querySelector(".mobile-explorer")
-    if (!mobileExplorer) return
-
-    if (mobileExplorer.checkVisibility()) {
+  // if mobile explorer button is visible, collapse by default
+  const mobileExplorer = document.querySelector(".mobile-explorer") as HTMLElement
+  const explorers = document.getElementsByClassName("explorer")
+  if (mobileExplorer && mobileExplorer.checkVisibility()) {
+    for (const explorer of explorers) {
       explorer.classList.add("collapsed")
       explorer.setAttribute("aria-expanded", "false")
-
-      // Allow <html> to be scrollable when mobile explorer is collapsed
-      document.documentElement.classList.remove("mobile-no-scroll")
     }
-
-    mobileExplorer.classList.remove("hide-until-loaded")
+    // Allow <html> to be scrollable when mobile explorer is collapsed
+    document.documentElement.classList.remove("mobile-no-scroll")
   }
+
 })
 
 window.addEventListener("resize", function () {
