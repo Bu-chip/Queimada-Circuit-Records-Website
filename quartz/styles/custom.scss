@@ -41,13 +41,96 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
+  margin-top: 0rem !important;
   margin-bottom: 1rem;
-  border-bottom: 1px solid var(--lightgray);
-  gap: 1rem;
+  border-bottom: none !important; // Remove the top horizontal line
+  gap: 1.5rem;
+  position: relative; // Needed for subtitle positioning
+  flex-wrap: nowrap !important; // Force single line
+
+  // Header-integrated Breadcrumbs and Meta
+  .breadcrumb-container,
+  .content-meta {
+    font-size: 0.7rem !important; // Slightly smaller to distinguish from title
+    opacity: 0.6; // More subtle to avoid confusion with main title
+    white-space: nowrap !important; // Force single line alignment
+    margin: 0 !important;
+    display: inline-flex;
+    align-items: center;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 
   @media all and ($mobile) {
-    padding: 0.75rem 0;
-    flex-wrap: wrap;
+    .content-meta {
+      display: flex !important;
+      font-size: 0.6rem !important;
+      margin-right: 0.5rem !important;
+      opacity: 0.6;
+      white-space: nowrap;
+    }
+  }
+
+  @media all and ($mobile) {
+    padding: 0 !important;
+    margin-top: 0 !important;
+    position: relative;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 50px !important;
+    z-index: 1100;
+
+    // The "Fixed Bar" background
+    &::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100dvw;
+      height: 50px;
+      background-color: #0a0a0a;
+      z-index: -1;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+
+    header,
+    .popover-hint {
+      padding-top: 0 !important;
+    }
+  }
+}
+
+// Subtitle Style (Article Title moved to header)
+.page-header .article-title {
+  position: absolute;
+  top: 100%; // Push below the header border
+  left: 0;
+  margin-top: -1.0rem !important; // Extremely tight spacing (almost touching main title)
+  padding: 0 !important;
+  font-size: 1.1rem !important;
+  color: var(--secondary) !important; // Brand Violet
+  border: none !important;
+  font-family: var(--codeFont) !important;
+  font-weight: normal !important;
+
+  &::before {
+    content: "└─ ";
+    color: var(--secondary);
+    margin-right: 0.5rem;
+    font-family: var(--codeFont);
+    font-size: 1.1em;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+  }
+
+  @media all and ($mobile) {
+    display: none !important; // Hide subtitle from horizontal bar to keep it on one line
   }
 }
 
@@ -56,9 +139,9 @@ html {
   font-size: 0.9rem !important;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--tertiary);
+  color: var(--tertiary) !important; // Forced lime green
   font-weight: 700;
-  white-space: nowrap;
+  white-space: nowrap; // Don't wrap the site title
   margin: 0;
   padding: 0;
 
@@ -68,6 +151,7 @@ html {
     transition: all 0.3s ease;
     background: none !important;
     padding: 0 !important;
+    white-space: nowrap !important; // Prevent site title link wrapping
 
     &:hover {
       color: var(--dark) !important;
@@ -76,8 +160,28 @@ html {
   }
 
   @media all and ($mobile) {
-    font-size: 0.7rem !important;
-    letter-spacing: 0.08em;
+    position: static !important;
+    transform: none !important;
+    height: auto !important;
+    z-index: 1101;
+    display: flex !important;
+    align-items: center;
+    justify-content: center !important;
+    flex: 2; // Take more space to keep it centered
+    margin: 0 !important;
+    background: transparent !important;
+    pointer-events: none;
+    text-align: center;
+
+    a {
+      pointer-events: auto;
+      font-size: 0.7rem !important;
+      letter-spacing: 0.05em;
+      text-align: center !important;
+      white-space: nowrap !important;
+      line-height: 1 !important;
+      font-weight: 700;
+    }
   }
 }
 
@@ -89,11 +193,20 @@ header .search {
     background-color: transparent;
 
     @media all and ($mobile) {
-      padding: 0.3rem;
+      padding: 0 !important;
       min-width: unset;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      border: none !important;
+      margin-right: 0.5rem;
+
+      svg {
+        width: 18px !important;
+        height: 18px !important;
+      }
 
       p {
         display: none;
@@ -105,17 +218,32 @@ header .search {
 // Spacer in header
 header .spacer {
   flex: 1;
+
+  @media all and ($mobile) {
+    display: none !important; // Don't let spacer push things on mobile
+  }
+}
+
+// Darkmode in header
+.darkmode {
+  @media all and ($mobile) {
+    display: none !important; // Hide to keep 3 elements clean
+  }
 }
 
 // --------------------------------------------
 // SIDEBAR LEFT - Just Explorer
 // --------------------------------------------
 .sidebar.left {
-  padding-top: 1rem !important;
+  padding-top: 1.5rem !important; // More clearance for the explorer button
 
   @media all and ($mobile) {
     padding-top: 0 !important;
   }
+}
+
+.sidebar.right {
+  padding-top: 1rem !important;
 }
 
 // --------------------------------------------
@@ -123,25 +251,48 @@ header .spacer {
 // --------------------------------------------
 article {
   padding-bottom: 3rem;
+  margin-top: 6rem; // Increased for substantial breathing room below the absolute subtitle
 
-  > * + * {
+  @media all and ($mobile) {
+    margin-top: 60px !important; // Precise breathing room (50px bar + 10px)
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  // Restore Bandcamp embeds visibility
+  iframe {
+    display: block !important;
+    visibility: visible !important;
+    min-height: 42px;
+    width: 100%;
+    border: none;
+    margin: 1.5rem 0;
+  }
+
+  // Hide the redundant markdown title (we already moved it to the header)
+  >h1:first-child {
+    display: none !important;
+  }
+
+  >*+* {
     margin-top: 1.5rem;
   }
 
-  > h2 {
+  >h2 {
     margin-top: 3rem;
   }
 
-  > h3 {
+  >h3 {
     margin-top: 2.5rem;
   }
 
-  > ul, > ol {
+  >ul,
+  >ol {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
 
-  > p {
+  >p {
     line-height: 1.8;
   }
 }
@@ -178,6 +329,12 @@ a {
 }
 
 // Article content links
+article {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
 article a:not(.internal):not([role="anchor"]) {
   border-bottom: 1px solid var(--secondary);
 
@@ -189,7 +346,12 @@ article a:not(.internal):not([role="anchor"]) {
 // --------------------------------------------
 // HEADINGS
 // --------------------------------------------
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--headerFont);
   color: var(--dark);
 
@@ -232,6 +394,12 @@ h3 {
 // EXPLORER - CLEAN, NO BORDERS
 // --------------------------------------------
 .explorer {
+  overflow: visible !important; // Prevent clipping of the toggle button
+
+  &.collapsed {
+    flex: 0 1 2rem !important; // Increase space to fit the button height
+  }
+
   .explorer-toggle {
     background: transparent;
     border: none;
@@ -331,15 +499,186 @@ h3 {
   }
 }
 
-// Mobile hamburger menu
-.mobile-explorer {
-  svg {
-    stroke: var(--tertiary);
+// Mobile explorer menu - FULL OPAQUE FIX
+@media all and ($mobile) {
+  .explorer .explorer-content {
+    background-color: #0a0a0a !important;
+    opacity: 1 !important;
+    z-index: 1000 !important;
+    border-right: 1px solid var(--secondary);
+    box-shadow: 10px 0 40px rgba(0, 0, 0, 0.8);
+    position: fixed !important; // Ensure it covers viewport
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem !important;
+
+    // Ensure all text inside is SHARP, WHITE and VISIBLE
+    a,
+    span,
+    button {
+      opacity: 1 !important;
+      color: #ffffff !important; // Forced white for maximum contrast
+      text-shadow: none !important;
+    }
+
+    .folder-title,
+    .folder-button span {
+      color: var(--secondary) !important; // Violet for folders
+    }
+
+    // Ensure lists inside the explorer-content are also sharp and white
+    ul li a,
+    ul li span {
+      color: #ffffff !important;
+      opacity: 1 !important;
+    }
+
+    .explorer-close {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      background: transparent;
+      border: none;
+      color: var(--secondary);
+      cursor: pointer;
+      padding: 0.5rem;
+
+      &:hover {
+        color: var(--tertiary);
+      }
+    }
+  }
+}
+
+// Mobile explorer menu arrow icon
+// --- NUCLEAR OPTION: CUSTOM MOBILE NAV ---
+
+// 1. HIDE OLD SYSTEM ON MOBILE
+// --- REFINED STABLE PANEL STRATEGY ---
+@media all and ($mobile) {
+
+  // 1. Hide in original location when NOT open
+  .sidebar.left .explorer:not(.mobile-nav-panel),
+  .mobile-explorer,
+  .explorer-toggle.mobile-explorer {
+    display: none !important;
   }
 
-  &:hover svg {
-    stroke: var(--dark);
+  // 2. Style Explorer when body has .mobile-nav-open
+  body.mobile-nav-open .explorer {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: #0a0a0a !important;
+    z-index: 13000 !important;
+    padding: 2rem !important;
+    overflow-y: auto !important;
+
+    // Inside the mobile-nav-panel (the explorer itself is the panel now)
+    .explorer-content {
+      display: block !important;
+      visibility: visible !important;
+      transform: none !important; // Disable any Quartz transitions
+      position: relative !important;
+      width: 100% !important;
+      height: auto !important;
+      padding: 1rem 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      border: none !important;
+    }
+
+    // Ensure the tree looks good
+    .folder-button,
+    a {
+      color: #ffffff !important;
+      font-size: 0.85rem !important;
+      padding: 0.4rem 0 !important;
+    }
   }
+}
+
+#mobile-nav-close-stable {
+  display: none;
+
+  @media all and ($mobile) {
+    body.mobile-nav-open & {
+      display: flex !important;
+      position: fixed !important;
+      top: 1rem;
+      right: 1.5rem;
+      z-index: 13002;
+      background: transparent;
+      border: none;
+      color: var(--secondary);
+      cursor: pointer;
+      padding: 0.5rem;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+// 2. NEW SYSTEM STYLING
+#mobile-nav-btn {
+  display: none; // Hidden on desktop
+
+  @media all and ($mobile) {
+    display: flex !important;
+    position: relative !important; // No longer fixed, but part of flex header
+    top: auto !important;
+    left: auto !important;
+    height: 30px !important;
+    width: 30px !important;
+    margin-left: 0.5rem !important;
+    z-index: 12000 !important;
+    align-items: center;
+    justify-content: center;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    color: var(--secondary);
+    cursor: pointer;
+
+    svg {
+      transform: rotate(-90deg);
+      width: 18px !important; // Scaled down to match header
+      height: 18px !important;
+    }
+  }
+}
+
+#mobile-nav-panel {
+  display: none !important;
+}
+
+body.mobile-nav-open {
+  overflow: hidden !important;
+}
+
+
+// Ensure ONLY Arrow on Desktop Search/Explorer
+@media all and not ($mobile) {
+  .mobile-explorer {
+    display: none !important;
+  }
+}
+
+// Desktop Explorer - Hide redundant text label
+.desktop-explorer h2 {
+  display: none !important;
 }
 
 // --------------------------------------------
@@ -352,6 +691,7 @@ h3 {
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    margin-top: 0.3rem !important;
   }
 
   .graph-outer {
@@ -396,25 +736,47 @@ h3 {
 // --------------------------------------------
 .search {
   .search-button {
-    border-color: var(--lightgray);
-    background-color: transparent;
-    transition: all 0.2s ease;
+    display: flex !important;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
 
-    &:hover {
-      border-color: var(--secondary);
-      background-color: rgba(168, 85, 247, 0.05);
+    svg {
+      min-width: 18px;
+      width: 18px;
+      height: 18px;
+
+      .search-path {
+        stroke: var(--secondary) !important;
+        stroke-width: 2px;
+        transition: stroke 0.2s ease;
+      }
     }
 
     p {
+      display: none !important;
+      border: 1px solid var(--lightgray);
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
       color: var(--gray);
+      margin: 0;
+      font-family: var(--bodyFont);
+      transition: all 0.2s ease;
     }
 
-    svg .search-path {
-      stroke: var(--gray);
-    }
+    &:hover {
+      background-color: transparent !important;
 
-    &:hover svg .search-path {
-      stroke: var(--secondary);
+      svg .search-path {
+        stroke: var(--tertiary) !important;
+      }
+
+      p {
+        border-color: var(--secondary);
+        color: var(--darkgray);
+      }
     }
   }
 
@@ -483,9 +845,17 @@ h3 {
     }
   }
 
-  .depth-1 { padding-left: 0; }
-  .depth-2 { padding-left: 1rem; }
-  .depth-3 { padding-left: 2rem; }
+  .depth-1 {
+    padding-left: 0;
+  }
+
+  .depth-2 {
+    padding-left: 1rem;
+  }
+
+  .depth-3 {
+    padding-left: 2rem;
+  }
 }
 
 // --------------------------------------------
@@ -517,6 +887,10 @@ h3 {
   font-size: 0.85rem;
   opacity: 0.7;
   font-family: var(--codeFont);
+
+  @media all and ($mobile) {
+    display: none !important; // Re-hidden here because we force it in header above
+  }
 }
 
 // Hide meta on index
@@ -619,6 +993,11 @@ footer {
   }
 }
 
+// Ensure Meta is clean when in header
+.page-header .content-meta {
+  opacity: 0.6;
+}
+
 // --------------------------------------------
 // CODE BLOCKS
 // --------------------------------------------
@@ -688,7 +1067,7 @@ img {
 }
 
 // Image captions
-p > img + em,
+p>img+em,
 figure figcaption {
   font-size: 0.85rem;
   color: var(--gray);
@@ -873,6 +1252,21 @@ hr {
   transition-timing-function: ease;
 }
 
+// Mobile sidebar backdrop overlay
+html.mobile-no-scroll body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4); // Darkens content behind menu
+  z-index: 999; // Below explorer-content (1000)
+  pointer-events: none;
+  // REMOVED BLUR to ensure it doesn't leak into sidebar text
+  animation: fadeIn 0.3s ease;
+}
+
 // Subtle fade-in for content
 .center {
   animation: fadeIn 0.3s ease;
@@ -883,6 +1277,7 @@ hr {
     opacity: 0;
     transform: translateY(5px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -898,4 +1293,117 @@ hr {
   &:hover {
     transform: translateX(3px);
   }
+}
+
+// Search icon sticky fix on mobile
+@media all and ($mobile) {
+  .search {
+    position: fixed !important;
+    top: 0;
+    right: 1.5rem;
+    height: 60px;
+    z-index: 1001;
+    display: flex !important;
+    align-items: center;
+    background: transparent !important;
+    margin: 0 !important;
+
+    #search-button {
+      background: transparent !important;
+      border: none !important;
+      padding: 0 !important;
+    }
+  }
+}
+
+// ============================================
+// HEADER - PERFECT HORIZONTAL ALIGNMENT
+// ============================================
+
+// Header con todos los elementos alineados
+header {
+  display: flex !important;
+  align-items: center !important; // Alineación vertical centrada
+  padding: 1rem 2rem !important;
+  min-height: 3rem !important;
+  gap: 1.5rem !important;
+
+  // Título del header
+  .page-title {
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+  }
+
+  // Spacer (elemento vacío para separar)
+  .spacer {
+    flex: 1 !important;
+  }
+
+  // Búsqueda
+  .search {
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  // Darkmode toggle
+  .darkmode {
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+// Explorador - alinear flecha con header
+.explorer {
+  padding-top: 1rem !important;
+
+  .explorer-toggle {
+    display: flex !important;
+    align-items: center !important;
+    padding: 0.5rem 0 !important;
+    margin: 0 !important;
+    min-height: 3rem !important; // Misma altura que header
+
+    svg {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    h2 {
+      margin: 0 !important;
+      padding: 0 !important;
+      line-height: 1 !important;
+    }
+  }
+}
+
+// Graph - alinear título "VISTA GRÁFICA" con header
+.graph {
+  padding-top: 1rem !important;
+
+  h3,
+  .graph-title {
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0.5rem 0 !important;
+    min-height: 3rem !important; // Misma altura que header
+    line-height: 1 !important;
+  }
+}
+
+// Metadata (fecha/tiempo) alineada
+.metadata {
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0.5rem 0 !important;
+  min-height: 3rem !important;
+  line-height: 1 !important;
 }
