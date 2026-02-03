@@ -19,11 +19,15 @@
 
 html {
   background-color: #0a0a0a;
+  // Prevent iOS bounce scroll from affecting fixed elements
+  overscroll-behavior: none;
 }
 
 body {
   background-color: #0a0a0a;
   min-height: 100vh;
+  // Prevent iOS bounce scroll
+  overscroll-behavior-y: none;
 }
 
 // Remove any grid/pattern backgrounds
@@ -49,7 +53,7 @@ html {
     padding: 0.75rem 2rem !important;
     margin: 0 !important;
     border-bottom: none !important;
-    gap: 1.5rem !important;
+    gap: 1rem !important;
     flex-wrap: nowrap !important;
     position: fixed !important;
     top: 0 !important;
@@ -57,17 +61,24 @@ html {
     right: 0 !important;
     height: 50px !important;
     background-color: #0a0a0a !important;
-    z-index: 1100 !important;
+    z-index: 10000 !important;
     box-sizing: border-box !important;
+    // iOS Safari fix - prevent bounce scroll from moving header
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
 
     @media all and ($mobile) {
-      padding: 0 1rem !important;
+      padding: 0 50px !important; // Leave space for the fixed mobile-explorer button
+      gap: 10px !important;
+      justify-content: center !important; // Center the title
     }
   }
 
   // Content below header (ArticleTitle, ContentMeta) - NOT fixed
   > .popover-hint {
-    padding-top: 55px !important; // Compensate for fixed header
+    padding-top: 55px !important;
     margin: 0 !important;
   }
 }
@@ -563,131 +574,92 @@ h3 {
   }
 }
 
-// Mobile explorer menu arrow icon
-// --- NUCLEAR OPTION: CUSTOM MOBILE NAV ---
-
-// 1. HIDE OLD SYSTEM ON MOBILE
-// --- REFINED STABLE PANEL STRATEGY ---
+// --------------------------------------------
+// MOBILE NAVIGATION - Native Quartz Explorer
+// --------------------------------------------
 @media all and ($mobile) {
+  // Position the mobile explorer button in the fixed header area
+  .mobile-explorer {
+    display: flex !important;
+    position: fixed !important;
+    top: 10px !important;
+    left: 15px !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 8px !important;
+    color: var(--secondary) !important;
+    cursor: pointer !important;
+    z-index: 10001 !important; // Above fixed header
+    pointer-events: auto !important;
 
-  // 1. Hide in original location when NOT open
-  .sidebar.left .explorer:not(.mobile-nav-panel),
-  .mobile-explorer,
-  .explorer-toggle.mobile-explorer {
+    svg {
+      width: 24px !important;
+      height: 24px !important;
+      // Arrow points right when menu closed (default)
+      transform: rotate(-90deg);
+      transition: transform 0.3s ease !important;
+    }
+  }
+
+  // When menu is open, arrow points down
+  .explorer:not(.collapsed) ~ .mobile-explorer svg,
+  body:has(.explorer:not(.collapsed)) .mobile-explorer svg {
+    transform: rotate(0deg) !important;
+  }
+
+  // Hide title when menu is open
+  body:has(.explorer:not(.collapsed)) .page-header header .page-title {
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  // Hide search when menu is open
+  body:has(.explorer:not(.collapsed)) .page-header header .search {
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  // Hide the desktop explorer toggle on mobile
+  .desktop-explorer {
     display: none !important;
   }
 
-  // 2. Style Explorer when body has .mobile-nav-open
-  body.mobile-nav-open .explorer {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    pointer-events: auto !important;
+  // Explorer content - full screen overlay when open
+  .explorer:not(.collapsed) .explorer-content {
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     width: 100vw !important;
     height: 100vh !important;
     background-color: #0a0a0a !important;
-    z-index: 13000 !important;
-    padding: 2rem !important;
+    z-index: 10000 !important;
+    padding: 60px 20px 20px 20px !important;
     overflow-y: auto !important;
+    transform: translateX(0) !important;
+    visibility: visible !important;
+  }
 
-    // Inside the mobile-nav-panel (the explorer itself is the panel now)
-    .explorer-content {
-      display: block !important;
-      visibility: visible !important;
-      transform: none !important; // Disable any Quartz transitions
-      position: relative !important;
-      width: 100% !important;
-      height: auto !important;
-      padding: 1rem 0 !important;
-      background: transparent !important;
-      box-shadow: none !important;
-      border: none !important;
-    }
+  // Hide explorer content when collapsed
+  .explorer.collapsed .explorer-content {
+    transform: translateX(-100vw) !important;
+    visibility: hidden !important;
+  }
 
-    // Ensure the tree looks good
-    .folder-button,
-    a {
-      color: #ffffff !important;
-      font-size: 0.85rem !important;
-      padding: 0.4rem 0 !important;
-    }
+  // Hide close button - we use the arrow to toggle
+  .explorer-content .explorer-close {
+    display: none !important;
   }
 }
 
-#mobile-nav-close-stable {
-  display: none;
 
-  @media all and ($mobile) {
-    body.mobile-nav-open & {
-      display: flex !important;
-      position: fixed !important;
-      top: 1rem;
-      right: 1.5rem;
-      z-index: 13002;
-      background: transparent;
-      border: none;
-      color: var(--secondary);
-      cursor: pointer;
-      padding: 0.5rem;
-
-      svg {
-        width: 24px;
-        height: 24px;
-      }
-    }
-  }
-}
-
-// Mobile navigation container - hidden on desktop
-.mobile-only-nav-container {
-  display: none !important;
-
-  @media all and ($mobile) {
-    display: flex !important;
-    align-items: center;
-  }
-}
-
-// Mobile nav button
-#mobile-nav-btn {
-  display: none;
-
-  @media all and ($mobile) {
-    display: flex !important;
-    height: 30px !important;
-    width: 30px !important;
-    align-items: center;
-    justify-content: center;
-    background: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-    color: var(--secondary);
-    cursor: pointer;
-
-    svg {
-      transform: rotate(-90deg);
-      width: 18px !important;
-      height: 18px !important;
-    }
-  }
-}
-
-#mobile-nav-panel {
-  display: none !important;
-}
-
-body.mobile-nav-open {
-  overflow: hidden !important;
-}
-
-
-// Ensure ONLY Arrow on Desktop Search/Explorer
+// Desktop: Hide mobile explorer button, show desktop one
 @media all and not ($mobile) {
   .mobile-explorer {
     display: none !important;
+  }
+
+  .desktop-explorer {
+    display: flex !important;
   }
 }
 
@@ -1305,17 +1277,20 @@ html.mobile-no-scroll body::after {
 
 // Search styling on mobile (header is already fixed)
 @media all and ($mobile) {
-  .search {
-    position: relative !important;
+  header .search {
+    position: fixed !important;
+    top: 10px !important;
+    right: 15px !important;
+    z-index: 10001 !important; // Above fixed header
     display: flex !important;
     align-items: center;
     background: transparent !important;
     margin: 0 !important;
 
-    #search-button {
+    .search-button {
       background: transparent !important;
       border: none !important;
-      padding: 0 !important;
+      padding: 8px !important;
     }
   }
 }

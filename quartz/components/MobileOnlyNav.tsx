@@ -42,49 +42,38 @@ function MobileOnlyNav({ displayClass }: QuartzComponentProps) {
 }
 
 const script = `
-function setupMobileNav() {
-  const openBtn = document.getElementById("mobile-nav-btn")
-  const closeBtn = document.getElementById("mobile-nav-close-stable")
+// Mobile nav handlers - using onclick for simplicity and reliability
+const openBtn = document.getElementById("mobile-nav-btn")
+const closeBtn = document.getElementById("mobile-nav-close-stable")
 
-  function openMenu() {
+if (openBtn) {
+  openBtn.onclick = function(e) {
+    e.preventDefault()
+    e.stopPropagation()
     document.body.classList.add("mobile-nav-open")
+    document.documentElement.classList.add("mobile-no-scroll")
   }
-
-  function closeMenu() {
-    document.body.classList.remove("mobile-nav-open")
-  }
-
-  function handleLinkClick(e) {
-    if (document.body.classList.contains("mobile-nav-open")) {
-      const target = e.target
-      if (target.tagName === 'A' && target.closest('.explorer-content')) {
-        closeMenu()
-      }
-    }
-  }
-
-  if (openBtn) {
-    openBtn.removeEventListener("click", openMenu)
-    openBtn.addEventListener("click", openMenu)
-    window.addCleanup(() => openBtn.removeEventListener("click", openMenu))
-  }
-
-  if (closeBtn) {
-    closeBtn.removeEventListener("click", closeMenu)
-    closeBtn.addEventListener("click", closeMenu)
-    window.addCleanup(() => closeBtn.removeEventListener("click", closeMenu))
-  }
-
-  document.removeEventListener("click", handleLinkClick)
-  document.addEventListener("click", handleLinkClick)
-  window.addCleanup(() => document.removeEventListener("click", handleLinkClick))
-
-  // Close menu on navigation
-  document.body.classList.remove("mobile-nav-open")
 }
 
-document.addEventListener("nav", setupMobileNav)
-setupMobileNav()
+if (closeBtn) {
+  closeBtn.onclick = function(e) {
+    e.preventDefault()
+    e.stopPropagation()
+    document.body.classList.remove("mobile-nav-open")
+    document.documentElement.classList.remove("mobile-no-scroll")
+  }
+}
+
+// Close menu when clicking on links inside explorer
+document.addEventListener("click", function(e) {
+  if (document.body.classList.contains("mobile-nav-open")) {
+    const target = e.target
+    if (target.tagName === 'A' && target.closest('.explorer-content')) {
+      document.body.classList.remove("mobile-nav-open")
+      document.documentElement.classList.remove("mobile-no-scroll")
+    }
+  }
+})
 `
 
 MobileOnlyNav.afterDOMLoaded = script
