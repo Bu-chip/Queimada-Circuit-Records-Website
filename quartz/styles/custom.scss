@@ -34,103 +34,51 @@ html {
 }
 
 // --------------------------------------------
-// HEADER - HORIZONTAL TOP BAR
+// HEADER - HORIZONTAL TOP BAR (STICKY)
 // --------------------------------------------
 .page-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
-  margin-top: 0rem !important;
-  margin-bottom: 1rem;
-  border-bottom: none !important; // Remove the top horizontal line
+  padding: 1rem 2rem;
+  margin-top: 0 !important;
+  margin-bottom: 0;
+  border-bottom: none !important;
   gap: 1.5rem;
-  position: relative; // Needed for subtitle positioning
-  flex-wrap: nowrap !important; // Force single line
-
-  // Header-integrated Breadcrumbs and Meta
-  .breadcrumb-container,
-  .content-meta {
-    font-size: 0.7rem !important; // Slightly smaller to distinguish from title
-    opacity: 0.6; // More subtle to avoid confusion with main title
-    white-space: nowrap !important; // Force single line alignment
-    margin: 0 !important;
-    display: inline-flex;
-    align-items: center;
-    transition: opacity 0.2s ease;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
+  flex-wrap: nowrap !important;
+  position: sticky !important;
+  top: 0;
+  background-color: #0a0a0a;
+  z-index: 1100;
 
   @media all and ($mobile) {
-    .content-meta {
-      display: flex !important;
-      font-size: 0.6rem !important;
-      margin-right: 0.5rem !important;
-      opacity: 0.6;
-      white-space: nowrap;
-    }
-  }
-
-  @media all and ($mobile) {
-    padding: 0 !important;
-    margin-top: 0 !important;
-    position: relative;
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between !important;
+    padding: 0 1rem !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
     height: 50px !important;
     z-index: 1100;
-
-    // The "Fixed Bar" background
-    &::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100dvw;
-      height: 50px;
-      background-color: #0a0a0a;
-      z-index: -1;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-    }
-
-    header,
-    .popover-hint {
-      padding-top: 0 !important;
-    }
+    background-color: #0a0a0a;
   }
 }
 
-// Subtitle Style (Article Title moved to header)
-.page-header .article-title {
-  position: absolute;
-  top: 100%; // Push below the header border
-  left: 0;
-  margin-top: -1.0rem !important; // Extremely tight spacing (almost touching main title)
+// Article Title - now in beforeBody
+.article-title {
+  margin-bottom: 0.5rem !important;
   padding: 0 !important;
-  font-size: 1.1rem !important;
-  color: var(--secondary) !important; // Brand Violet
+  font-size: 1.5rem !important;
+  color: var(--secondary) !important;
   border: none !important;
-  font-family: var(--codeFont) !important;
-  font-weight: normal !important;
+  font-family: var(--headerFont) !important;
+  font-weight: 700 !important;
 
-  &::before {
-    content: "└─ ";
-    color: var(--secondary);
-    margin-right: 0.5rem;
-    font-family: var(--codeFont);
-    font-size: 1.1em;
-    vertical-align: middle;
-    position: relative;
-    top: -1px;
-  }
-
-  @media all and ($mobile) {
-    display: none !important; // Hide subtitle from horizontal bar to keep it on one line
+  h1 {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    color: var(--secondary) !important;
+    font-size: inherit !important;
   }
 }
 
@@ -887,14 +835,11 @@ body.mobile-nav-open {
   font-size: 0.85rem;
   opacity: 0.7;
   font-family: var(--codeFont);
-
-  @media all and ($mobile) {
-    display: none !important; // Re-hidden here because we force it in header above
-  }
+  margin-bottom: 1rem;
 }
 
 // Hide meta on index
-.page-header:has(+ .center article[data-slug="index"]) .content-meta {
+article[data-slug="index"] .content-meta {
   display: none;
 }
 
@@ -993,10 +938,6 @@ footer {
   }
 }
 
-// Ensure Meta is clean when in header
-.page-header .content-meta {
-  opacity: 0.6;
-}
 
 // --------------------------------------------
 // CODE BLOCKS
@@ -1295,14 +1236,10 @@ html.mobile-no-scroll body::after {
   }
 }
 
-// Search icon sticky fix on mobile
+// Search styling on mobile (header is already fixed)
 @media all and ($mobile) {
   .search {
-    position: fixed !important;
-    top: 0;
-    right: 1.5rem;
-    height: 60px;
-    z-index: 1001;
+    position: relative !important;
     display: flex !important;
     align-items: center;
     background: transparent !important;
