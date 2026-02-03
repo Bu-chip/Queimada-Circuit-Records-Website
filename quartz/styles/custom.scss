@@ -19,11 +19,15 @@
 
 html {
   background-color: #0a0a0a;
+  // Prevent iOS bounce scroll from affecting fixed elements
+  overscroll-behavior: none;
 }
 
 body {
   background-color: #0a0a0a;
   min-height: 100vh;
+  // Prevent iOS bounce scroll
+  overscroll-behavior-y: none;
 }
 
 // Remove any grid/pattern backgrounds
@@ -59,6 +63,11 @@ html {
     background-color: #0a0a0a !important;
     z-index: 10000 !important;
     box-sizing: border-box !important;
+    // iOS Safari fix - prevent bounce scroll from moving header
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
 
     @media all and ($mobile) {
       padding: 0 50px !important; // Leave space for the fixed mobile-explorer button
