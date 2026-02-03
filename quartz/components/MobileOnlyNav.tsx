@@ -42,30 +42,49 @@ function MobileOnlyNav({ displayClass }: QuartzComponentProps) {
 }
 
 const script = `
-const openBtn = document.getElementById("mobile-nav-btn")
-const closeBtn = document.getElementById("mobile-nav-close-stable")
+function setupMobileNav() {
+  const openBtn = document.getElementById("mobile-nav-btn")
+  const closeBtn = document.getElementById("mobile-nav-close-stable")
 
-if (openBtn) {
-  openBtn.addEventListener("click", () => {
+  function openMenu() {
     document.body.classList.add("mobile-nav-open")
-  })
-}
+  }
 
-if (closeBtn) {
-  closeBtn.addEventListener("click", () => {
+  function closeMenu() {
     document.body.classList.remove("mobile-nav-open")
-  })
+  }
+
+  function handleLinkClick(e) {
+    if (document.body.classList.contains("mobile-nav-open")) {
+      const target = e.target
+      if (target.tagName === 'A' && target.closest('.explorer-content')) {
+        closeMenu()
+      }
+    }
+  }
+
+  if (openBtn) {
+    openBtn.removeEventListener("click", openMenu)
+    openBtn.addEventListener("click", openMenu)
+    window.addCleanup(() => openBtn.removeEventListener("click", openMenu))
+  }
+
+  if (closeBtn) {
+    closeBtn.removeEventListener("click", closeMenu)
+    closeBtn.addEventListener("click", closeMenu)
+    window.addCleanup(() => closeBtn.removeEventListener("click", closeMenu))
+  }
+
+  document.removeEventListener("click", handleLinkClick)
+  document.addEventListener("click", handleLinkClick)
+  window.addCleanup(() => document.removeEventListener("click", handleLinkClick))
+
+  // Close menu on navigation
+  document.body.classList.remove("mobile-nav-open")
 }
 
-// Close on link click
-document.addEventListener("click", (e) => {
-    if (document.body.classList.contains("mobile-nav-open")) {
-        const target = e.target
-        if (target.tagName === 'A' && target.closest('.explorer-content')) {
-            document.body.classList.remove("mobile-nav-open")
-        }
-    }
-})
+document.addEventListener("nav", setupMobileNav)
+setupMobileNav()
 `
 
 MobileOnlyNav.afterDOMLoaded = script

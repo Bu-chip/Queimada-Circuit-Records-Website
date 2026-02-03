@@ -282,18 +282,14 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   const currentSlug = e.detail.url
   await setupExplorer(currentSlug)
 
-  // if mobile explorer button is visible, collapse by default
-  const mobileExplorer = document.querySelector(".mobile-explorer") as HTMLElement
+  // Collapse explorer by default on all screen sizes
   const explorers = document.getElementsByClassName("explorer")
-  if (mobileExplorer && mobileExplorer.checkVisibility()) {
-    for (const explorer of explorers) {
-      explorer.classList.add("collapsed")
-      explorer.setAttribute("aria-expanded", "false")
-    }
-    // Allow <html> to be scrollable when mobile explorer is collapsed
-    document.documentElement.classList.remove("mobile-no-scroll")
+  for (const explorer of explorers) {
+    explorer.classList.add("collapsed")
+    explorer.setAttribute("aria-expanded", "false")
   }
-
+  // Allow <html> to be scrollable when explorer is collapsed
+  document.documentElement.classList.remove("mobile-no-scroll")
 })
 
 window.addEventListener("resize", function () {
