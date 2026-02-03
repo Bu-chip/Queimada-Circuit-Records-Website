@@ -595,8 +595,28 @@ h3 {
     svg {
       width: 24px !important;
       height: 24px !important;
-      transform: rotate(-90deg); // Arrow pointing right (menu icon)
+      // Arrow points right when menu closed (default)
+      transform: rotate(-90deg);
+      transition: transform 0.3s ease !important;
     }
+  }
+
+  // When menu is open, arrow points down
+  .explorer:not(.collapsed) ~ .mobile-explorer svg,
+  body:has(.explorer:not(.collapsed)) .mobile-explorer svg {
+    transform: rotate(0deg) !important;
+  }
+
+  // Hide title when menu is open
+  body:has(.explorer:not(.collapsed)) .page-header header .page-title {
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  // Hide search when menu is open
+  body:has(.explorer:not(.collapsed)) .page-header header .search {
+    opacity: 0 !important;
+    pointer-events: none !important;
   }
 
   // Hide the desktop explorer toggle on mobile
@@ -625,22 +645,9 @@ h3 {
     visibility: hidden !important;
   }
 
-  // Close button inside explorer-content
+  // Hide close button - we use the arrow to toggle
   .explorer-content .explorer-close {
-    display: flex !important;
-    position: absolute !important;
-    top: 15px !important;
-    right: 15px !important;
-    background: transparent !important;
-    border: none !important;
-    color: var(--secondary) !important;
-    cursor: pointer !important;
-    padding: 8px !important;
-    z-index: 10002 !important;
-
-    &:hover {
-      color: var(--tertiary) !important;
-    }
+    display: none !important;
   }
 }
 
