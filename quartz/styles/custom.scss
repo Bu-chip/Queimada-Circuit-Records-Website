@@ -37,40 +37,49 @@ html {
 // HEADER - HORIZONTAL TOP BAR (FIXED)
 // --------------------------------------------
 .page-header {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  padding: 0.75rem 2rem !important;
+  display: block !important;
   margin: 0 !important;
-  border-bottom: none !important;
-  gap: 1.5rem !important;
-  flex-wrap: nowrap !important;
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  height: 50px !important;
-  background-color: #0a0a0a !important;
-  z-index: 1100 !important;
-  box-sizing: border-box !important;
+  padding: 0 !important;
 
-  @media all and ($mobile) {
-    padding: 0 1rem !important;
+  // The actual header bar - FIXED
+  > header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0.75rem 2rem !important;
+    margin: 0 !important;
+    border-bottom: none !important;
+    gap: 1.5rem !important;
+    flex-wrap: nowrap !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 50px !important;
+    background-color: #0a0a0a !important;
+    z-index: 1100 !important;
+    box-sizing: border-box !important;
+
+    @media all and ($mobile) {
+      padding: 0 1rem !important;
+    }
+  }
+
+  // Content below header (ArticleTitle, ContentMeta) - NOT fixed
+  > .popover-hint {
+    padding-top: 55px !important; // Compensate for fixed header
+    margin: 0 !important;
   }
 }
 
-// Compensate for fixed header - add padding to body content
-.page > #quartz-body {
-  padding-top: 60px !important;
-
-  @media all and ($mobile) {
-    padding-top: 50px !important;
-  }
+// Hide the hr between content and footer
+.center > hr {
+  display: none !important;
 }
 
 // Article Title - now in beforeBody
 .article-title {
-  margin-bottom: 0.5rem !important;
+  margin: 0 0 0.5rem 0 !important;
   padding: 0 !important;
   font-size: 1.5rem !important;
   color: var(--secondary) !important;
@@ -85,6 +94,12 @@ html {
     color: var(--secondary) !important;
     font-size: inherit !important;
   }
+}
+
+// Hide ArticleTitle on index page
+article[data-slug="index"] .article-title,
+.page:has(article[data-slug="index"]) .article-title {
+  display: none !important;
 }
 
 // Page Title - Horizontal in header (LIME GREEN)
@@ -188,7 +203,7 @@ header .spacer {
 // SIDEBAR LEFT - Just Explorer
 // --------------------------------------------
 .sidebar.left {
-  padding-top: 1.5rem !important; // More clearance for the explorer button
+  padding-top: 55px !important; // Match header height
 
   @media all and ($mobile) {
     padding-top: 0 !important;
@@ -196,7 +211,11 @@ header .spacer {
 }
 
 .sidebar.right {
-  padding-top: 1rem !important;
+  padding-top: 55px !important; // Match header height
+
+  @media all and ($mobile) {
+    padding-top: 0 !important;
+  }
 }
 
 // --------------------------------------------
