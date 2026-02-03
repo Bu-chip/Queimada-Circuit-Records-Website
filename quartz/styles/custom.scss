@@ -61,8 +61,9 @@ html {
     box-sizing: border-box !important;
 
     @media all and ($mobile) {
-      padding: 0 15px !important;
+      padding: 0 50px !important; // Leave space for the fixed mobile-explorer button
       gap: 10px !important;
+      justify-content: center !important; // Center the title
     }
   }
 
@@ -564,145 +565,85 @@ h3 {
   }
 }
 
-// Mobile explorer menu arrow icon
-// --- NUCLEAR OPTION: CUSTOM MOBILE NAV ---
-
-// 1. HIDE OLD SYSTEM ON MOBILE
-// --- REFINED STABLE PANEL STRATEGY ---
+// --------------------------------------------
+// MOBILE NAVIGATION - Native Quartz Explorer
+// --------------------------------------------
 @media all and ($mobile) {
+  // Position the mobile explorer button in the fixed header area
+  .mobile-explorer {
+    display: flex !important;
+    position: fixed !important;
+    top: 10px !important;
+    left: 15px !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 8px !important;
+    color: var(--secondary) !important;
+    cursor: pointer !important;
+    z-index: 10001 !important; // Above fixed header
+    pointer-events: auto !important;
 
-  // 1. Hide in original location when NOT open
-  .sidebar.left .explorer:not(.mobile-nav-panel),
-  .mobile-explorer,
-  .explorer-toggle.mobile-explorer {
+    svg {
+      width: 24px !important;
+      height: 24px !important;
+      transform: rotate(-90deg); // Arrow pointing right (menu icon)
+    }
+  }
+
+  // Hide the desktop explorer toggle on mobile
+  .desktop-explorer {
     display: none !important;
   }
 
-  // 2. Style Explorer when body has .mobile-nav-open
-  body.mobile-nav-open .explorer {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    pointer-events: auto !important;
+  // Explorer content - full screen overlay when open
+  .explorer:not(.collapsed) .explorer-content {
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     width: 100vw !important;
     height: 100vh !important;
     background-color: #0a0a0a !important;
-    z-index: 13000 !important;
-    padding: 2rem !important;
+    z-index: 10000 !important;
+    padding: 60px 20px 20px 20px !important;
     overflow-y: auto !important;
-
-    // Inside the mobile-nav-panel (the explorer itself is the panel now)
-    .explorer-content {
-      display: block !important;
-      visibility: visible !important;
-      transform: none !important; // Disable any Quartz transitions
-      position: relative !important;
-      width: 100% !important;
-      height: auto !important;
-      padding: 1rem 0 !important;
-      background: transparent !important;
-      box-shadow: none !important;
-      border: none !important;
-    }
-
-    // Ensure the tree looks good
-    .folder-button,
-    a {
-      color: #ffffff !important;
-      font-size: 0.85rem !important;
-      padding: 0.4rem 0 !important;
-    }
+    transform: translateX(0) !important;
+    visibility: visible !important;
   }
-}
 
-#mobile-nav-close-stable {
-  display: none;
-
-  @media all and ($mobile) {
-    display: none !important; // Hidden by default
-
-    body.mobile-nav-open & {
-      display: flex !important;
-      position: fixed !important;
-      top: 10px !important;
-      right: 15px !important;
-      z-index: 99999 !important; // Very high z-index
-      background: transparent !important;
-      border: none !important;
-      color: var(--secondary) !important;
-      cursor: pointer !important;
-      padding: 10px !important;
-      pointer-events: auto !important;
-
-      svg {
-        width: 24px !important;
-        height: 24px !important;
-        pointer-events: none; // SVG shouldn't capture clicks
-      }
-    }
+  // Hide explorer content when collapsed
+  .explorer.collapsed .explorer-content {
+    transform: translateX(-100vw) !important;
+    visibility: hidden !important;
   }
-}
 
-// Mobile navigation container
-.mobile-only-nav-container {
-  display: none !important;
-
-  @media all and ($mobile) {
+  // Close button inside explorer-content
+  .explorer-content .explorer-close {
     display: flex !important;
-    align-items: center;
-    z-index: 9999 !important;
-    pointer-events: auto !important;
-  }
-}
-
-// Mobile nav button (open menu)
-#mobile-nav-btn {
-  display: none;
-
-  @media all and ($mobile) {
-    display: flex !important;
-    height: 40px !important;
-    width: 40px !important;
-    align-items: center;
-    justify-content: center;
+    position: absolute !important;
+    top: 15px !important;
+    right: 15px !important;
     background: transparent !important;
     border: none !important;
-    padding: 5px !important;
     color: var(--secondary) !important;
     cursor: pointer !important;
-    z-index: 9999 !important;
-    pointer-events: auto !important;
+    padding: 8px !important;
+    z-index: 10002 !important;
 
-    svg {
-      transform: rotate(-90deg);
-      width: 20px !important;
-      height: 20px !important;
-      pointer-events: none; // SVG shouldn't capture clicks
-    }
-
-    // Hide when menu is open
-    body.mobile-nav-open & {
-      display: none !important;
+    &:hover {
+      color: var(--tertiary) !important;
     }
   }
 }
 
-#mobile-nav-panel {
-  display: none !important;
-}
 
-body.mobile-nav-open {
-  overflow: hidden !important;
-}
-
-
-// Ensure ONLY Arrow on Desktop Search/Explorer
+// Desktop: Hide mobile explorer button, show desktop one
 @media all and not ($mobile) {
   .mobile-explorer {
     display: none !important;
+  }
+
+  .desktop-explorer {
+    display: flex !important;
   }
 }
 
@@ -1320,17 +1261,20 @@ html.mobile-no-scroll body::after {
 
 // Search styling on mobile (header is already fixed)
 @media all and ($mobile) {
-  .search {
-    position: relative !important;
+  header .search {
+    position: fixed !important;
+    top: 10px !important;
+    right: 15px !important;
+    z-index: 10001 !important; // Above fixed header
     display: flex !important;
     align-items: center;
     background: transparent !important;
     margin: 0 !important;
 
-    #search-button {
+    .search-button {
       background: transparent !important;
       border: none !important;
-      padding: 0 !important;
+      padding: 8px !important;
     }
   }
 }
