@@ -96,10 +96,17 @@ html {
   }
 }
 
-// Hide ArticleTitle on index page
-article[data-slug="index"] .article-title,
-.page:has(article[data-slug="index"]) .article-title {
+// Hide ArticleTitle and ContentMeta on index page
+body[data-slug="index"] .article-title,
+body[data-slug="index"] .content-meta,
+body[data-slug="index"] .popover-hint > .article-title,
+body[data-slug="index"] .popover-hint > .content-meta {
   display: none !important;
+}
+
+// Reduce padding on index page
+body[data-slug="index"] .popover-hint {
+  padding-top: 55px !important;
 }
 
 // Page Title - Horizontal in header (LIME GREEN)
@@ -203,18 +210,49 @@ header .spacer {
 // SIDEBAR LEFT - Just Explorer
 // --------------------------------------------
 .sidebar.left {
-  padding-top: 55px !important; // Match header height
+  padding-top: 50px !important; // Match fixed header height exactly
 
   @media all and ($mobile) {
     padding-top: 0 !important;
   }
+
+  // Align explorer toggle with header
+  .explorer {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    .explorer-toggle {
+      margin: 0 !important;
+      padding: 0 !important;
+      min-height: auto !important;
+      height: auto !important;
+    }
+  }
 }
 
 .sidebar.right {
-  padding-top: 55px !important; // Match header height
+  padding-top: 50px !important; // Match fixed header height exactly
 
   @media all and ($mobile) {
     padding-top: 0 !important;
+  }
+
+  // Align graph title with header
+  .graph {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+
+    h3 {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+}
+
+// Explorer collapsed by default - hide content until toggled
+@media all and not ($mobile) {
+  .explorer.collapsed .explorer-content {
+    display: none !important;
   }
 }
 
@@ -223,10 +261,10 @@ header .spacer {
 // --------------------------------------------
 article {
   padding-bottom: 3rem;
-  margin-top: 6rem; // Increased for substantial breathing room below the absolute subtitle
+  margin-top: 0.5rem; // Minimal spacing - content starts close to header
 
   @media all and ($mobile) {
-    margin-top: 60px !important; // Precise breathing room (50px bar + 10px)
+    margin-top: 10px !important;
     padding-left: 1rem;
     padding-right: 1rem;
   }
