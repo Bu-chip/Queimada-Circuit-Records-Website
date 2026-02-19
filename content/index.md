@@ -24,6 +24,7 @@ title: 000000
 * ⬡ **[[03_EVENTOS/index|Eventos]]** ⟢ Registro de directos, carteles y sesiones.
 * ⬡ **[[04_LAB/index|Lab]]** ⟢ Ingeniería, worldbuilding y procesos DIY.
 * ⬡ **[[05_BLOG/index|Blog]]** ⟢ Bitácora de desarrollo y volcados de datos.
+* ⬡ **[[queimada-circuit-records|Sobre el sello]]** ⟢ Historia, proyectos y contexto de Queimada.
 
 ◈
 ◈
