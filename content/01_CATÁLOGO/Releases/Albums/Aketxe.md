@@ -8,6 +8,8 @@ tags:
   - synthwave
   - live
 cover:
+aliases:
+  - aketxe-live-jam
 ---
 ---
 

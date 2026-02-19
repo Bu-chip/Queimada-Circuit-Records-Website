@@ -12,6 +12,6 @@ lugar: "Txirbilenea, Sestao"
 **Tipo:** sesión
 **Participantes QCR:** [[555-kables]] ([[cuerpopensante]] + [[colaboradores/anarkoeneko]])
 **Colaboradores:** [[colaboradores/misoginia-punk]], [[colaboradores/cenizasdb]], [[colaboradores/kolektivokotxino]], [[colaboradores/txirbilenea-sestao]]
-**Releases relacionados:** [[aketxe-live-jam]] <!-- VERIFICAR LINK -->
+**Releases relacionados:** [[aketxe-live-jam]]
 
 Sesión de ~1 hora. Video completo en YouTube en canal @queimadacircuitrecords.
