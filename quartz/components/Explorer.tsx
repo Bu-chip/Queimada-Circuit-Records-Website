@@ -87,7 +87,7 @@ export default ((userOpts?: Partial<Options>) => {
           </svg>
         </button>
         <div
-          class={classNames(displayClass, "explorer")}
+          class={classNames(displayClass, "explorer", opts.folderDefaultState === "collapsed" ? "collapsed" : "")}
           data-behavior={opts.folderClickBehavior}
           data-collapsed={opts.folderDefaultState}
           data-savestate={opts.useSavedState}

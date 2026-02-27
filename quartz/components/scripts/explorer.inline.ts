@@ -285,7 +285,7 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   // Collapse explorer by default on all screen sizes
   const explorers = document.getElementsByClassName("explorer")
   for (const explorer of explorers) {
-    explorer.classList.add("collapsed")
+    // explorer.classList.add("collapsed")
     explorer.setAttribute("aria-expanded", "false")
   }
   // Allow <html> to be scrollable when explorer is collapsed

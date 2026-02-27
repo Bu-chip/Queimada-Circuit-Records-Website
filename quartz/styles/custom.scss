@@ -46,7 +46,7 @@ html {
   padding: 0 !important;
 
   // The actual header bar - FIXED
-  > header {
+  >header {
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
@@ -61,7 +61,7 @@ html {
     right: 0 !important;
     height: 50px !important;
     background-color: #0a0a0a !important;
-    z-index: 10000 !important;
+    z-index: 999 !important;
     box-sizing: border-box !important;
     // iOS Safari fix - prevent bounce scroll from moving header
     -webkit-transform: translateZ(0) !important;
@@ -77,14 +77,14 @@ html {
   }
 
   // Content below header (ArticleTitle, ContentMeta) - NOT fixed
-  > .popover-hint {
+  >.popover-hint {
     padding-top: 55px !important;
     margin: 0 !important;
   }
 }
 
 // Hide the hr between content and footer
-.center > hr {
+.center>hr {
   display: none !important;
 }
 
@@ -110,8 +110,8 @@ html {
 // Hide ArticleTitle and ContentMeta on index page
 body[data-slug="index"] .article-title,
 body[data-slug="index"] .content-meta,
-body[data-slug="index"] .popover-hint > .article-title,
-body[data-slug="index"] .popover-hint > .content-meta {
+body[data-slug="index"] .popover-hint>.article-title,
+body[data-slug="index"] .popover-hint>.content-meta {
   display: none !important;
 }
 
@@ -223,8 +223,10 @@ header .spacer {
 .sidebar.left {
   padding-top: 50px !important; // Match fixed header height exactly
 
+
   @media all and ($mobile) {
     padding-top: 0 !important;
+    display: block !important; // Allow mobile-explorer to be visible
   }
 
   // Align explorer toggle with header
@@ -242,10 +244,21 @@ header .spacer {
 }
 
 .sidebar.right {
-  padding-top: 50px !important; // Match fixed header height exactly
+  padding-top: 15px !important; // Match fixed header height exactly
 
   @media all and ($mobile) {
+    // Force right sidebar visible on mobile to show Graph
+    display: block !important;
     padding-top: 0 !important;
+    position: relative !important;
+    width: 100% !important;
+    margin-top: 60px !important; // Space for fixed header
+
+    // Ensure Graph is visible on mobile
+    .graph {
+      display: block !important;
+      padding: 1rem !important;
+    }
   }
 
   // Align graph title with header
@@ -578,6 +591,7 @@ h3 {
 // MOBILE NAVIGATION - Native Quartz Explorer
 // --------------------------------------------
 @media all and ($mobile) {
+
   // Position the mobile explorer button in the fixed header area
   .mobile-explorer {
     display: flex !important;
@@ -587,7 +601,7 @@ h3 {
     background: transparent !important;
     border: none !important;
     padding: 8px !important;
-    color: var(--secondary) !important;
+    color: var(--secondary) !important; // Violet, consistent
     cursor: pointer !important;
     z-index: 10001 !important; // Above fixed header
     pointer-events: auto !important;
@@ -601,8 +615,13 @@ h3 {
     }
   }
 
+  // Hide the desktop explorer toggle on mobile
+  .desktop-explorer {
+    display: none !important;
+  }
+
   // When menu is open, arrow points down
-  .explorer:not(.collapsed) ~ .mobile-explorer svg,
+  .explorer:not(.collapsed)~.mobile-explorer svg,
   body:has(.explorer:not(.collapsed)) .mobile-explorer svg {
     transform: rotate(0deg) !important;
   }
@@ -632,7 +651,7 @@ h3 {
     width: 100vw !important;
     height: 100vh !important;
     background-color: #0a0a0a !important;
-    z-index: 10000 !important;
+    z-index: 999 !important;
     padding: 60px 20px 20px 20px !important;
     overflow-y: auto !important;
     transform: translateX(0) !important;
@@ -642,7 +661,7 @@ h3 {
   // Hide explorer content when collapsed
   .explorer.collapsed .explorer-content {
     transform: translateX(-100vw) !important;
-    visibility: hidden !important;
+    // visibility: hidden !important; REMOVED to allow fixed children (mobile button) to be visible
   }
 
   // Hide close button - we use the arrow to toggle
@@ -1340,7 +1359,7 @@ header {
 
 // Explorador - alinear flecha con header
 .explorer {
-  padding-top: 1rem !important;
+  padding-top: 0 !important;
 
   .explorer-toggle {
     display: flex !important;
@@ -1362,17 +1381,17 @@ header {
   }
 }
 
-// Graph - alinear título "VISTA GRÁFICA" con header
-.graph {
-  padding-top: 1rem !important;
+// Graph - alinear título "VISTA GRÁFICA" con header  
+.sidebar.right .graph {
+  padding-top: 40 !important; // En sidebar derecha, sin padding
+  margin-top: 0 !important;
 
   h3,
   .graph-title {
     display: flex !important;
     align-items: center !important;
     margin: 0 !important;
-    padding: 0.5rem 0 !important;
-    min-height: 3rem !important; // Misma altura que header
+    padding: 0 !important;
     line-height: 1 !important;
   }
 }

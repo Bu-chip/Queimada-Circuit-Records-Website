@@ -579,6 +579,7 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
 
   async function renderLocalGraph() {
     cleanupLocalGraphs()
+
     const localGraphContainers = document.getElementsByClassName("graph-container")
     for (const container of localGraphContainers) {
       localGraphCleanups.push(await renderGraph(container as HTMLElement, slug))
