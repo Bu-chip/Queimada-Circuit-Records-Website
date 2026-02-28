@@ -5,7 +5,7 @@ tags:
 instagram: "@anarkoeneko"
 ---
 
-Cofundador y mitad de [[555-kables]]. Toca con Novation Circuit. Comparte estudio con [[cuerpopensante]] y es la otra mitad del proyecto conjunto.
+Cofundador y mitad de [[555-kables]]. Toca con Novation Circuit. Comparte estudio con [[cuerpo pensante]] y es la otra mitad del proyecto conjunto.
 
 ## Aparece en
 - [[halloween-txirbilenea-oct-2024]]

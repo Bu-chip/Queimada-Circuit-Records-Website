@@ -18,7 +18,7 @@ aliases:
 </div>
 ## Sobre la jam y el disco
 
-Sesión en vivo grabada en la sala de ensayo de Aketxe por [[555 Kables]]
+Sesión en vivo grabada en la sala de ensayo de Aketxe por [[555-kables]]
 
 Una toma continua de 40 minutos dividida en tres partes, sin cortes ni ediciones. Crudo y directo, tal como sonamos. Novation Circuit, TR-6S, y una Crave con problemas técnicos que solo dejó escapar algunos sonidos. Solo ecualización en el master, nada más.
 

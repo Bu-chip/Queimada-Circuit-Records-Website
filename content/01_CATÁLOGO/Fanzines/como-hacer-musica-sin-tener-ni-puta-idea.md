@@ -10,7 +10,7 @@ artista: "[[cuerpopensante]], [[555-kables]]"
 
 **Tipo:** Fanzine tutorial independiente
 **Año:** 2024
-**Artistas:** [[cuerpopensante]], [[555-kables]]
+**Artistas:** [[cuerpo pensante]], [[555-kables]]
 
 Fanzine DIY sobre cómo acercarse a la música sin conocimientos previos. Nació de las charlas, pruebas y dudas del colectivo [[555-kables]]. Vendido e intercambiado en eventos y ferias. Sirvió de base para los talleres presenciales.
 

@@ -9,7 +9,7 @@ lugar: "Arrigorriaga"
 
 **Lugar:** Arrigorriaga
 **Tipo:** concierto
-**Participantes QCR:** [[cuerpopensante]]
+**Participantes QCR:** [[cuerpo pensante]]
 **Colaboradores:** [[colaboradores/irolairratia]], [[colaboradores/misoginia-punk]], [[colaboradores/camile-duhart]]
 
 Bolos organizados por Irolairratia. Miguel realizó edits de datamoshing de las grabaciones — primer experimento con esta técnica.

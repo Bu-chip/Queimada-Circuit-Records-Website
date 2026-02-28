@@ -5,7 +5,7 @@ tags:
 instagram: "@dirtyytapess / @power_electronics7"
 ---
 
-Sello de Valladolid. Publicaron *Aberración Biológica* de [[cuerpopensante]] y han organizado bolos conjuntos con QCR en Valladolid.
+Sello de Valladolid. Publicaron *Aberración Biológica* de [[cuerpo pensante]] y han organizado bolos conjuntos con QCR en Valladolid.
 
 ## Aparece en
 - [[bolo-elsalonenllamas-valladolid-mar-2025]]

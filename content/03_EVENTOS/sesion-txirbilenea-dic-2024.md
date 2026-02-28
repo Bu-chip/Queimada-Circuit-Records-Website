@@ -10,7 +10,7 @@ lugar: "Txirbilenea, Sestao"
 
 **Lugar:** Txirbilenea, Sestao
 **Tipo:** sesión
-**Participantes QCR:** [[555-kables]] ([[cuerpopensante]] + [[colaboradores/anarkoeneko]])
+**Participantes QCR:** [[555-kables]] ([[cuerpo pensante]] + [[colaboradores/anarkoeneko]])
 **Colaboradores:** [[colaboradores/misoginia-punk]], [[colaboradores/cenizasdb]], [[colaboradores/kolektivokotxino]], [[colaboradores/txirbilenea-sestao]]
 **Releases relacionados:** [[aketxe-live-jam]]
 

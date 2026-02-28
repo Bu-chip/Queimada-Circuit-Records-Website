@@ -9,7 +9,7 @@ lugar: "La Kobra, Bilbao"
 
 **Lugar:** La Kobra, Bilbao
 **Tipo:** feria
-**Participantes QCR:** [[cuerpopensante]], [[buchi-buchip]]
+**Participantes QCR:** [[cuerpo pensante]], [[buchi-buchip]]
 **Colaboradores:** [[colaboradores/lurrazpikoliga]]
 **Releases relacionados:** [[buchi-buchip-acto-i]]
 

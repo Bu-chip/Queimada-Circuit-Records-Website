@@ -9,8 +9,8 @@ de nodos arriba a la derecha, o el panel desplegable verde en la versión web.
 
 ◈ En [[02_ARTISTAS/index|ARTISTAS]] encontrarás los perfiles de cada proyecto. 
 
-⟡ [[cuerpo pensante|CUERPOPENSANTE]] ⟡ [[cachalote mecánico|CACHALOTE MECÁNICO]]
-⟡ [[buchi-buchip|BUCHI.BUCHIP]] ⟡ [[555 Kables|555 KABLES]] ⟡ son por ahora nuestros proyectos a largo plazo
+⟡ [[cuerpo pensante|CUERPOPENSANTE]] ⟡ [[Cachalote Mecánico|CACHALOTE MECÁNICO]]
+⟡ [[buchi-buchip|BUCHI.BUCHIP]] ⟡ [[555-Kables|555 KABLES]]⟡ son por ahora nuestros proyectos a largo plazo
 
 
 ◈ En [[03_EVENTOS/index|EVENTOS]] el registro de directos y sesiones.

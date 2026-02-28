@@ -7,31 +7,29 @@ tags:
   - experimental
   - electronica
 ---
+![[02_ARTISTAS/FILES/516466942_1470244827667176_5988909081147158967_n.png]]
 
-# Queimada Circuit Records
 
 > Sello de electrónica experimental. Bilbao. Cualquier subgénero es admitido.
 
-**Queimada Circuit Records** es un sello discográfico experimental con base en **Bilbao**, fundado y coordinado por [[cuerpopensante]] (Miguel Borrajo). Opera como estructura de distribución y archivo para un ecosistema de proyectos sonoros que exploran los límites de la electrónica, el folclore, el noise y la síntesis.
-
-El sello se autodefine también como **"Electronic Variety Circus"** — un circo de variedades electrónicas donde cualquier subgénero tiene cabida. Lo que une a los proyectos del catálogo no es un sonido común sino una actitud compartida: DIY, experimental, sin permiso.
+**Queimada Circuit Records** es un sello discográfico experimental con base en **Bilbao**, fundado y coordinado por [[cuerpo pensante]] (Miguel Borrajo). Opera como estructura de distribución y archivo para un ecosistema de proyectos sonoros que exploran los límites de la electrónica, el folclore, el noise y la síntesis. Lo que une a los proyectos: DIY, experimental, sin permiso.
 
 ## Origen
 
-El nombre viene de la **queimada** gallega — ritual en el que se quema aguardiente con hierbas, se recita un conxuro para ahuyentar los malos espíritus, y se comparte en comunidad. Fuego, tradición y excusa para juntarse. Queimada hereda esa lógica: música como ritual compartido, hecha entre varios y ofrecida al entorno.
+El nombre viene de la **queimada** gallega, un ritual en el que se quema aguardiente con hierbas, se recita un conxuro para ahuyentar los malos espíritus, y se comparte en comunidad. Fuego, tradición y excusa para juntarse. Queimada hereda esa lógica.
 
-Nació porque había mucha música acumulada entre muchas personas y necesitaba salir. No como industria sino como gesto: *esto lo hemos hecho, aquí está*. Desde abajo, desde lo local, con las herramientas que hay.
+Nació porque había mucha música acumulada entre muchas personas y necesitaba salir. 
 
-Queimada no es solo un archivo de grabaciones. Es conciertos, workshops de producción electrónica, participación en la vida cultural del entorno. El directo y el contacto presencial son tan parte del proyecto como los lanzamientos — quizás más.
+Queimada también es conciertos, workshops de producción electrónica, participación en la vida cultural, fiestas con amigos. El directo y el contacto presencial son tan parte del proyecto como los lanzamientos, quizás más.
 
-En el horizonte hay proyectos en desarrollo: el mapa de biodiversidad de Bilbao, experimentos sonoros y comunitarios que irán tomando forma. La complejidad es parte del proyecto — Queimada no quiere ser una sola cosa fácil de describir, sino algo vivo que crece en varias direcciones a la vez.
+En el horizonte hay proyectos en desarrollo: el mapa de biodiversidad de Bilbao, experimentos sonoros y comunitarios que irán tomando forma. La complejidad es parte del proyecto. Queimada no quiere ser una sola cosa fácil de describir.
 
-## Proyectos del sello
+## Principales proyectos del sello
 
-- [[cuerpopensante]] — alias principal del curador. Ambient, breakcore, IDM, dark ambient, noise, muiñeira.
+- [[cuerpo pensante]] — alias principal del curador. Ambient, breakcore, IDM, dark ambient, noise, muiñeira.
 - [[buchi-buchip|buchi.buchip]] — alias de síntesis. IDM conceptual, fanzine-álbum, universo de ficción sonora.
 - [[555-kables|555 Kables]] — colectivo de live jam electrónico. Electrónica en directo, irrepetible.
-- [[cachalote-mecanico|cachalote mecánico]] — noise extremo y folclore. Harsh noise, paso doble, breakcore.
+- [[Cachalote Mecánico|cachalote mecánico]] — noise extremo y folclore. Harsh noise, paso doble, breakcore.
 
 ## Catálogo completo
 
@@ -50,6 +48,7 @@ El hilo conceptual que atraviesa el catálogo — sin nombrarse explícitamente 
 - SoundCloud: [@queimadacircuitrecords](https://soundcloud.com/the-shamanka)
 - MusicBrainz: [entrada del sello](https://musicbrainz.org/label/3ea3022d-4b0c-4475-884b-acb5d2e7ea07)
 
+![[el bueno logo QCR.png]]
 ---
 
 [[02_ARTISTAS/index|← Volver a Artistas]]

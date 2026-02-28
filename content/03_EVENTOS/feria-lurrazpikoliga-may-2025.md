@@ -9,7 +9,7 @@ lugar: "Gazte, Bilbao"
 
 **Lugar:** Gazte, Bilbao
 **Tipo:** feria
-**Participantes QCR:** [[cuerpopensante]], [[555-kables]]
+**Participantes QCR:** [[cuerpo pensante]], [[555-kables]]
 **Colaboradores:** [[colaboradores/lurrazpikoliga]], [[colaboradores/goikore]]
 **Releases relacionados:** [[como-hacer-musica-sin-tener-ni-puta-idea]], [[fanzine-555k-queimada]]
 

@@ -9,7 +9,7 @@ lugar: "Cirkolepsia, Bilbao"
 
 **Lugar:** Cirkolepsia, Bilbao
 **Tipo:** taller
-**Participantes QCR:** [[555-kables]] ([[cuerpopensante]] + [[colaboradores/anarkoeneko]])
+**Participantes QCR:** [[555-kables]] ([[cuerpo pensante]] + [[colaboradores/anarkoeneko]])
 **Colaboradores:** [[colaboradores/cirkolepsia]], [[colaboradores/kolektivokotxino]], [[colaboradores/tanta-tattoo]], [[colaboradores/goikore]]
 **Releases relacionados:** [[como-hacer-musica-sin-tener-ni-puta-idea]]
 
