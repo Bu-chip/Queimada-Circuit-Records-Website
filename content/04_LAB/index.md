@@ -1,20 +1,19 @@
 ---
 title: Lab
 ---
+[[Un montón de links]] 
+* **[[Bilbao Underground Explorer]]**
 
-# Laboratorio (I/O)
-Zona de experimentación visual, enlaces de interés y proyectos paralelos.
+[Perfil en p5.js](https://editor.p5js.org/Bu-chip/sketches)
 
-## 👁️ Visual
-Galerías, estética glitch y diseño gráfico.
-* `[ENLACE A GALERÍA O PROYECTO VISUAL]`
+![[Pasted image 20260228052030.png]]
+![[Pasted image 20260228052102.png]]
+![[Pasted image 20260228052142.png]]
+![[Pasted image 20260228052234.png]]
+[perfil en shadertoy](https://www.shadertoy.com/user/Buchibuchi) 
 
-## 🤝 Proyectos Externos
-Iniciativas amigas y conexiones en la red.
-* **[[Bilbao Underground Explorer]]**: Mapeando el subsuelo sonoro.
-* `[OTRO PROYECTO]`
+![[Grabación de pantalla 2026-02-28 a las 5.23.56.mov]]
+touchdesigner
 
-## 🔗 Referencias
-Enlaces, recursos y frikadas que nos inspiran.
-* `[ENLACE INTERESANTE 1]`
-* `[ENLACE INTERESANTE 2]`
+
+
