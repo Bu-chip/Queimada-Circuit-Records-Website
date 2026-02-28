@@ -14,7 +14,7 @@ export default (() => {
   }: QuartzComponentProps) => {
     const titleSuffix = cfg.pageTitleSuffix ?? ""
     const title =
-      (fileData.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title) + titleSuffix
+      (fileData.frontmatter?.title || i18n(cfg.locale).propertyDefaults.title) + titleSuffix
     const description =
       fileData.frontmatter?.socialDescription ??
       fileData.frontmatter?.description ??
@@ -38,7 +38,8 @@ export default (() => {
 
     return (
       <head>
-        <title>{title}</title>
+        <title data-persist="">{cfg.pageTitle}</title>
+        <script dangerouslySetInnerHTML={{ __html: `(function(){var t="${cfg.pageTitle}";document.title=t;Object.defineProperty(document,"title",{get:function(){return t;},set:function(){},configurable:true});})();` }} data-persist="" />
         <meta charSet="utf-8" />
         {cfg.theme.cdnCaching && cfg.theme.fontOrigin === "googleFonts" && (
           <>
@@ -82,7 +83,7 @@ export default (() => {
           </>
         )}
 
-        <link rel="icon" href={iconPath} />
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>" data-persist="" />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
 

@@ -171,32 +171,17 @@ body[data-slug="index"] .popover-hint {
   }
 }
 
-// Search in header - compact style
+// Search in header - icon only, no border, no text
 header .search {
   .search-button {
-    padding: 0.4rem 0.8rem;
-    border-color: var(--lightgray);
-    background-color: transparent;
+    padding: 0 !important;
+    border: none !important;
+    background-color: transparent !important;
+    width: auto !important;
+    height: auto !important;
 
-    @media all and ($mobile) {
-      padding: 0 !important;
-      min-width: unset;
-      width: 30px;
-      height: 30px;
-      display: flex !important;
-      align-items: center;
-      justify-content: center;
-      border: none !important;
-      margin-right: 0.5rem;
-
-      svg {
-        width: 18px !important;
-        height: 18px !important;
-      }
-
-      p {
-        display: none;
-      }
+    p {
+      display: none !important;
     }
   }
 }
@@ -741,18 +726,24 @@ h3 {
 // SEARCH
 // --------------------------------------------
 .search {
+  // En el header: solo icono, sin borde, sin texto
   .search-button {
     display: flex !important;
     align-items: center;
-    gap: 0.3rem;
-    padding: 0 !important;
-    border: none !important;
+    justify-content: center;
     background: transparent !important;
+    border: none !important;
+    border-radius: 0;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    padding: 0 !important;
 
     svg {
       min-width: 18px;
       width: 18px;
       height: 18px;
+      margin: 0;
 
       .search-path {
         stroke: var(--secondary) !important;
@@ -763,25 +754,14 @@ h3 {
 
     p {
       display: none !important;
-      border: 1px solid var(--lightgray);
-      padding: 0.4rem 0.8rem;
-      border-radius: 4px;
-      color: var(--gray);
-      margin: 0;
-      font-family: var(--bodyFont);
-      transition: all 0.2s ease;
     }
 
     &:hover {
       background-color: transparent !important;
+      border: none !important;
 
       svg .search-path {
         stroke: var(--tertiary) !important;
-      }
-
-      p {
-        border-color: var(--secondary);
-        color: var(--darkgray);
       }
     }
   }
@@ -824,6 +804,75 @@ h3 {
       }
     }
   }
+}
+
+// --------------------------------------------
+// RANDOM PAGE — botón espejo de .search-button
+// Vive dentro de un Component.Flex() junto con Search,
+// en el sidebar derecho encima del Graph.
+// El SVG hereda color via currentColor, igual que .search-path.
+// --------------------------------------------
+.random-page {
+  // Alineación en header — igual que .search
+  display: flex;
+  align-items: center;
+
+  .random-page-button {
+    // Reset nativo — idéntico al .search-button en header
+    appearance: none;
+    border: none !important;
+    background: transparent !important;
+    cursor: pointer;
+    padding: 0 !important;
+    margin: 0;
+
+    // Mismas dimensiones que el SVG de la lupa: 18×18px
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
+      color: var(--secondary);
+      stroke: var(--secondary);
+      transition: stroke 0.2s ease, color 0.2s ease, transform 0.35s ease;
+    }
+
+    &:hover svg {
+      stroke: var(--tertiary);
+      color: var(--tertiary);
+      transform: rotate(180deg);
+    }
+
+    // Clase .spinning añadida por JS durante la navegación
+    &.spinning svg {
+      stroke: var(--tertiary);
+      color: var(--tertiary);
+      animation: spinOnce 0.35s ease forwards;
+    }
+  }
+}
+
+@keyframes spinOnce {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+// Agrupa Search + RandomPage juntos en el header
+header .flex-component {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+// Sidebar (por si se usa en otro contexto)
+.sidebar .flex-component {
+  align-items: center;
 }
 
 // --------------------------------------------

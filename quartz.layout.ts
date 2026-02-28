@@ -6,7 +6,12 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [
     Component.PageTitle(),
-    Component.Search(),
+    Component.Flex({
+      components: [
+        { Component: Component.Search() },
+        { Component: Component.RandomPage() },
+      ],
+    }),
   ],
   afterBody: [],
   footer: Component.Footer({

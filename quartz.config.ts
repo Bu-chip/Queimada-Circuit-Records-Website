@@ -84,7 +84,7 @@ const config: QuartzConfig = {
       }),
       Plugin.Assets(),
       Plugin.Static(),
-      Plugin.Favicon(),
+      // Plugin.Favicon(), // desactivado: usamos favicon SVG emoji inline en Head.tsx
       Plugin.NotFoundPage(),
     ],
   },

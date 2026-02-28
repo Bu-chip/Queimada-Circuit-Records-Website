@@ -1,0 +1,35 @@
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+// @ts-ignore
+import script from "./scripts/randomPage.inline"
+
+// Botón de página aleatoria — estructura idéntica a Search.tsx (.search > .search-button)
+// El SVG usa stroke="currentColor" para heredar el color del CSS igual que .search-path
+const RandomPage: QuartzComponent = (_props: QuartzComponentProps) => {
+  return (
+    <div class="random-page">
+      <button class="random-page-button" aria-label="Ir a una página aleatoria" title="Página aleatoria">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <rect x="2" y="2" width="20" height="20" rx="3" ry="3" />
+          <circle cx="8"  cy="8"  r="1.2" fill="currentColor" stroke="none" />
+          <circle cx="16" cy="8"  r="1.2" fill="currentColor" stroke="none" />
+          <circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none" />
+          <circle cx="8"  cy="16" r="1.2" fill="currentColor" stroke="none" />
+          <circle cx="16" cy="16" r="1.2" fill="currentColor" stroke="none" />
+        </svg>
+      </button>
+    </div>
+  )
+}
+
+RandomPage.afterDOMLoaded = script
+
+export default (() => RandomPage) satisfies QuartzComponentConstructor
