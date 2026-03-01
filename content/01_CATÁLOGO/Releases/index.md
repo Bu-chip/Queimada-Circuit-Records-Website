@@ -1,7 +1,6 @@
 ---
 title: Releases
 ---
-
 # Discografía Queimada Circuit Records
 
 ## Álbumes

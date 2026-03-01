@@ -1,5 +1,5 @@
 ---
-title: QUEIMADA CIRCUIT RECORDS
+title: QUEIMADA
 ---
 <div style="text-align: center">
 

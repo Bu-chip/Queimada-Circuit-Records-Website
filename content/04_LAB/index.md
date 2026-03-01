@@ -2,8 +2,6 @@
 title: Lab
 ---
 ---
-title: Lab
----
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;400;600&family=Syne:wght@400;600;800&family=Courier+Prime:wght@400;700&display=swap');
