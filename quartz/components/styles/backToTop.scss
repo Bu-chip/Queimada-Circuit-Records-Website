@@ -1,0 +1,29 @@
+.back-to-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--lightgray);
+
+  #back-to-top-btn {
+    display: none;
+    background: none;
+    border: 1px solid var(--gray);
+    color: var(--gray);
+    font-family: var(--codeFont);
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    padding: 0.3rem 0.75rem;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      color: var(--secondary);
+      border-color: var(--secondary);
+    }
+
+    &.visible {
+      display: inline-block;
+    }
+  }
+}
