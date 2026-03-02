@@ -2,6 +2,7 @@
 title: Fanzines y publicaciones
 ---
 
+[[como hacer música sin tener ni puta idea]] 
 ## Cómo hacer música sin tener ni puta idea (2025)
 **555 Kables × Queimada Circuit Records**
 
