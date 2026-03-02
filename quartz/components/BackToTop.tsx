@@ -5,7 +5,7 @@ const BackToTop: QuartzComponent = () => {
   return (
     <div class="back-to-top">
       <button id="back-to-top-btn" aria-label="Volver arriba" title="Volver arriba">
-        ↑ arriba
+        ^ inicio
       </button>
     </div>
   )

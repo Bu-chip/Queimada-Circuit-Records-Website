@@ -1190,19 +1190,37 @@ footer {
 // --------------------------------------------
 .breadcrumb-container {
   font-family: var(--codeFont);
-  font-size: 0.8rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem !important;
+  opacity: 0.85;
 
+  // Todos los crumbs excepto el último: gris tenue
   a {
     color: var(--gray);
+    text-decoration: none;
+    background: none !important;
+    padding: 0 !important;
+    transition: color 0.2s ease;
 
     &:hover {
-      color: var(--secondary);
+      color: var(--tertiary); // lime green al hover
+      text-shadow: 0 0 8px var(--tertiary);
     }
   }
 
-  .breadcrumb-element::before {
-    color: var(--gray);
-    opacity: 0.5;
+  // El último crumb (página actual): lime green, sin link activo
+  .breadcrumb-element:last-child a {
+    color: var(--tertiary);
+    pointer-events: none; // no es clickable
+  }
+
+  // Separador ◈ — morado
+  .breadcrumb-element p {
+    color: var(--secondary) !important;
+    opacity: 1;
+    margin: 0 0.15rem !important;
   }
 }
 

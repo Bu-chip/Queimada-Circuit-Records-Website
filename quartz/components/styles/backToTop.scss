@@ -1,29 +1,43 @@
 .back-to-top {
   display: flex;
   justify-content: flex-end;
-  margin-top: 2rem;
-  padding-top: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.2rem;
   border-top: 1px solid var(--lightgray);
 
   #back-to-top-btn {
+    // Oculto por defecto, visible via JS al hacer scroll
     display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, color 0.2s ease, border-color 0.2s ease, text-shadow 0.2s ease;
+
+    // Reset de estilos de botón
     background: none;
-    border: 1px solid var(--gray);
-    color: var(--gray);
-    font-family: var(--codeFont);
-    font-size: 0.75rem;
-    letter-spacing: 0.05em;
-    padding: 0.3rem 0.75rem;
+    border: 1px solid var(--secondary); // borde morado
+    outline: none;
     cursor: pointer;
-    transition: color 0.2s ease, border-color 0.2s ease;
+
+    // Tipografía terminal
+    font-family: var(--codeFont);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    // Color base: morado
+    color: var(--secondary);
+
+    // Geometría angular — sin border-radius (estética cyberpunk)
+    padding: 0.3rem 0.9rem;
 
     &:hover {
-      color: var(--secondary);
-      border-color: var(--secondary);
+      color: var(--tertiary);           // lime green al hover
+      border-color: var(--tertiary);
+      text-shadow: 0 0 8px var(--tertiary);
     }
 
     &.visible {
       display: inline-block;
+      opacity: 1;
     }
   }
 }
