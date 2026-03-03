@@ -3,41 +3,40 @@
   justify-content: flex-end;
   margin-top: 3rem;
   padding-top: 1.2rem;
-  border-top: 1px solid var(--lightgray);
+  // El borde solo aparece cuando el botón es visible
+  border-top: 1px solid transparent;
+  transition: border-color 0.3s ease;
+
+  &:has(#back-to-top-btn.visible) {
+    border-top-color: var(--lightgray);
+  }
 
   #back-to-top-btn {
-    // Oculto por defecto, visible via JS al hacer scroll
-    // NO usar display:none + opacity:0 juntos — CSS no anima display
     display: none;
-    transition: color 0.2s ease, border-color 0.2s ease, text-shadow 0.2s ease;
-
-    // Reset de estilos de botón
     background: none;
-    border: 1px solid var(--secondary); // borde morado
+    border: 1px solid var(--secondary);
     outline: none;
     cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease, text-shadow 0.2s ease;
 
     // Tipografía terminal
     font-family: var(--codeFont);
     font-size: 0.72rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-
-    // Color base: morado
     color: var(--secondary);
 
-    // Geometría angular — sin border-radius (estética cyberpunk)
+    // Sin border-radius — estética angular
     padding: 0.3rem 0.9rem;
 
     &:hover {
-      color: var(--tertiary);           // lime green al hover
+      color: var(--tertiary);
       border-color: var(--tertiary);
       text-shadow: 0 0 8px var(--tertiary);
     }
 
     &.visible {
       display: inline-block;
-      opacity: 1;
     }
   }
 }
