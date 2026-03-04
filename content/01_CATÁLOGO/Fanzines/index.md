@@ -1,11 +1,8 @@
 ---
 title: Fanzines
 ---
-# Fanzines
 
 Publicaciones DIY de Queimada Circuit Records.
 
-## Fanzines disponibles
-- [[Sin-Puta-Idea|Cómo hacer música sin tener ni puta idea]]
-- [[Sastraka|Sastraka]]
-- [[Cirkolepsia|Cirkolepsia]]
+- [[como-hacer-musica-sin-tener-ni-puta-idea|Cómo hacer música sin tener ni puta idea]]
+- [[fanzines|Ver todas las publicaciones]]

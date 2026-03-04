@@ -1,0 +1,42 @@
+.back-to-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
+  padding-top: 1.2rem;
+  // El borde solo aparece cuando el botón es visible
+  border-top: 1px solid transparent;
+  transition: border-color 0.3s ease;
+
+  &:has(#back-to-top-btn.visible) {
+    border-top-color: var(--lightgray);
+  }
+
+  #back-to-top-btn {
+    display: none;
+    background: none;
+    border: 1px solid var(--secondary);
+    outline: none;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease, text-shadow 0.2s ease;
+
+    // Tipografía terminal
+    font-family: var(--codeFont);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--secondary);
+
+    // Sin border-radius — estética angular
+    padding: 0.3rem 0.9rem;
+
+    &:hover {
+      color: var(--tertiary);
+      border-color: var(--tertiary);
+      text-shadow: 0 0 8px var(--tertiary);
+    }
+
+    &.visible {
+      display: inline-block;
+    }
+  }
+}

@@ -26,6 +26,16 @@ export const sharedPageComponents: SharedLayout = {
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
+    // Breadcrumbs en todas las páginas excepto el index
+    Component.ConditionalRender({
+      component: Component.Breadcrumbs({
+        spacerSymbol: "◈",
+        rootName: "QUEIMADA",
+        resolveFrontmatterTitle: true,
+        showCurrentPage: true,
+      }),
+      condition: (props) => props.fileData.slug !== "index",
+    }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
@@ -60,11 +70,27 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
+  afterBody: [
+    // BackToTop solo en páginas que no sean el index
+    Component.ConditionalRender({
+      component: Component.BackToTop(),
+      condition: (props) => props.fileData.slug !== "index",
+    }),
+  ],
 }
 
 // components for pages that display lists of pages (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [
+    Component.ConditionalRender({
+      component: Component.Breadcrumbs({
+        spacerSymbol: "◈",
+        rootName: "QUEIMADA",
+        resolveFrontmatterTitle: true,
+        showCurrentPage: true,
+      }),
+      condition: (props) => props.fileData.slug !== "index",
+    }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
   ],
