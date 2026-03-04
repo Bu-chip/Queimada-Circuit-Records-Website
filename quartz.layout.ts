@@ -16,9 +16,10 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      Bandcamp: "https://queimadacircuit.bandcamp.com",
-      Instagram: "https://instagram.com/queimadacircuit",
-      Contacto: "mailto:queimadacircuit@gmail.com",
+      Bandcamp: "https://queimada-circuit-records.bandcamp.com",
+      Instagram: "https://www.instagram.com/queimadacircuitrecords/",
+      Contacto: "mailto:queimadacircuitrecords@gmail.com",
+      Anticopyright: "/anticopyright",
     },
   }),
 }

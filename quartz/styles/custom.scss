@@ -523,7 +523,7 @@ h3 {
   .explorer .explorer-content {
     background-color: #0a0a0a !important;
     opacity: 1 !important;
-    z-index: 1000 !important;
+    z-index: 1001 !important;
     border-right: 1px solid var(--secondary);
     box-shadow: 10px 0 40px rgba(0, 0, 0, 0.8);
     position: fixed !important; // Ensure it covers viewport
@@ -636,7 +636,7 @@ h3 {
     width: 100vw !important;
     height: 100vh !important;
     background-color: #0a0a0a !important;
-    z-index: 999 !important;
+    z-index: 1001 !important;
     padding: 60px 20px 20px 20px !important;
     overflow-y: auto !important;
     transform: translateX(0) !important;
@@ -1143,18 +1143,19 @@ footer {
   text-align: center;
 
   p {
-    color: var(--gray);
-    font-size: 0.75rem;
-    font-family: var(--codeFont);
+    font-size: 0 !important; // Ocultar "Creado con Quartz"
     margin-bottom: 1rem;
 
-    // Hide "Created with Quartz" link
-    a[href*="quartz.jzhao.xyz"] {
-      display: none;
+    a {
+      display: none !important;
     }
 
     &::before {
-      content: "QUEIMADA CIRCUIT RECORDS // BILBAO ";
+      display: block;
+      font-size: 0.75rem;
+      color: var(--gray);
+      font-family: var(--codeFont);
+      content: "QUEIMADA CIRCUIT RECORDS // BILBAO // Anti-Capitalist Copyright © 2026";
     }
   }
 
@@ -1479,19 +1480,20 @@ hr {
   transition-timing-function: ease;
 }
 
-// Mobile sidebar backdrop overlay
-html.mobile-no-scroll body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.4); // Darkens content behind menu
-  z-index: 999; // Below explorer-content (1000)
-  pointer-events: none;
-  // REMOVED BLUR to ensure it doesn't leak into sidebar text
-  animation: fadeIn 0.3s ease;
+// Mobile sidebar backdrop overlay — solo en móvil
+@media all and ($mobile) {
+  html.mobile-no-scroll body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 500;
+    pointer-events: none;
+    animation: fadeIn 0.3s ease;
+  }
 }
 
 // Subtle fade-in for content
