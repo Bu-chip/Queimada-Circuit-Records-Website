@@ -78,9 +78,16 @@ html {
 
   // Content below header (ArticleTitle, ContentMeta) - NOT fixed
   >.popover-hint {
-    padding-top: 55px !important;
+    padding-top: 50px !important; // Exactly the header height
     margin: 0 !important;
   }
+}
+
+// Extra-specific override for base.scss's $topSpacing margin on page-header
+.page > #quartz-body .page-header,
+#quartz-body .page-header {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 // Hide the hr between content and footer
@@ -90,7 +97,7 @@ html {
 
 // Article Title - now in beforeBody
 .article-title {
-  margin: 0 0 0.5rem 0 !important;
+  margin: 0 0 0.25rem 0 !important;
   padding: 0 !important;
   font-size: 1.5rem !important;
   color: var(--secondary) !important;
@@ -117,7 +124,7 @@ body[data-slug="index"] .popover-hint>.content-meta {
 
 // Reduce padding on index page
 body[data-slug="index"] .popover-hint {
-  padding-top: 55px !important;
+  padding-top: 50px !important;
 }
 
 // Page Title - Horizontal in header (LIME GREEN)
@@ -523,7 +530,7 @@ h3 {
   .explorer .explorer-content {
     background-color: #0a0a0a !important;
     opacity: 1 !important;
-    z-index: 1001 !important;
+    z-index: 1000 !important;
     border-right: 1px solid var(--secondary);
     box-shadow: 10px 0 40px rgba(0, 0, 0, 0.8);
     position: fixed !important; // Ensure it covers viewport
@@ -636,7 +643,7 @@ h3 {
     width: 100vw !important;
     height: 100vh !important;
     background-color: #0a0a0a !important;
-    z-index: 1001 !important;
+    z-index: 999 !important;
     padding: 60px 20px 20px 20px !important;
     overflow-y: auto !important;
     transform: translateX(0) !important;
@@ -1103,7 +1110,7 @@ header .flex-component {
   font-size: 0.85rem;
   opacity: 0.7;
   font-family: var(--codeFont);
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
 }
 
 // Hide meta on index
@@ -1143,19 +1150,18 @@ footer {
   text-align: center;
 
   p {
-    font-size: 0 !important; // Ocultar "Creado con Quartz"
+    color: var(--gray);
+    font-size: 0.75rem;
+    font-family: var(--codeFont);
     margin-bottom: 1rem;
 
-    a {
-      display: none !important;
+    // Hide "Created with Quartz" link
+    a[href*="quartz.jzhao.xyz"] {
+      display: none;
     }
 
     &::before {
-      display: block;
-      font-size: 0.75rem;
-      color: var(--gray);
-      font-family: var(--codeFont);
-      content: "QUEIMADA CIRCUIT RECORDS // BILBAO // Anti-Capitalist Copyright © 2026";
+      content: "QUEIMADA CIRCUIT RECORDS // BILBAO ";
     }
   }
 
@@ -1191,37 +1197,19 @@ footer {
 // --------------------------------------------
 .breadcrumb-container {
   font-family: var(--codeFont);
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-bottom: 1.2rem !important;
-  opacity: 0.85;
+  font-size: 0.8rem;
 
-  // Todos los crumbs excepto el último: gris tenue
   a {
     color: var(--gray);
-    text-decoration: none;
-    background: none !important;
-    padding: 0 !important;
-    transition: color 0.2s ease;
 
     &:hover {
-      color: var(--tertiary); // lime green al hover
-      text-shadow: 0 0 8px var(--tertiary);
+      color: var(--secondary);
     }
   }
 
-  // El último crumb (página actual): lime green, sin link activo
-  .breadcrumb-element:last-child a {
-    color: var(--tertiary);
-    pointer-events: none; // no es clickable
-  }
-
-  // Separador ◈ — morado
-  .breadcrumb-element p {
-    color: var(--secondary) !important;
-    opacity: 1;
-    margin: 0 0.15rem !important;
+  .breadcrumb-element::before {
+    color: var(--gray);
+    opacity: 0.5;
   }
 }
 
@@ -1480,20 +1468,19 @@ hr {
   transition-timing-function: ease;
 }
 
-// Mobile sidebar backdrop overlay — solo en móvil
-@media all and ($mobile) {
-  html.mobile-no-scroll body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 500;
-    pointer-events: none;
-    animation: fadeIn 0.3s ease;
-  }
+// Mobile sidebar backdrop overlay
+html.mobile-no-scroll body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4); // Darkens content behind menu
+  z-index: 999; // Below explorer-content (1000)
+  pointer-events: none;
+  // REMOVED BLUR to ensure it doesn't leak into sidebar text
+  animation: fadeIn 0.3s ease;
 }
 
 // Subtle fade-in for content
@@ -1524,13 +1511,14 @@ hr {
   }
 }
 
-// Search styling on mobile (header is already fixed)
+// Search + RandomPage en móvil: fijados individualmente en el header
 @media all and ($mobile) {
+  // Lupa: esquina superior derecha
   header .search {
     position: fixed !important;
     top: 10px !important;
     right: 15px !important;
-    z-index: 10001 !important; // Above fixed header
+    z-index: 10001 !important;
     display: flex !important;
     align-items: center;
     background: transparent !important;
@@ -1541,6 +1529,27 @@ hr {
       border: none !important;
       padding: 8px !important;
     }
+  }
+
+  // Dado: a la izquierda de la lupa con ~10px de separación
+  header .random-page {
+    position: fixed !important;
+    top: 10px !important;
+    right: 55px !important;
+    z-index: 10001 !important;
+    display: flex !important;
+    align-items: center;
+  }
+
+  // Colapsar flex-component — sus hijos ahora son fixed
+  header .flex-component {
+    flex: 0 0 0px !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    overflow: visible !important; // No clip fixed children
+    gap: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 
