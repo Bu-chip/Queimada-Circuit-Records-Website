@@ -53,9 +53,9 @@ El proceso de [[cuerpo pensante]] se basa en la exploración de formatos híbrid
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=2505895169/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/breakmania-breakcore-jazz-single">Breakmania [Breakcore Jazz single] by cachalote mecánico</a></iframe>
 
-- [[Guayaba|Guayaba]] (2024) - Noise + Video
+- [[guayaba-dondestas-tu|Guayaba — dondestas tu?]] (2024) - Session · Noise · Live
 
-<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=1613157637/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/guayaba-dondestas-tu-noise-remix-jam">Guayaba - dondestas tu? (​╯​°​□​°​）​╯​︵ ┻​━​┻) [Noise Remix jam] by cachalote mecánico</a></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Fw6s2uIzUPQ?si=5g2tS0wvECXYxAmy" title="Guayaba - dondestas tu? (Queimada Circuit Sessions II)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Otros Proyectos
 

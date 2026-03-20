@@ -4,8 +4,7 @@ date: 2024-12-26
 tags: [dark ambient, noise, experimental]
 cover: /images/releases/txus-space.jpg
 ---
-
-![Txus space](/images/releases/txus-space.jpg)
+<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=3820930762/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/txus-space-dark-ambient-soundtrack">Txus space [dark ambient soundtrack]</a></iframe>
 
 **Descripción:**
 Segundo ensayo de audiorreacción a video.

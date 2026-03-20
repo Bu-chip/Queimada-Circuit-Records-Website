@@ -93,21 +93,22 @@ Worldbuilding sonoro. En desarrollo: Acto II.
 
 ---
 
-### [[Txus-Space]]
+### [[Txus-Space]] 
 [[cuerpo pensante|cuerpopensante]] · `SINGLE · DARK AMBIENT`
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=3820930762/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/txus-space-dark-ambient-soundtrack">Txus space [dark ambient soundtrack]</a></iframe>
 
 ---
 
-### [[Breakmania]]
+### [[Breakmania]] 
 [[cuerpo pensante|cuerpopensante]] · `SINGLE · BREAKCORE JAZZ`
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=2505895169/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/breakmania-breakcore-jazz-single">Breakmania [Breakcore Jazz single]</a></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NxkpeJXJLOs?si=lbFafv8AMxcIPikW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
-### [[Guayaba - dondestas tu? (​╯​°​□​°​）​╯​︵ ┻​━​┻)|Guayaba — ¿dónde estás tú?]]
-[[Cachalote Mecánico|cachalote mecánico]] · `SINGLE · NOISE JAM`
+### [[guayaba-dondestas-tu|Guayaba — dondestas tu?]]
+Guayaba / [[cuerpo pensante|cuerpopensante]] · `SESSION · NOISE · LIVE`
 
-<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=1613157637/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/guayaba-dondestas-tu-noise-remix-jam">Guayaba - dondestas tu? [Noise Remix jam]</a></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Fw6s2uIzUPQ?si=5g2tS0wvECXYxAmy" title="Guayaba - dondestas tu? (Queimada Circuit Sessions II)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

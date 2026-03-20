@@ -50,7 +50,7 @@ Breakcore Jazz
 
 ---
 
-**Cachalote Mecánico — Guayaba**
-Noise Jam
+**Guayaba / cuerpo pensante — dondestas tu?**
+Session · Noise · Live
 
-<iframe style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=1613157637/size=large/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/guayaba-dondestas-tu-noise-remix-jam">Guayaba - dondestas tu? [Noise Remix jam]</a></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Fw6s2uIzUPQ?si=5g2tS0wvECXYxAmy" title="Guayaba - dondestas tu? (Queimada Circuit Sessions II)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

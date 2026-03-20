@@ -24,11 +24,12 @@ El formato de live jam implica que la música es fundamentalmente **un evento en
 
 [[Aketxe|Aketxe - Live Jam]]
 <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1400213486/size=large/bgcol=333333/linkcol=2ebd35/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/album/aketxe-live-jam">Aketxe [Live Jam] by 555 Kables</a></iframe>
-
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 2rem auto;">
 <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/GlVxe2Fy0tc?si=unGIpdzLc8Abkshz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+Nuestro primer directo:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0sMLt7ig1JM?si=SGXSemY5Q5CgNmVy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ## Proyectos vinculados
 
 - [[Queimada Circuit Records]] — sello que publica los lanzamientos
