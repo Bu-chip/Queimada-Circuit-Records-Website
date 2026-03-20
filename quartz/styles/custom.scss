@@ -70,9 +70,9 @@ html {
     backface-visibility: hidden !important;
 
     @media all and ($mobile) {
-      padding: 0 50px !important; // Leave space for the fixed mobile-explorer button
-      gap: 10px !important;
-      justify-content: center !important; // Center the title
+      padding: 0 1rem 0 55px !important; // 55px izquierda para hamburguesa, 1rem derecha
+      gap: 0.75rem !important; // gap entre título e iconos in-flow
+      justify-content: center !important; // Centra el bloque título+iconos
     }
   }
 
@@ -160,7 +160,7 @@ body[data-slug="index"] .popover-hint {
     display: flex !important;
     align-items: center;
     justify-content: center !important;
-    flex: 2; // Take more space to keep it centered
+    flex: 0 0 auto; // Ancho natural — forma bloque con los iconos
     margin: 0 !important;
     background: transparent !important;
     pointer-events: none;
@@ -588,11 +588,13 @@ h3 {
   .mobile-explorer {
     display: flex !important;
     position: fixed !important;
-    top: 10px !important;
-    left: 15px !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 50px !important;
+    align-items: center !important;
     background: transparent !important;
     border: none !important;
-    padding: 8px !important;
+    padding: 0 8px 0 15px !important; // padding izquierdo para separación del borde
     color: var(--secondary) !important; // Violet, consistent
     cursor: pointer !important;
     z-index: 10001 !important; // Above fixed header
@@ -1033,7 +1035,7 @@ header .flex-component {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
-  gap: 0.75rem !important;
+  gap: 10px !important;
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -1499,43 +1501,44 @@ hr {
   }
 }
 
-// Search + RandomPage en móvil: fijados individualmente en el header
+// Search + RandomPage en móvil: en flujo junto al título, formando bloque visual
 @media all and ($mobile) {
-  // Lupa: esquina superior derecha
+  // Lupa: in-flow, sin posición fija
   header .search {
-    position: fixed !important;
-    top: 10px !important;
-    right: 15px !important;
-    z-index: 10001 !important;
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    height: auto !important;
     display: flex !important;
-    align-items: center;
+    align-items: center !important;
     background: transparent !important;
     margin: 0 !important;
+    padding: 0 !important;
 
     .search-button {
       background: transparent !important;
       border: none !important;
-      padding: 8px !important;
+      padding: 0 4px !important;
     }
   }
 
-  // Dado: a la izquierda de la lupa con ~10px de separación
+  // Dado: in-flow, sin posición fija
   header .random-page {
-    position: fixed !important;
-    top: 10px !important;
-    right: 55px !important;
-    z-index: 10001 !important;
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    height: auto !important;
     display: flex !important;
-    align-items: center;
+    align-items: center !important;
   }
 
-  // Colapsar flex-component — sus hijos ahora son fixed
+  // Flex-component: in-flow junto al título
   header .flex-component {
-    flex: 0 0 0px !important;
-    width: 0 !important;
+    flex: 0 0 auto !important;
+    width: auto !important;
     min-width: 0 !important;
-    overflow: visible !important; // No clip fixed children
-    gap: 0 !important;
+    overflow: visible !important;
+    gap: 10px !important;
     margin: 0 !important;
     padding: 0 !important;
   }
