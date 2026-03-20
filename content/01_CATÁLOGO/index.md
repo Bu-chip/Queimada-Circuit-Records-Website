@@ -54,7 +54,7 @@ Live jams, hardware
 **[[Cachalote Mecánico]]**  
 Noise, breakcore, harsh
 
-**[[buchi-buchip]]**
+**[[buchi-buchip_CINE EXTENDIDO]]**
 IDM, experimental, mixmedia
 
 </div>

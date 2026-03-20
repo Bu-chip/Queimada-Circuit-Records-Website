@@ -11,37 +11,35 @@ tags:
   - buchi-buchip
 date: 2024-05-01
 ---
+> Un universo de ficción sonora donde el sonido sintético es el único lenguaje posible.
+
+Buchi.buchip es un proyecto colaborativo de la artista visual [[camile-duhart]] y la bailarina profesional [[Andrea Jalon]] en la que el cuerpo en movimiento y el sonido sintético se invocan entre sí. 
 
 ![[Andreita_buchis_foto 1.jpg]]
 
-> Un universo de ficción sonora donde el sonido sintético es el único lenguaje posible.
-
-Buchi.buchip es un proyecto colaborativo  de la artista visual [[camile-duhart]] y la bailarina profesional [[andreita]]  en la que el cuerpo en movimiento y el sonido sintético se invocan entre sí. 
-
 ## El universo Buchi/Buchip
 
-El proyecto se construye sobre un sistema de ficción propio: dos especies imaginarias en colisión.
+El proyecto se construye sobre un sistema de ficción: dos especies imaginarias en colisión.
 
 Los **Buchis** son seres que se comunican exclusivamente a través de **vibraciones corporales**
 
-Los **Buchips** son seres de **mecanismos basados en chips** — sintéticos, modulares, procesados.
+Los **Buchips** son seres de **mecanismos basados en chips**: sintéticos, modulares, procesados.
 
-Cada pieza musical de buchi.buchip es la transcripción sonora de un segmento de esta historia sin palabras. El sonido sintético es el protagonista, desde sus versiones más audibles hasta frecuencias de "otros planetas". 
+Cada pieza musical de buchi.buchip es la transcripción sonora de un segmento de esta historia. El sonido sintético es el protagonista.
 
 Este concepto conecta directamente con la pregunta: ¿cómo comunican entidades que no comparten ningún lenguaje? ¿Qué es la comunicación cuando no existen palabras? 
 
-buchi.buchip opera en formato doble: cada lanzamiento es simultáneamente un **álbum digital** y un **fanzine físico**. 
-
+buchi.buchip opera en formato triple: cada lanzamiento es simultáneamente un **álbum digital**, un **fanzine físico** y **una obra de cine extendido**. 
 
 ## Discografía en QCR
 
 <iframe style="border: 0; width: 350px; height: 621px;" src="https://bandcamp.com/EmbeddedPlayer/album=2373774624/size=large/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/album/buchi-buchip-acto-i-conceptual-idm-album">Buchi.buchip - Acto I [Conceptual IDM Album] by cuerpo pensante</a></iframe>
 
-### [[buchi-buchip-acto-i]] — notas
+### [[buchi-buchip-acto-i_FANZINE_ALBUM]] — notas
 
 Primer disco publicado bajo este alias y primer lanzamiento del sello. 5 tracks. Funciona como presentación del alias en el mundo de la síntesis y como carta de presentación del sello. 
 
-La palabra "Acto I" implica que hay más Actos por venir.
+El título, "Acto I: congreso" implica que hay más Actos por venir.
 
 ## Proyectos vinculados
 

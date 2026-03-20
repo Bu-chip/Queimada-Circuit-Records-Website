@@ -27,7 +27,7 @@ En el horizonte hay proyectos en desarrollo: el mapa de biodiversidad de Bilbao,
 ## Principales proyectos del sello
 
 - [[cuerpo pensante]] — alias principal del curador. Ambient, breakcore, IDM, dark ambient, noise, muiñeira.
-- [[buchi-buchip|buchi.buchip]] — alias de síntesis. IDM conceptual, fanzine-álbum, universo de ficción sonora.
+- [[buchi-buchip_CINE EXTENDIDO|buchi.buchip]] — alias de síntesis. IDM conceptual, fanzine-álbum, universo de ficción sonora.
 - [[555-kables|555 Kables]] — colectivo de live jam electrónico. Electrónica en directo, irrepetible.
 - [[Cachalote Mecánico|cachalote mecánico]] — noise extremo y folclore. Harsh noise, paso doble, breakcore.
 
@@ -37,7 +37,7 @@ En el horizonte hay proyectos en desarrollo: el mapa de biodiversidad de Bilbao,
 
 ## Contexto
 
-Queimada arrancó en 2024 con *[[buchi-buchip-acto-i|Buchi.buchip - Acto I]]*, un concept album-fanzine que presentaba simultáneamente el alias de síntesis de su fundador y el propio sello. Desde entonces ha publicado de forma sostenida, registrado en Bandcamp y MusicBrainz.
+Queimada arrancó en 2024 con *[[buchi-buchip-acto-i_FANZINE_ALBUM|Buchi.buchip - Acto I]]*, un concept album-fanzine que presentaba simultáneamente el alias de síntesis de su fundador y el propio sello. Desde entonces ha publicado de forma sostenida, registrado en Bandcamp y MusicBrainz.
 
 El hilo conceptual que atraviesa el catálogo — sin nombrarse explícitamente — es la **comunicación como problema sonoro y filosófico**: ¿cómo se transmite algo entre entidades que no comparten lenguaje? Esa pregunta resuena en el nombre del cachalote, en el universo Buchi/Buchip, en los jams de 555 Kables que solo existen en el momento en que ocurren.
 

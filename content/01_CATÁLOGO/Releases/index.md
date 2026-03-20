@@ -6,7 +6,7 @@ title: Releases
 ## Álbumes
 
 - [Buenos días, Ansiedad](Buenos%20días,%20Ansiedad.md) - Ambient (2025)
-- [Buchi.buchip - Acto I](buchi-buchip-acto-i.md) - IDM (2024)
+- [Buchi.buchip - Acto I](buchi-buchip-acto-i_FANZINE_ALBUM.md) - IDM (2024)
 - [Aketxe](Aketxe.md) - Live Jam (2025)
 
 ## Singles
