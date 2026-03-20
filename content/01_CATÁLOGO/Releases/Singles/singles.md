@@ -27,7 +27,7 @@ Hard IDM · *Varias Artistas Vol.2* · Dirty Tapes
 
 ---
 
-**Cachalote Mecánico — Sei**
+**cuerpo pensante — Sei**
 Breakcore
 
 <iframe style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=117637960/size=large/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/sei-kitty-breakcore-single">Sei [kitty breakcore single]</a></iframe>
