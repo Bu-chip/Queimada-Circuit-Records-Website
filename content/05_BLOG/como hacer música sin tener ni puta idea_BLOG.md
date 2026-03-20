@@ -192,7 +192,7 @@ Segunda edición en camino.
 
 <div style="margin-top: 4rem; padding: 2rem; border: 2px dashed #666; text-align: center; background: rgba(255,0,255,0.05);">
 <p style="font-family: 'Azeret Mono', monospace; color: #ff00ff; margin: 0; font-size: 0.9rem;">
-→ Ver también: [[Fanzine completo (PDF)]]
+→ [Ver el fanzine completo](../../01_CATÁLOGO/Fanzines/Cómo hacer música sin tener ni puta idea_FANZINE.md)
 </p>
 </div>
 
