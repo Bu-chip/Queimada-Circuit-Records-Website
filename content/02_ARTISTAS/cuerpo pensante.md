@@ -21,7 +21,7 @@ El proceso de [[cuerpo pensante]] se basa en la exploración de formatos híbrid
 - [[Acto-I|Acto I]] - Álbum conceptual en 5 partes que describe las tensiones entre ruido y ambiente mediante una narrativa de ciencia ficción.
 - [[Txus-Space|Txus Space]] - Desarrollo de sonido a través de imágenes generadas por IA, incluyendo fotografías y diálogos con amigos sobre cómo veían esas imágenes.
 - [[Aberración Bológica|Aberración Biológica]] - Pruebas de automatizaciones que derivaron en una animación con texto representando el escenario sonoro
-- [[Corto-Naiara|Corto Naiara]] - Banda sonora para corto de animación.
+- [[Elowen_CORTOMETRAJE|Corto Naiara]] - Banda sonora para corto de animación.
 - [[Buenos días, Ansiedad|Buenos días, Ansiedad]] - Exploración del ambient como proceso de escucha profunda y gestión de la ansiedad. 
 
 ## Discografía en Queimada
@@ -59,8 +59,8 @@ El proceso de [[cuerpo pensante]] se basa en la exploración de formatos híbrid
 
 ### Otros Proyectos
 
-- [[Corto-Naiara|Corto Naiara]] (2024) - Soundtrack
-- [[Videoclip-Uber|Videoclip Uber]] (2024) - Canción + Video
+- [[Elowen_CORTOMETRAJE|Corto Naiara]] (2024) - Soundtrack
+- [[Sindicato Uber_VIDEOCLIP|Videoclip Uber]] (2024) - Canción + Video
 
 ## Enlaces
 

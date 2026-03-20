@@ -1468,20 +1468,8 @@ hr {
   transition-timing-function: ease;
 }
 
-// Mobile sidebar backdrop overlay
-html.mobile-no-scroll body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.4); // Darkens content behind menu
-  z-index: 999; // Below explorer-content (1000)
-  pointer-events: none;
-  // REMOVED BLUR to ensure it doesn't leak into sidebar text
-  animation: fadeIn 0.3s ease;
-}
+// Mobile sidebar backdrop overlay — desactivado (sin oscurecimiento)
+// html.mobile-no-scroll body::after { ... }
 
 // Subtle fade-in for content
 .center {

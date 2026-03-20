@@ -10,6 +10,6 @@ lugar: "Katakomba (Gaztetxe Sastraka), Bilbao"
 **Lugar:** Katakomba (Gaztetxe Sastraka), Bilbao
 **Tipo:** feria
 **Participantes QCR:** [[cuerpo pensante]]
-**Releases relacionados:** [[como-hacer-musica-sin-tener-ni-puta-idea]]
+**Releases relacionados:** [[Cómo hacer música sin tener ni puta idea_FANZINE]]
 
 Presentación del fanzine "Cómo hacer música sin tener ni puta idea" con set experimental en directo.

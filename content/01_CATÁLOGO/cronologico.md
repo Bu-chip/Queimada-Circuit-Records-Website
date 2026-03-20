@@ -37,6 +37,9 @@ Cinco temas sobre escucha profunda y ansiedad. Fanzine *Cinco Ríos* + videos se
 Novation Circuit, TR-6S, Crave. Sesión completa en vivo.
 
 <iframe style="border: 0; width: 100%; height: 241px;" src="https://bandcamp.com/EmbeddedPlayer/album=1400213486/size=large/bgcol=333333/linkcol=2ebd35/artwork=small/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/album/aketxe-live-jam">Aketxe [Live Jam] by 555 Kables</a></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 2rem auto;">
+<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/GlVxe2Fy0tc?si=unGIpdzLc8Abkshz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ---
 
@@ -56,24 +59,25 @@ Novation Circuit, TR-6S, Crave. Sesión completa en vivo.
 
 ---
 
-### [[Como-hacer-musica-sin-tener-ni-puta-idea|Cómo hacer música sin tener ni puta idea]]
+### [[Cómo hacer música sin tener ni puta idea_FANZINE|Cómo hacer música sin tener ni puta idea]]
 [[555-kables|555 Kables]] · `FANZINE · DIY`
 
 Tutorial distribuido en eventos. Serie de videos.
 
 ---
 
-### [[Corto-Naiara]]
+### [[Elowen_CORTOMETRAJE]]
 [[cuerpo pensante|cuerpopensante]] · `SOUNDTRACK · ENCARGO`
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d2PHTZ9hjl0?si=fiYfhwPDd1seG_dK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ---
 
-### [[Conversacion-ChatGPT-4am]]
+### [[Una Conversación con ChatGPT AM]]
 `FANZINE · REFLEXIÓN`
 
 ---
 
-### [[Videoclip-Uber]]
+### [[Sindicato Uber_VIDEOCLIP]]
 `CANCIÓN · ENCARGO`
 
 ---
