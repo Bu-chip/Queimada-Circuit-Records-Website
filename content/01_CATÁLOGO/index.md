@@ -1,9 +1,24 @@
 ---
 title: Catálogo Queimada
 ---
+<style>
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 3rem 0;
+}
+@media (max-width: 768px) {
+  .catalogo-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+</style>
+
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 3rem 0;">
+<div class="catalogo-grid">
 
 <div>
 
@@ -28,7 +43,7 @@ Drama Recorder, Dirty Tapes, Delirium Psychosis.
 
 <div>
 
-## Por artista
+## Explorar por artista
 
 **[[cuerpo pensante]]**  
 IDM, ambient, field recording
@@ -38,6 +53,9 @@ Live jams, hardware
 
 **[[Cachalote Mecánico]]**  
 Noise, breakcore, harsh
+
+**[[buchi-buchip]]**
+IDM, experimental, mixmedia
 
 </div>
 

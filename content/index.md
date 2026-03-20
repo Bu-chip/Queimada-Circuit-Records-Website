@@ -1,19 +1,19 @@
 ---
 title: QUEIMADA
 ---
-<div style="text-align: center">
+<style>
+.home-nav a, .home-sub a { white-space: nowrap; }
+</style>
 
-[[01_CATÁLOGO/index|CATÁLOGO]] ◈ 
-[[02_ARTISTAS/index|ARTISTAS]] ◈ 
-[[03_EVENTOS/index|EVENTOS]] ◈ 
-[[04_LAB/index|LAB]] ◈ 
-[[05_BLOG/index|BLOG]] ◈ 
+<div class="home-nav" style="text-align: center">
 
+[[01_CATÁLOGO/index|CATÁLOGO]] ◈ [[02_ARTISTAS/index|ARTISTAS]] ◈ [[03_EVENTOS/index|EVENTOS]] ◈ [[04_LAB/index|LAB]] ◈ [[05_BLOG/index|BLOG]] ◈
 
-[[queimada-circuit-records|¿Qué es Queimada?]] [[Cómo se usa esta web|¿Cómo se usa esta web?]] 
+</div>
 
+<div class="home-sub" style="text-align: center">
 
-
+[[queimada-circuit-records|¿Qué es Queimada?]] · [[Cómo se usa esta web|¿Cómo se usa esta web?]]
 
 </div>
 
