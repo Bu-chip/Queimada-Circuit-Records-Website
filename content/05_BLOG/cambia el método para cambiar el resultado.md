@@ -150,14 +150,11 @@ title: Cambia el método y cambia la canción
 
 <div class="tesis-principal">
 
-**En la improvisación, la interacción con el objeto rompe la manera en que te enfrentabas a él.**
-
-No es que el cacharro cambie.  
-Es que tú cambias al usarlo de otra forma.
+**En la improvisación, la interacción con el objeto rompe la manera en que te enfrentas a él.**
 
 </div>
 
-El método no es neutral. El método determina el resultado.
+El método determina el resultado.
 
 Si siempre empiezas por el bajo, siempre harás temas construidos desde el bajo. Si siempre usas el mismo delay, siempre tendrás el mismo tipo de espacio. Si siempre trabajas en el DAW con la misma plantilla, siempre acabarás en el mismo sitio.
 
@@ -173,9 +170,9 @@ Mick Gordon, el que hizo la música de DOOM, tenía un encargo claro: hacer algo
 
 Lo importante no es tanto lo que hizo, sino **cómo lo hizo**.
 
-En lugar de aplicar su método habitual, cambió completamente la forma de trabajar. No buscó "el sonido correcto", sino **una estructura que le obligara a pensar distinto**.
+En lugar de aplicar su método habitual, cambió completamente la forma de trabajar. 
 
-Montó una cadena de efectos, pedales, micros, grabadoras y procesadores. No componía como tal. Lanzaba señales (ondas senoidales) a un sistema complejo y trabajaba con lo que salía de ahí. Era diseño de sonido por iteración, no por planificación. El control estaba en cómo estaba montado el sistema, no en una partitura.
+Montó una cadena de efectos, pedales, micros, grabadoras y procesadores. Lanzaba señales (ondas senoidales) a un sistema complejo y trabajaba con lo que salía de ahí. Era diseño de sonido por iteración, el control estaba en cómo estaba montado el sistema.
 
 </div>
 
@@ -201,7 +198,7 @@ Una guitarra invita a tocar acordes. Pero si la conectas a un pedal de delay y e
 
 Entender esto aplicado a la producción musical significa **entender qué elementos puedes manipular de ese ambiente**.
 
-No se trata solo de qué cacharro usas. Se trata de:
+No se trata solo de qué cacharro usas, sino de:
 
 - Qué está mandando instrucciones
 - Qué está obedeciendo
@@ -209,9 +206,7 @@ No se trata solo de qué cacharro usas. Se trata de:
 - Qué suena y por dónde suena
 - Qué está en los graves, en los agudos
 - Si todo suena a la vez, o todo suene lo bruto
-- Si no cuidamos esto, se vuelve un muro de ruido sin matices
-
-**Lo que buscamos es intensidad, sí, pero con intención.**
+- Si no cuidamos esto, se vuelve un muro de ruido gris
 
 ---
 
@@ -250,7 +245,7 @@ No se trata solo de qué cacharro usas. Se trata de:
 **Método 1:** Loop mítico de 6 segundos de batería de los años 60 usado como base rítmica en hip hop.  
 **Resultado:** Un sample más.
 
-**Método 2:** En los noventa, los productores de jungle cogían vinilos de soul o funk viejos, los pasaban por samplers baratos y los reventaban con timestretching. El Amen Break —ese loop mítico de 6 segundos— no estaba hecho para eso. Pero al estirarlo, cortarlo y repetirlo, se convirtió en la columna vertebral de toda una escena: drum and bass, breakcore, jungle, etc.  
+**Método 2:** En los noventa, los productores de jungle cogían vinilos de soul o funk viejos, los pasaban por samplers baratos y los reventaban con timestretching. El Amen Break  no estaba hecho para eso. Pero al estirarlo, cortarlo y repetirlo, se convirtió en la columna vertebral de toda una escena: drum and bass, breakcore, jungle, etc.  
 **Resultado:** Todo pasó por poner un sample donde no "debía ir".
 
 </div>
@@ -277,7 +272,7 @@ No se trata solo de qué cacharro usas. Se trata de:
 
 #### 01 — Toma la estructura de una canción que te guste y construye desde cero
 
-Forma, energía, armonía. Cambia todos los timbres. No copies los sonidos, copia la estructura. Ver qué pasa cuando cambias todo lo demás.
+Forma, energía, armonía. Cambia todos los timbres. Copia la estructura. Mira qué pasa cuando cambias todo lo demás.
 
 </div>
 
@@ -299,7 +294,7 @@ Convierte el audio a MIDI con un plugin. Adapta los números a un sintetizador. 
 
 <div class="ejercicio-practico">
 
-#### 04 — Abre un DAW viejo como Reaper v2
+#### 04 — Abre un DAW viejo como Reaper v2 o Pure Data
 
 Mete saturadores hasta que el máster clipee a lo bestia. Exporta, vuelve a importar, y sábete con más delay sin control. Overload creativo = abusar del feedback, subir el reverb a tope, usar delays sin control.
 
@@ -309,7 +304,7 @@ Mete saturadores hasta que el máster clipee a lo bestia. Exporta, vuelve a impo
 
 #### 05 — Escoge una palabra al azar
 
-Construye una pieza que suene a partir de esa imagen. "Selva", "túnel", "desierto" o "tono de oficinas". En tres capas (fondo, plano medio, primer plano). Layer 1: ambiente imaginario. Layer 2: el zumbido eléctrico. Layer 3: la vibración de otro cuerpo.
+Construye una pieza que suene a partir de esa imagen. "Selva", "túnel", "desierto" o "tono de oficinas". En tres capas (fondo, plano medio, primer plano). Capa 1: ambiente imaginario. Capa 2: el zumbido eléctrico. Capa 3: la vibración de otro cuerpo.
 
 </div>
 
@@ -317,13 +312,10 @@ Construye una pieza que suene a partir de esa imagen. "Selva", "túnel", "desier
 
 <div class="conclusion-rotunda">
 
-<span class="highlight-texto">**No es tanto una técnica como una actitud:**</span>
+<span class="highlight-texto">**Si siempre haces música de la misma forma, va a sonar parecida**</span>
 
 Si siempre haces música de la misma forma, va a sonar parecida.
 
-Si cambias cómo trabajas, cambia lo que obtienes.
-
-**Y no hace falta hacerlo todo el tiempo. Basta con recordarlo cuando te cances.**
 
 </div>
 

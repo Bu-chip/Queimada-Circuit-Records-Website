@@ -165,10 +165,10 @@ Escuchar antes de sonar. Método ≠ receta. Escucha activa.
 No hace falta un estudio. Un móvil viejo, una radio, un micro de mierda. Lo demás es exploración.
 
 **4. Escuchar ≠ oír**  
-Pauline Oliveros: los músicos olvidan escuchar. La escucha profunda es improvisar presencia, no notas.
+Pauline Oliveros: los músicos olvidan escuchar. 
 
 **5. El set 555K**  
-Cómo tocamos nosotros. Nos movemos por impulsos, por lo que suena entre los dos. No hay temas cerrados, hay encuentros.
+Cómo tocamos nosotros. Nos movemos por lo que suena entre los dos. 
 
 **6. Ejercicios para hacer ruido**  
 Más de 20 ejercicios prácticos y raros. Graba 30 segundos del autobús y conviértelo a MIDI. Usa una melodía como batería.
@@ -177,7 +177,7 @@ Más de 20 ejercicios prácticos y raros. Graba 30 segundos del autobús y convi
 Un minuto de silencio donde nadie explica nada. Escuchar géneros distintos para confundir al algoritmo.
 
 **8. Técnica de set en vivo**  
-Detalles de cómo usamos el reloj, la mesa, qué controla a qué. Diseño de sonido por iteración, no por planificación.
+Detalles de cómo usamos el reloj, la mesa, qué controla a qué. 
 
 ---
 

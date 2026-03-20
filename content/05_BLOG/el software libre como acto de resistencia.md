@@ -7,7 +7,7 @@ Tema: open source, política, capitalismo, tecnología
 
 La idea es la de que los modelos Open de empresas funcionan como un modelo de retribución de la riqueza, y serían modelos a copiar en futuras empresas que estuvieran subvencionadas. Lo que sucede es que estos modelos se alimentan de gente que le interesa mejorar la plataforma para su propio beneficio, desarrollarse en ella. Plataformas que permiten compartir el conocimiento y que luego revalorizan su posición a través de venderse a otras empresas como Microsoft o Amazon, y que no atracan al consumidor en ese sentido, sino que lo que hacen es aprovecharse del excedente de capital de estas empresas.
 
-## Johan Söderberg y el "Intelecto General"
+## Johan Söderberg
 
 Johan Söderberg, en su artículo sobre software libre y marxismo, interpreta este movimiento desde la perspectiva del "intelecto general" de Marx, un concepto que se refiere al conocimiento colectivo que se convierte en una fuerza productiva central en la sociedad. Marx había anticipado que el desarrollo de las fuerzas productivas llevaría a una mayor socialización del trabajo y a una eventual contradicción con las relaciones capitalistas de producción, donde el control de los medios está en manos privadas.
 

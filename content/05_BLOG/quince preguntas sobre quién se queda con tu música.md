@@ -268,10 +268,7 @@ Tema: autoría, samples, apropiación cultural, propiedad intelectual
 
 <div class="respuesta-implicita">
 
-Estas preguntas no tienen respuesta fácil.
-
-Pero hacerlas ya es parte del trabajo.
-
+....
 </div>
 
 </div>

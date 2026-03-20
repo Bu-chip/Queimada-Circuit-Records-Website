@@ -150,9 +150,7 @@ title: Cómo empezó Queimada: Muti, Luci y un disco sin terminar
 
 <div class="momento-inicial">
 
-Todo empezó en un concierto de **Mutilated Judge**, sudor, pogo, y un bajo distorsionadísimo que Juantxu me pasó sin preguntar.
-
-Esa fue la primera vez que toqué en vivo.
+Todo empezó en un concierto de **Mutilated Judge**, sudor, pogo, y un bajo distorsionadísimo que Juantxu me pasó sin preguntar. Esa fue la primera vez que toqué en vivo.
 
 </div>
 
@@ -189,9 +187,7 @@ Luci acababa de empezar con la batería. Yo acababa de empezar con el bajo.
 
 Hablé con ella. Le dije: "Monta un grupo conmigo". Ella dijo que sí.
 
-Montamos **Melissa B**. Ella batería, yo bajo. Tocábamos en un local de ensayo en Bilbao que olía a humedad y tenía las paredes forradas de cartones de huevos. Ensayábamos covers de bandas que nos gustaban, pero también empezamos a componer cosas nuestras.
-
-Hicimos un disco. Grabamos todo. Lo mezclamos. Estaba casi listo.
+Montamos **Melissa B**. Ella batería, yo bajo. Tocábamos en un local de ensayo en Bilbao tocando un par de horas los miércoles, en la sala 4. Ensayábamos covers de bandas que nos gustaban, pero también empezamos a componer cosas nuestras. Hicimos un disco. Grabamos todo. Lo mezclamos. 
 
 <div class="momento-clave">
 Pero Luci tenía el hombro jodido.
@@ -218,7 +214,7 @@ No poder tocar con instrumentos físicos nos empujó a hacerlo digital.
 
 Yo empecé a usar **mucho** el ordenador para hacer música. Ableton. Experimentación. Samples raros. Sintetizadores virtuales. Pero también empecé a tocar cosas de programación y código varias.
 
-No era solo hacer música. Era entender cómo funcionaba la música desde otro sitio: desde el código, desde el algoritmo, desde el error.
+La idea era entender cómo funcionaba la música desde otro sitio: desde el código, desde el algoritmo, desde el error.
 
 <div class="reflexion-box">
 Creo que si no hubiera sido por la operación de Luci, nunca habría entrado tan a fondo en lo digital. A veces las cosas que te cortan el camino te abren otro.
@@ -259,7 +255,7 @@ Después vinieron más. Gente que aparecía, tocaba, grababa algo, y desaparecí
 
 </div>
 
-No buscaba hacer un proyecto cerrado. Buscaba **tocar con gente que tuviera ganas de explorar**.
+Creo que buscábamos **tocar con gente que tuviera ganas de explorar**.
 
 </div>
 </div>
@@ -272,11 +268,9 @@ No buscaba hacer un proyecto cerrado. Buscaba **tocar con gente que tuviera gana
 
 ## El sello: Queimada Circuit Records
 
-En algún momento decidí hacer un sello.
+En algún momento decidí hacer un sello. Básicamente porque quería un sitio donde poder sacar música **sin esperar a que nadie me dijera que sí**.
 
-No porque quisiera montar una empresa. Sino porque quería un sitio donde poder sacar música **sin esperar a que nadie me dijera que sí**.
-
-Un espacio comunitario que celebra lo bastardo, lo compartido y lo hecho con lo que haya. Nacido desde Galicia, el nombre es una mezcla entre la tradición de la queimada —rito colectivo, fuego que purga— y el circuito, como red, plataforma y estación de soldadura.
+Un espacio comunitario que celebra lo bastardo, lo compartido y lo hecho con lo que haya. Nacido desde Galicia, el nombre es una mezcla entre la tradición de la queimada, como rito colectivo,  y el circuito, como red, plataforma y estación de soldadura.
 
 **Publicamos lo que nos mueve, no lo que se vende.**
 
