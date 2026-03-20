@@ -17,7 +17,7 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       Bandcamp: "https://queimada-circuit-records.bandcamp.com",
-      Instagram: "https://www.instagram.com/queimadacircuitrecords/",
+      Instagram: "https://www.instagram.com/queimada.circuit.records/",
       Contacto: "mailto:queimadacircuitrecords@gmail.com",
       Anticopyright: "/anticopyright",
     },
