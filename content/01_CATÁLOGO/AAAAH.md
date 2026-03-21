@@ -43,4 +43,4 @@ Primeras exploraciones de harsh noise y noisecore, usando la voz como instrument
 
 ---
 
-[[01_CATALOGO/index|← Volver al Catálogo]]
+[[01_CATÁLOGO/index|← Volver al Catálogo]]
