@@ -1,5 +1,7 @@
 ---
 title: QUEIMADA
+socialTitle: Queimada Circuit Records
+description: Sello DIY de música electrónica experimental desde Bilbao. Releases, fanzines, eventos y proyectos.
 ---
 <div style="text-align: center">
 
