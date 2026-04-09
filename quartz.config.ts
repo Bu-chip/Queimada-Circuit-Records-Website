@@ -12,7 +12,10 @@ const config: QuartzConfig = {
     pageTitleSuffix: " | QCR",
     enableSPA: true,
     enablePopovers: true,
-    analytics: null,
+    analytics: {
+      provider: "umami",
+      websiteId: "1049165c-3871-4f30-a9c4-35f4a913e7d0",
+    },
     locale: "es-ES",
     baseUrl: "queimadacircuitrecords.com",
     ignorePatterns: ["private", "templates", ".obsidian"],
