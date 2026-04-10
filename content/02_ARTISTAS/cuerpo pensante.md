@@ -37,7 +37,7 @@ El proceso de [[cuerpo pensante]] se basa en la exploración de formatos híbrid
 
 ### Singles
 
-- [[Sei|Sei]] (2025) - Breakcore
+- [[sei-kitty-breakcore|Sei]] (2025) - Breakcore
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=117637960/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/sei-kitty-breakcore-single">Sei [kitty breakcore single] by cuerpo pensante</a></iframe>
 
