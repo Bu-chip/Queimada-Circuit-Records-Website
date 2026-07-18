@@ -2,6 +2,7 @@
 Estatus: A medias
 Tema: proceso creativo, técnica, aprendizaje, síntesis
 title: Hay mil maneras de aprender un cacharro nuevo
+date: 2024-11-01
 ---
 
 La técnica puede ser muchas cosas distintas. Cuando te llega un cacharro nuevo, lo normal es querer usarlo ya. Pero usar un sinte complejo requiere técnica, tiempo, aprendizaje. Como cuando compras tu primera guitarra: quieres tocar y que suene, pero sorpresa, no suena como quieres tan fácilmente.

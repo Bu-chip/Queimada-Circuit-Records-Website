@@ -1,6 +1,7 @@
 ---
 Estatus: Listo
 Tema: autoría, samples, apropiación cultural, propiedad intelectual
+date: 2025-11-01
 ---
 
 ## Preguntas que rozan el límite entre lo que es copia y lo que no:

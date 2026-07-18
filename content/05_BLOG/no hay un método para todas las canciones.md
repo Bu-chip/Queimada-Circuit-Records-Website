@@ -1,6 +1,7 @@
 ---
 Estatus: A medias
 Tema: producción musical, proceso creativo, herramientas, IA
+date: 2025-07-01
 ---
 
 No hay un método para todas las canciones.

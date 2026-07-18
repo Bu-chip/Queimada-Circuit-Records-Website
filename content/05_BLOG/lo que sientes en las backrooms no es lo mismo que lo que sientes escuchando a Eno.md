@@ -1,6 +1,7 @@
 ---
 Estatus: A medias
 Tema: ambient, liminal, capitalismo, Brian Eno
+date: 2025-04-01
 ---
 
 Hay dos formas de sentirte insignificante.

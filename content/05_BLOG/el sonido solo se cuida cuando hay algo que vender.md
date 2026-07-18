@@ -2,6 +2,7 @@
 Estatus: A medias
 Tema: sonido, espacio público, Brian Eno, diseño sonoro
 title: El sonido solo se cuida cuando hay algo que vender
+date: 2025-05-01
 ---
 
 Se cuida muy poco el sonido.

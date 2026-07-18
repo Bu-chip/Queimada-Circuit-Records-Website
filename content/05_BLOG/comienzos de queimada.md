@@ -2,6 +2,7 @@
 Estatus: En bruto
 Tema: Queimada, historia, origen, autobiografía
 title: "Cómo empezó Queimada: Muti, Luci y un disco sin terminar"
+date: 2024-05-01
 ---
 
 Todo empezó en un concierto de **Mutilated Judge**, sudor, pogo, y un bajo distorsionadísimo que Juantxu me pasó sin preguntar. Esa fue la primera vez que toqué en vivo.

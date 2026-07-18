@@ -1,6 +1,7 @@
 ---
 Estatus: En bruto
 Tema: field recording, paisaje sonoro, ruido urbano
+date: 2025-01-01
 ---
 
 La ciudad habla.

@@ -1,6 +1,7 @@
 ---
 Estatus: En bruto
 Tema: noise, ambient, historia de la música, orígenes
+date: 2024-06-01
 ---
 Brian Eno le puso nombre en 1978 con _Music for Airports_. Pero el ambient llevaba ahí desde siempre.
 

@@ -2,6 +2,7 @@
 Estatus: En bruto
 Tema: affordances, improvisación, proceso creativo, Mick Gordon
 title: Cambia el método y cambia la canción
+date: 2025-09-01
 ---
 
 **En la improvisación, la interacción con el objeto rompe la manera en que te enfrentas a él.**
