@@ -101,3 +101,51 @@ Rama: `limpieza-auditoria-2026`. Un commit por bloque para poder revertir por pa
 8. **`[[../index]]` en las fichas de Fanzines.** No estaba en el listado de tareas; Quartz lo resuelve como enlace relativo y el build no da error, así que se dejó tal cual.
 
 9. **No se ha hecho merge ni push.** La rama `limpieza-auditoria-2026` queda lista para revisión.
+
+---
+
+# PASADA 2 — Despurga de scaffold visual generado por IA (2026-07-18)
+
+Segunda tanda, posterior al informe de arriba. Objetivo: retirar el andamiaje HTML/CSS clonado (tell de generación automática) del **blog** y del **LAB**, para que las páginas vivan dentro del estilo propio del sitio (Quartz + `custom.scss`) en vez de traer cada una su propio universo neón.
+
+**Regla de oro mantenida: no se escribió texto nuevo; el texto del autor se conserva literal.** Verificado con un diff de texto plano (prosa, ignorando maquetación) entre cada versión HEAD y la despurgada: **sin pérdida de prosa**. Lo único que "desaparece" son números decorativos de tarjeta y una frase de cierre que estaba duplicada (queda una vez).
+
+Commits: `b0501e2` (blog, Bloque B) · `8e418c3` (LAB, Bloque C) · commit de frontmatter aparte al final.
+
+## Scaffold retirado (común)
+`<style>` embebidos y `@import` de Google Fonts (Azeret Mono / Syne / Courier Prime) · wrappers `<div class/style>` · cajas rotadas con `box-shadow` neón · cajas-cita magenta con frase centrada en negrita · tarjetas numeradas con nº gigante de fondo · badges `SNAKE_CASE` · paleta magenta/cian/lima/rojo · separadores `///`, `>>`, `* * *`, `/// END ///` · barras `▓▒░` · rutas de carpeta falsas · marcos con esquinas de corchete y bordes discontinuos.
+
+## Blog — `05_BLOG/` (9 posts)
+| Archivo | Cómo quedó |
+|---|---|
+| `la ciudad como instrumento` | caja-poema cian rotada → 4 versos en párrafos |
+| `como hacer música..._BLOG` | `<div>`/`.fanzine-content` → texto plano; 6 `![[FILES/fanzine-N.png]]` conservados; caja final → enlace al fanzine |
+| `el sonido solo se cuida...` | 6 tipos de caja → párrafos/blockquote; `<ul class>` → lista; iframe YouTube conservado |
+| `cambia el método...` | tesis/gordon/affordance/ejemplo/ejercicio → encabezados+párrafos+listas; **frase de cierre duplicada retirada (queda 1 vez)** |
+| `comienzos de queimada` | 5 `.capitulo` con nº de fondo → `##`; timeline → lista; highlights → negrita |
+| `hay mil maneras...` | 8 `.ruta` con nº → `####`; ejemplos → blockquote; `<ul class>` → lista |
+| `lo que sientes en las backrooms...` | tesis-dual/polo/zona-mezcla/capitalismo → encabezados/párrafos; fichas de disco → **título en negrita + descripción** |
+| `no hay un método...` | 10 `.juego-card` → **lista numerada 1–10**; gordon-quote → blockquote; enlace bandlab conservado |
+| `quince preguntas...` | 15 `.pregunta-critica` con nº → **lista numerada 1–15**; highlights → negrita; `....` conservado |
+
+Convenciones: cajas-cita → blockquote (citas externas: Eno, Mick Gordon) o párrafo (voz del autor); tarjetas numeradas → lista numerada; `<span class="highlight-*">` → **negrita** (si había >2 en un párrafo, solo la más importante en negrita, el resto plano). Conservados imágenes, iframe de YouTube y enlaces.
+
+## LAB — `04_LAB/index.md`
+- Retirados: título glitch `>> LAB`, separador "scroll" con barritas, `▓▒░...`, `/// END ///`, ruta falsa `/experiments/sketches/`, caja entera `/touchdesigner/ [WIP]`, números de tarjeta, marcos (bordes magenta, esquinas de corchete, box-shadow, bordes discontinuos), CTA `>> CLICK_PARA_EXPLORAR`, tagline `/// RECURSOS // HERRAMIENTAS // UNDERGROUND`.
+- Badges `BILBAO_UNDERGROUND_EXPLORER` / `P5.JS` / `SHADERTOY` → encabezados `##`.
+- **Mapa Euskadi Underground conservado intacto**: iframe `bu-chip.github.io/MEU/` + enlace + texto descriptivo, sin la caja magenta.
+- Imágenes p5.js (4) y vídeos Shadertoy (2): a tamaño completo, sin marco.
+- **CRÍTICO — los 6 `src` de media no se tocaron** (byte a byte idénticos a HEAD; solo cambió el atributo `style`). Verificado contra el HTML de producción: rutas generadas `../04_LAB/FILES/...` idénticas. (Lección del commit `acb9b28`.)
+
+## `04_LAB/Un montón de links.md` — NO tocado
+El diagnóstico esperaba un "marco de terminal falso", pero el archivo ya es Markdown plano. Sin scaffold.
+
+## Archivos limpios no tocados
+`05_BLOG/index.md`, `el synthwave...`, `el software libre...`, `el primer concierto...`, `el bug era un fantasma...`, `Eric Nord y la máquina...` — sin HTML/scaffold.
+
+## Dudas / decisiones (revisar)
+1. **Doble frontmatter (bug preexistente).** Los posts tenían dos bloques `---` (uno `Estatus/Tema`, otro `title:`); Quartz solo lee el primero, así que el `title:` se renderizaba como cuerpo. **Arreglado en commit aparte** (fusión de los dos bloques usando el título ya existente, sin inventar texto). En 3 posts (`backrooms`, `no hay un método`, `quince preguntas`) NO había `title` en el frontmatter → **no se inventó** (caen al slug del nombre de archivo). Decide si quieres darles título propio.
+2. **LAB — tagline y CTA descartados.** `/// RECURSOS // HERRAMIENTAS // UNDERGROUND` y `>> CLICK_PARA_EXPLORAR` se juzgaron decoración de navegación y se quitaron. Si quieres conservar esas palabras como subtítulo del enlace, dilo.
+3. **LAB — media a `width:100%`.** Para "lo más grandes posible sin marco" cambié solo el `style` de display (nunca el `src`).
+4. **Frase duplicada** en `cambia el método` retirada (aparecía 2 veces idéntica; queda 1).
+5. **`....`** en `quince preguntas` conservado como línea suelta (silencio retórico).
