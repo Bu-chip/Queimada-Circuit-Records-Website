@@ -9,7 +9,7 @@ lugar: "El Salón en Llamas, Valladolid"
 
 **Lugar:** El Salón en Llamas, Valladolid
 **Tipo:** concierto
-**Participantes QCR:** [[555-kables]] ([[cuerpo pensante]] + [[colaboradores/anarkoeneko]])
-**Colaboradores:** [[colaboradores/dirty-tapes]], [[colaboradores/elsalonenllamas]]
+**Participantes QCR:** [[555-kables]] ([[cuerpo pensante]] + [[Colaboradores y sellos vinculados|anarkoeneko]])
+**Colaboradores:** [[Colaboradores y sellos vinculados|dirty-tapes]], [[Colaboradores y sellos vinculados|elsalonenllamas]]
 
 Segundo bolo con Dirty Tapes en Valladolid. Anarkoeneko incorporó melodías de piano al set.

@@ -5,7 +5,7 @@ tags:
   - fanzine
   - didáctico
   - 555-kables
-artista: "[[cuerpopensante]], [[555-kables]]"
+artista: "[[cuerpo pensante]], [[555-kables]]"
 ---
 
 **Tipo:** Fanzine tutorial independiente

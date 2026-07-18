@@ -37,14 +37,14 @@ Luego hice una cosa. Los mezclé con gritos de... [*el texto se corta aquí en B
 - **Duración:** 04:42
 - **Samples:** Sonidos de la NASA (campo gravitacional, ondas espaciales), música de C418 (Minecraft - amaneceres), gritos procesados
 - **Proceso:** Lowercase ambient, capas de acordes que respiran, mezcla de fuentes orgánicas y espaciales
-- **Concepto:** Relación entre [[Los-Buchis|proyecto Buchis]] y soundscapes espaciales
+- **Concepto:** Relación entre proyecto Buchis y soundscapes espaciales
 - **Estética:** Space ambient, lowercase, tape recording
 
 ## Influencias
 
 - Sonidos de la NASA (cortesía de Javi)
 - C418 - Música de Minecraft
-- [[Los-Buchis]] (proyecto en desarrollo)
+- Los Buchis (proyecto en desarrollo)
 
 ## Enlaces
 

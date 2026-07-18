@@ -56,4 +56,4 @@ Incluye animación con texto representando el escenario sonoro.
 
 ---
 
-[[01_CATALOGO/index|← Volver al Catálogo]]
+[[01_CATÁLOGO/index|← Volver al Catálogo]]

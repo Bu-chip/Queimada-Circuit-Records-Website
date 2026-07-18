@@ -32,7 +32,7 @@ El nombre contiene ya todo el programa estético: el **cachalote** (Physeter mac
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1287990936/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://dramarecorder.bandcamp.com/album/noise-as-a-form-of-expression-vl-3">NOISE AS A FORM OF EXPRESSION VL.3 de V/A</a></iframe>
 
- **[[Breakmania]]** [Breakcore jazz + Video]  
+ **[[breakmania]]** [Breakcore jazz + Video]  
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=2505895169/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/breakmania-breakcore-jazz-single">Breakmania [Breakcore Jazz single] by cachalote mecánico</a></iframe>
 
@@ -40,7 +40,7 @@ El nombre contiene ya todo el programa estético: el **cachalote** (Physeter mac
 
 - [[cuerpo pensante]] — mismo ecosistema QCR
 - [[queimada-circuit-records|Queimada Circuit Records]] — sello que publica los lanzamientos
-- [[555-kables\|555 Kables]] — colectivo de live jam vinculado
+- [[555-kables|555 Kables]] — colectivo de live jam vinculado
 
 ## Conexiones externas
 

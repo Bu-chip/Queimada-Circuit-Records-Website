@@ -19,7 +19,7 @@ También es el creador y curador de [[queimada-circuit-records|Queimada Circuit 
 El proceso de [[cuerpo pensante]] se basa en la exploración de formatos híbridos:
 
 - [[buchi-buchip-acto-i_FANZINE_ALBUM|Acto I]] - Álbum conceptual en 5 partes que describe las tensiones entre ruido y ambiente mediante una narrativa de ciencia ficción.
-- [[Txus-Space|Txus Space]] - Desarrollo de sonido a través de imágenes generadas por IA, incluyendo fotografías y diálogos con amigos sobre cómo veían esas imágenes.
+- [[txus-space|Txus Space]] - Desarrollo de sonido a través de imágenes generadas por IA, incluyendo fotografías y diálogos con amigos sobre cómo veían esas imágenes.
 - [[Aberración Bológica|Aberración Biológica]] - Pruebas de automatizaciones que derivaron en una animación con texto representando el escenario sonoro
 - [[Elowen_CORTOMETRAJE|Corto Naiara]] - Banda sonora para corto de animación.
 - [[Buenos días, Ansiedad|Buenos días, Ansiedad]] - Exploración del ambient como proceso de escucha profunda y gestión de la ansiedad. 
@@ -45,11 +45,11 @@ El proceso de [[cuerpo pensante]] se basa en la exploración de formatos híbrid
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=756704386/size=small/bgcol=333333/linkcol=2ebd35/track=1095909154/transparent=true/" seamless><a href="https://dirtytapesxxx.bandcamp.com/album/varias-artistas-vol-2">VARIAS ARTISTAS VOL.2 de VARIAS ARTISTAS</a></iframe>
 
-- [[Txus-Space|Txus Space]] (2024) - Dark Ambient + Video
+- [[txus-space|Txus Space]] (2024) - Dark Ambient + Video
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=3820930762/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/txus-space-dark-ambient-soundtrack">Txus space [dark ambient soundtrack] by cuerpo pensante</a></iframe>
 
-- [[Breakmania|Breakmania]] (2024) - Jazz + Video
+- [[breakmania|Breakmania]] (2024) - Jazz + Video
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=2505895169/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/breakmania-breakcore-jazz-single">Breakmania [Breakcore Jazz single] by cachalote mecánico</a></iframe>
 

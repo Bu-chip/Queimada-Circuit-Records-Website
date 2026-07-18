@@ -12,7 +12,7 @@ Eneko Barrena. Cofundador de [[555-kables|555 Kables]]. Novation Circuit. Compar
 ### [[camile-duhart|Camile Duhart]]
 `ARTISTA VISUAL`
 
-Datamoshing, imagen procesada. Video de [[Txus-Space|Txus Space]].
+Datamoshing, imagen procesada. Video de [[txus-space|Txus Space]].
 
 ---
 

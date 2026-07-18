@@ -8,7 +8,7 @@
 - [https://neal.fun/](https://neal.fun/) → Colección de juegos/experimentos web interactivos
 - [https://neal.fun/internet-artifacts](https://neal.fun/internet-artifacts) → Museo virtual de artefactos de internet
 - [http://astronaut.io/#](http://astronaut.io/#) → Videos aleatorios de YouTube sin vistas
-- [https://hackertyper.jcom](https://hackertyper.jcom) → Simula que estás hackeando
+- [https://hackertyper.com](https://hackertyper.com) → Simula que estás hackeando
 - [https://thisxdoesnotexist.com/](https://thisxdoesnotexist.com/) → Generador de cosas que no existen (AI)
 - [https://www.playphrase.me/#/search?q=%22hey+there+he+is%22&language=en](https://www.playphrase.me/#/search?q=%22hey+there+he+is%22&language=en) → Busca frases en películas/series
 - [https://thisissand.com](https://thisissand.com) → Crear arte con arena digital
@@ -24,7 +24,7 @@
 - [https://www.marecomic.com/comic/intro-page-2/](https://www.marecomic.com/comic/intro-page-2/) → Webcomic
 - [https://phet.colorado.edu/es/simulations/browse](https://phet.colorado.edu/es/simulations/browse) → Simulaciones científicas interactivas (física, química, etc.)
 - [https://rotatingsandwiches.wordpress.com](https://rotatingsandwiches.wordpress.com) → Blog de sándwiches giratorios
-- [https://inconvergent.net/generative/](https://inconvergent.net/generative/) → Arte generativo (ver [[Filosofía del arte generativo inconvergent]])
+- [https://inconvergent.net/generative/](https://inconvergent.net/generative/) → Arte generativo (ver Filosofía del arte generativo inconvergent)
 - [https://wiki.xxiivv.com/site/home.html](https://wiki.xxiivv.com/site/home.html) → Wiki personal de XXIIVV (Devine Lu Linvega) - diseño, código, arte
 - [https://100r.co/site/projects.html](https://100r.co/site/projects.html) → Hundred Rabbits - proyectos de diseño/software sostenible
 
