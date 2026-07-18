@@ -1,8 +1,6 @@
 ---
 Estatus: A medias
 Tema: proceso creativo, técnica, aprendizaje, síntesis
----
----
 title: Hay mil maneras de aprender un cacharro nuevo
 ---
 

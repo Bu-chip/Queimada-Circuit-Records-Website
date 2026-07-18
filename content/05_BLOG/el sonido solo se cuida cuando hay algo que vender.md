@@ -1,8 +1,6 @@
 ---
 Estatus: A medias
 Tema: sonido, espacio público, Brian Eno, diseño sonoro
----
----
 title: El sonido solo se cuida cuando hay algo que vender
 ---
 

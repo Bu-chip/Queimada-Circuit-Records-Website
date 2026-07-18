@@ -1,8 +1,6 @@
 ---
 Estatus: En bruto
 Tema: affordances, improvisación, proceso creativo, Mick Gordon
----
----
 title: Cambia el método y cambia la canción
 ---
 

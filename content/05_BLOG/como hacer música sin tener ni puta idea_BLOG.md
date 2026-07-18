@@ -1,13 +1,10 @@
 ---
-title:
+title: Cómo hacer música sin tener ni puta idea
 date: 2024-03-15
 tags:
   - tutorial
   - DIY
   - producción
----
----
-title: Cómo hacer música sin tener ni puta idea
 ---
 
 En 2025 sacamos el primer fanzine de Queimada Circuit Records junto con 555 Kables. Se vendió en la Katakomba acompañando un set ambient en vivo. Ahora estamos preparando una segunda edición "con más errores", pero mientras tanto, aquí está la primera.
