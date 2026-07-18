@@ -48,4 +48,4 @@ Escúchalos con tiempo. Con auriculares. Cuidad a vuestra gente.
 - [Bandcamp](https://queimada-circuit-records.bandcamp.com/album/buenos-d-as-ansiedad-ambient-album)
 
 ---
-[[01_CATÁLOGO/Releases/index|Volver a Releases]]
+[[cronologico|Volver a Releases]]

@@ -40,20 +40,7 @@ Ambient conectado vs liminal vacío. Burial, Gas, The Caretaker.
 
 ---
 
-### TECNOLOGÍA & RESISTENCIA
-
-**[El software libre como acto de resistencia](https://queimadacircuitrecords.com/05_BLOG/el-software-libre-como-acto-de-resistencia)** · feb 2025
-Sobre por qué el código abierto importa en la música.
-
-**[El bug era un fantasma antes de ser un insecto](https://queimadacircuitrecords.com/05_BLOG/el-bug-era-un-fantasma-antes-de-ser-un-insecto)** · ago 2024
-Historia del glitch, de Grace Hopper al vaporwave.
-
----
-
 ### NOSTALGIA & MEMORIA
-
-**[El synthwave no es nostalgia de los 80](https://queimadacircuitrecords.com/el-synthwave-no-es-nostalgia-de-los-80-es-nostalgia-de-un-futuro-que-no-existió)** · sep 2024
-Es nostalgia de un futuro que nunca llegó.
 
 **[Eric Nord y la máquina](https://queimadacircuitrecords.com/05_BLOG/Eric-Nord-y-la-máquina_apuntes-desde-el-interior-del-desastre)** · feb 2026
 Apuntes desde el interior del desastre.

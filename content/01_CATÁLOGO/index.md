@@ -27,16 +27,16 @@ title: Catálogo Queimada
 **[[cronologico|→ Archivo cronológico]]**  
 Todo desde 2024.
 
-**[[albumes|→ Álbumes y LPs]]**  
+**[[cronologico|→ Álbumes y LPs]]**  
 Buenos días Ansiedad, Acto I, Aketxe.
 
-**[[singles|→ Singles y EPs]]**  
+**[[cronologico|→ Singles y EPs]]**  
 Sei, Breakmania, Txus Space.
 
 **[[fanzines|→ Fanzines]]**  
 Cómo hacer música sin tener ni puta idea.
 
-**[[colaboraciones|→ Colaboraciones]]**  
+**[[cronologico|→ Colaboraciones]]**  
 Drama Recorder, Dirty Tapes, Delirium Psychosis.
 
 </div>

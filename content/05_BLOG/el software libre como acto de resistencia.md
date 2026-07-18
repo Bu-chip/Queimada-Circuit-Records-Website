@@ -1,6 +1,7 @@
 ---
 Estatus: A medias
 Tema: open source, política, capitalismo, tecnología
+draft: true
 ---
 
 # El software libre como resistencia: de Marx al código abierto

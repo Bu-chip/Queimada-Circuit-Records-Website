@@ -39,4 +39,4 @@ Una toma continua de 40 minutos dividida en tres partes, sin cortes ni ediciones
 - [Bandcamp](https://queimadacircuitrecords.bandcamp.com/album/aketxe-live-jam)
 
 ---
-[[01_CATÁLOGO/Releases/index|Volver a Releases]]
+[[cronologico|Volver a Releases]]
