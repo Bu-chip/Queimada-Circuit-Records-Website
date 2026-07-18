@@ -149,3 +149,38 @@ El diagnóstico esperaba un "marco de terminal falso", pero el archivo ya es Mar
 3. **LAB — media a `width:100%`.** Para "lo más grandes posible sin marco" cambié solo el `style` de display (nunca el `src`).
 4. **Frase duplicada** en `cambia el método` retirada (aparecía 2 veces idéntica; queda 1).
 5. **`....`** en `quince preguntas` conservado como línea suelta (silencio retórico).
+
+---
+
+# PASADA 3 — Fixes de bugs + presencia visual del LAB + 404 (2026-07-18)
+
+Tercera tanda tras revisar el resultado en local. Regla de oro vigente. Un commit por bloque.
+
+## Bloque 1 — Fechas del blog (BUG diagnosticado, NO era lo que parecía)
+La sospecha (que `82007bc` perdió el campo `date`) es **falsa**. Comparado el frontmatter de los 15 posts en `origin/main` vs actual: **ninguno tenía `date`** salvo `como hacer música` (`date: 2024-03-15`), que sigue **intacto**. Nada perdido; el frontmatter ya coincide con `origin/main`.
+Causa real: `defaultDateType: "modified"` con prioridad `frontmatter → git → filesystem`. Los 8 posts sin `date` caen a la **fecha de git**; producción muestra `20.03.26` (commit del lote en `main`) y local muestra hoy porque la limpieza los recommiteó. `como hacer música` sale bien justo porque es el único con `date` en frontmatter.
+**Restaurar valores de origin/main = no-op** (ya coinciden) y no arregla el síntoma. Arreglarlo requiere **añadir `date`**, que los originales no tenían → decisión del dueño pendiente (no se inventan fechas).
+
+## Bloque 2 — Enlaces internos del índice del blog (BUG, arreglado)
+Los 11 enlaces de `05_BLOG/index.md` eran URLs absolutas a `https://queimadacircuitrecords.com/...` (se pintaban externos ↗; el de `como hacer música` daba 404 por faltarle el sufijo `_BLOG`). Convertidos a wikilinks `[[archivo|texto]]` (resolución `shortest`, nombre exacto). Verificado: 11 destinos internos, 0 externos, 0 rotos. Texto visible literal. Commit `d75d386`.
+
+## Bloque 6a — Cajas de sección de la 404 (arreglado)
+`quartz/components/pages/404.tsx`: las 4 cajas (Catálogo/Artistas/LAB/Blog) con borde neón + color por sección + box-shadow → **lista simple** con divisor sutil, enlaces y texto literales. El bloque glitch de arriba se mantiene (6b pendiente). Commit `17f35fe`.
+
+## Bloque 4 — Altura del iframe MEU (hecho)
+`04_LAB/index.md`: iframe del Mapa Euskadi Underground `height: 300px → 820px`. Solo dimensión; src e interior intactos. **A confirmar en local** que muestra cabecera + filtros + 2 filas de portadas (no verificable en el preview headless, que sandboxea el iframe externo). Commit `156d0fe`.
+
+## Bloque 5 — "Un montón de links" destacado (hecho)
+`04_LAB/index.md`: flechas `<<<<<<<<<` junto al enlace (decisión puntual, no patrón). Texto del enlace intacto; flechas como decoración, sin caja. Commit `f9ed1eb`.
+
+## Bloque 3 — Pies de foto del LAB (PROPUESTA, NO aplicada)
+Descripciones técnicas propuestas para los 6 media (tabla en el chat). Pendiente de que el dueño apruebe/reescriba antes de aplicar. Hallazgo: el vídeo `...5.24.46.mov` **no es un shader**, es una captura de pantalla del perfil de Shadertoy del autor (dashboard con lista de shaders) — quizá convenga sustituirlo.
+
+## Bloque 6b — Rediseño del bloque glitch de la 404 (PROPUESTA, NO aplicada)
+3 direcciones (A · Errata/misregistro de imprenta · B · Sigilo/sello oculto · C · Vacío/marca corrupta), renderizadas en un Artifact. Fuera neón; negro + hueso + un acento apagado; símbolos alquímicos/astrales/de imprenta; glitch desde el material. Referente: paleta y tipos reales del Random Genre Explorer (Barlow Condensed + IBM Plex Mono; grises casi-negros → hueso, acentos desaturados). Pendiente de que el dueño elija dirección.
+
+## Verificación (Bloque V)
+- ✅ `npx quartz build` sin errores (62 entrada, 194 emitidos).
+- ✅ Los 6 `src` de media del LAB siguen **sin ruta, solo nombre** (idénticos a `origin/main`) — comprobado explícitamente (3ª vez).
+- ✅ Diff de texto plano del índice del blog: cero prosa perdida (solo cambió el destino del enlace).
+- ✅ Commit por bloque (2, 6a, 4, 5). Los bloques 3 y 6b no se commitean hasta aprobación. Sin push ni merge.
