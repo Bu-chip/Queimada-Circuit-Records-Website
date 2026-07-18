@@ -11,6 +11,6 @@ lugar: "Txarraska Gaztetxea, Bilbao"
 **Lugar:** Txarraska Gaztetxea, Bilbao
 **Tipo:** rave
 **Participantes QCR:** [[555-kables]]
-**Colaboradores:** [[03_EVENTOS/colaboradores/txarraska-gaztetxea|Txarraska Gaztetxea]]
+**Colaboradores:** [[Colaboradores y sellos vinculados|Txarraska Gaztetxea]]
 
 Rave clandestina durante el Txarraskate. Lugar con significado especial: aquí se conoció 555K montando chips 555 para osciloscopios. También participaron en la asamblea de vivienda del espacio.

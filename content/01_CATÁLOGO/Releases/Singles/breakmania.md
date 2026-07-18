@@ -1,5 +1,6 @@
 ---
 title: "Breakmania [Breakcore Jazz single]"
+artista: "cachalote mecánico"
 date: 2024-11-23
 tags: [breakcore, jazz, glitch, datamosh]
 cover: /images/releases/breakmania.jpg

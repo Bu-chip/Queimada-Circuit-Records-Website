@@ -32,4 +32,4 @@ Registro cronológico de directos, talleres, ferias y sesiones de Queimada Circu
 
 ---
 
-→ [[colaboradores/|Ver colaboradores externos]]
+→ [[Colaboradores y sellos vinculados|Ver colaboradores externos]]

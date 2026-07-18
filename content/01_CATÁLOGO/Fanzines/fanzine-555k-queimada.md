@@ -11,7 +11,7 @@ artista: "[[555-kables]]"
 **Año:** 2024
 **Artistas:** [[555-kables]]
 
-Fanzine de presentación del colectivo [[555-kables]] y su relación con [[Queimada Circuit Records]]. Documenta el origen y filosofía del proyecto.
+Fanzine de presentación del colectivo [[555-kables]] y su relación con [[queimada-circuit-records|Queimada Circuit Records]]. Documenta el origen y filosofía del proyecto.
 
 ## Aparece en
 - [[feria-lurrazpikoliga-may-2025]]

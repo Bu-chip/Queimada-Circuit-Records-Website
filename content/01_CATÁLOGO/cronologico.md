@@ -84,7 +84,7 @@ Tutorial distribuido en eventos. Serie de videos.
 
 ## 2024
 
-### [[Acto-I|Buchi.buchip — Acto I]]
+### [[buchi-buchip-acto-i_FANZINE_ALBUM|Buchi.buchip — Acto I]]
 [[cuerpo pensante|cuerpopensante]] · `ÁLBUM · IDM CONCEPTUAL · FANZINE`
 
 Worldbuilding sonoro. En desarrollo: Acto II.
@@ -93,15 +93,15 @@ Worldbuilding sonoro. En desarrollo: Acto II.
 
 ---
 
-### [[Txus-Space]] 
+### [[txus-space]] 
 [[cuerpo pensante|cuerpopensante]] · `SINGLE · DARK AMBIENT`
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=3820930762/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/txus-space-dark-ambient-soundtrack">Txus space [dark ambient soundtrack]</a></iframe>
 
 ---
 
-### [[Breakmania]] 
-[[cuerpo pensante|cuerpopensante]] · `SINGLE · BREAKCORE JAZZ`
+### [[breakmania]] 
+[[Cachalote Mecánico|cachalote mecánico]] · `SINGLE · BREAKCORE JAZZ`
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=2505895169/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/breakmania-breakcore-jazz-single">Breakmania [Breakcore Jazz single]</a></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NxkpeJXJLOs?si=lbFafv8AMxcIPikW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

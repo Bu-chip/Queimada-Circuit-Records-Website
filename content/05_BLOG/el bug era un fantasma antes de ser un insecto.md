@@ -1,6 +1,7 @@
 ---
 Estatus: Listo
 Tema: tecnología, historia, lenguaje
+draft: true
 ---
 Sí, el término **"bug"** ya se usaba antes del incidente con Grace Hopper.
 

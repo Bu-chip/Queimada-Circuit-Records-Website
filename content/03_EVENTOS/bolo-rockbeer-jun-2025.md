@@ -10,6 +10,6 @@ lugar: "Rockbeer, Bilbao"
 **Lugar:** Rockbeer, Bilbao
 **Tipo:** concierto
 **Participantes QCR:** [[555-kables]]
-**Colaboradores:** [[colaboradores/rockbeer]]
+**Colaboradores:** [[Colaboradores y sellos vinculados|rockbeer]]
 
 Bolo organizado por @d.d.d.jade y @rslkt.eu. Jam de calentamiento en el estudio el día anterior.

@@ -13,7 +13,7 @@ date: 2024-05-01
 ---
 > Un universo de ficción sonora donde el sonido sintético es el único lenguaje posible.
 
-Buchi.buchip es un proyecto colaborativo de la artista visual [[camile-duhart]] y la bailarina profesional [[Andrea Jalon]] en la que el cuerpo en movimiento y el sonido sintético se invocan entre sí. 
+Buchi.buchip es un alias de [[cuerpo pensante]] en colaboración con la artista visual [[Colaboradores y sellos vinculados|camile-duhart]] y la bailarina profesional [[Colaboradores y sellos vinculados|Andrea Jalon]], en la que el cuerpo en movimiento y el sonido sintético se invocan entre sí. Proyecto actualmente en pausa. 
 
 ![[Andreita_buchis_foto 1.jpg]]
 
@@ -44,7 +44,7 @@ El título, "Acto I: congreso" implica que hay más Actos por venir.
 ## Proyectos vinculados
 
 - [[cuerpo pensante]] — alias principal del mismo productor
-- [[Queimada Circuit Records]] — sello que publica los lanzamientos
+- [[queimada-circuit-records|Queimada Circuit Records]] — sello que publica los lanzamientos
 
 ## Conexiones externas
 

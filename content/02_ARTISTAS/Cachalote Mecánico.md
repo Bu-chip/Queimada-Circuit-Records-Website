@@ -18,7 +18,7 @@ date: 2024-08-07
 
 > Harsh noise. Folclore. Frecuencias de otro planeta. Bilingüe.
 
-cachalote mecánico (también: **katxalote mekanikoa** en euskera) es el proyecto más extremo y más oscuro del ecosistema [[Queimada Circuit Records]].
+cachalote mecánico (también: **katxalote mekanikoa** en euskera) es el proyecto más extremo y más oscuro del ecosistema [[queimada-circuit-records|Queimada Circuit Records]].
 
 El nombre contiene ya todo el programa estético: el **cachalote** (Physeter macrocephalus) es el animal con el cerebro más grande del mundo y el ser vivo capaz de producir los sonidos más intensos de la biosfera — hasta 230 decibelios, por encima del umbral del dolor humano. Es también uno de los animales cuyo sistema de comunicación los científicos menos comprenden: los clics y codas de los cachalotes son un lenguaje complejo que todavía no sabemos descifrar. Que ese animal lleve el adjetivo "mecánico" — sintético, artificial, procesado — convierte el nombre en una imagen de poder y de opacidad semiótica simultánea.
 
@@ -32,15 +32,15 @@ El nombre contiene ya todo el programa estético: el **cachalote** (Physeter mac
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1287990936/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://dramarecorder.bandcamp.com/album/noise-as-a-form-of-expression-vl-3">NOISE AS A FORM OF EXPRESSION VL.3 de V/A</a></iframe>
 
- **[[Breakmania]]** [Breakcore jazz + Video]  
+ **[[breakmania]]** [Breakcore jazz + Video]  
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=2505895169/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/breakmania-breakcore-jazz-single">Breakmania [Breakcore Jazz single] by cachalote mecánico</a></iframe>
 
 ## Proyectos vinculados
 
 - [[cuerpo pensante]] — mismo ecosistema QCR
-- [[Queimada Circuit Records]] — sello que publica los lanzamientos
-- [[555-kables\|555 Kables]] — colectivo de live jam vinculado
+- [[queimada-circuit-records|Queimada Circuit Records]] — sello que publica los lanzamientos
+- [[555-kables|555 Kables]] — colectivo de live jam vinculado
 
 ## Conexiones externas
 

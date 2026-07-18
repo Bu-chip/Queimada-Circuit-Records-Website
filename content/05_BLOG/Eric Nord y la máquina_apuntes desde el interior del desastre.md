@@ -1,6 +1,7 @@
 ---
 Estatus: Listo
 Tema: IA, arte, proceso creativo
+date: 2026-02-01
 ---
 Llevo tres meses enganchado al Threads de Eric Nord (@dirtcastle) como quien vuelve obsesivamente a un accidente de tráfico. Mientras la mitad de Instagram se llena de influencers vendiendo prompts mágicos y la otra mitad grita que la IA es el apocalipsis del arte, Nord está en otro sitio completamente distinto: generando cientos de imágenes al día y explicando, sin pelos en la lengua, qué coño está haciendo realmente.
 

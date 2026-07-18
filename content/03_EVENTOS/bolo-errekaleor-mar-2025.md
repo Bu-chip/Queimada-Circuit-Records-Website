@@ -10,6 +10,6 @@ lugar: "Errekaleor, Bilbao"
 **Lugar:** Errekaleor, Bilbao
 **Tipo:** concierto
 **Participantes QCR:** [[555-kables]]
-**Colaboradores:** [[colaboradores/cirkolepsia]], [[colaboradores/errekaleor]]
+**Colaboradores:** [[Colaboradores y sellos vinculados|cirkolepsia]], [[Colaboradores y sellos vinculados|errekaleor]]
 
 Bolo de 555K organizado por Cirkolepsia en el gaztetxe Errekaleor.

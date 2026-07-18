@@ -1,6 +1,7 @@
 ---
 Estatus: Listo
 Tema: Synthwave, géneros, capitalismo, nostalgia
+draft: true
 ---
 
 Hay algo profundamente extraño en la nostalgia que articula el synthwave, y esa extrañeza merece tomarse en serio antes de disolver el fenómeno en narrativas demasiado simples sobre autenticidad traicionada o capitalismo depredador. La lectura lineal —un género nace genuino, el mercado lo absorbe, la escena muere— tiene la ventaja de la claridad y el inconveniente de no explicar casi nada. Lo que ocurre es más turbio, más interesante, y probablemente más revelador de las condiciones culturales del presente.

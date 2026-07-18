@@ -14,10 +14,6 @@ duracion: "04:44"
 ---
 
 
-## Contexto
-
-Track publicado en el compilatorio **VARIAS ARTISTAS VOL.2** del sello Dirty Tapes (Valladolid). Proyecto [[cuerpo-pensante|cuerpo pensante]].
-
 ## Sobre el tema
 
 Roland TR-6S y Behringer Crave. Chopeos, cortes, secuencias ácidas distorsionadas, ritmos destruidos.
@@ -35,25 +31,10 @@ Pruebas de automatizaciones que derivaron en una animación con texto representa
 
 1. Aberración Biológica — 04:44
 
-## Detalles técnicos
-
-- **Duración:** 04:44
-- **Hardware:** Roland TR-6S, Behringer Crave
-- **Proceso:** Grabación en directo, una toma sin ediciones, automatizaciones
-- **Concepto:** Ritmos destruidos, secuencias ácidas distorsionadas, animación con texto
-- **Estética:** Hard IDM, industrial noise, experimental, cassette tape
-- **Sello:** Dirty Tapes (Valladolid)
-
 ## Video
 
 Incluye animación con texto representando el escenario sonoro.
 
-## Enlaces
-
-- [Escuchar en Bandcamp](https://queimada-circuit-records.bandcamp.com/track/aberraci-n-biol-gica-hard-idm-single)
-- Parte de: VARIAS ARTISTAS VOL.2
-- [Dirty tapes](https://dirtytapesxxx.bandcamp.com)
-
 ---
 
-[[01_CATALOGO/index|← Volver al Catálogo]]
+[[01_CATÁLOGO/index|← Volver al Catálogo]]

@@ -16,7 +16,7 @@ date: 2025-03-20
 
 > Colectivo de live jam electrónico. Bilbao / Euskadi.
 
-555 Kables es un **colectivo de live jam electrónico** vinculado a [[Queimada Circuit Records]] compuesto por Miguel Borrajo y Eneko Barrena.  A diferencia de los proyectos de estudio del ecosistema QCR, 555 Kables opera en el registro del directo. Sus grabaciones son capturas de lo que ocurre en el momento, sin la mediación del estudio. Lo que se graba es lo que ocurrió.
+555 Kables es un **colectivo de live jam electrónico** vinculado a [[queimada-circuit-records|Queimada Circuit Records]] compuesto por Miguel Borrajo y Eneko Barrena.  A diferencia de los proyectos de estudio del ecosistema QCR, 555 Kables opera en el registro del directo. Sus grabaciones son capturas de lo que ocurre en el momento, sin la mediación del estudio. Lo que se graba es lo que ocurrió.
 
 El formato de live jam implica que la música es fundamentalmente **un evento en el tiempo**, cada sesión es irrepetible. Esto lo coloca en una posición interesante dentro del catálogo de QCR, que habitualmente trabaja con formatos más elaborados (álbum conceptual, fanzine, single producido).
 
@@ -32,7 +32,7 @@ Nuestro primer directo:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0sMLt7ig1JM?si=SGXSemY5Q5CgNmVy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ## Proyectos vinculados
 
-- [[Queimada Circuit Records]] — sello que publica los lanzamientos
+- [[queimada-circuit-records|Queimada Circuit Records]] — sello que publica los lanzamientos
 - [[cuerpo pensante]] — curador del sello, posible integrante del colectivo
 
 ![[02_ARTISTAS/FILES/HHH03029.jpg]]

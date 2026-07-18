@@ -10,6 +10,6 @@ lugar: "Bilbao"
 **Lugar:** Bilbao
 **Tipo:** concierto
 **Participantes QCR:** [[555-kables]]
-**Colaboradores:** [[colaboradores/kolektivokotxino]], [[colaboradores/grishacecosas]], [[colaboradores/misoginia-punk]]
+**Colaboradores:** [[Colaboradores y sellos vinculados|kolektivokotxino]], [[Colaboradores y sellos vinculados|grishacecosas]], [[Colaboradores y sellos vinculados|misoginia-punk]]
 
 Primer bolo oficial de 555 Kables organizado por Kolektivo Kotxino. Grishacecosas dirigió un cadáver exquisito durante la sesión.

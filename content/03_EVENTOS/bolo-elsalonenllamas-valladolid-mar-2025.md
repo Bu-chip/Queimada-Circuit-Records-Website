@@ -10,6 +10,6 @@ lugar: "El Salón en Llamas, Valladolid"
 **Lugar:** El Salón en Llamas, Valladolid
 **Tipo:** concierto
 **Participantes QCR:** [[555-kables]]
-**Colaboradores:** [[colaboradores/dirty-tapes]], [[colaboradores/elsalonenllamas]]
+**Colaboradores:** [[Colaboradores y sellos vinculados|dirty-tapes]], [[Colaboradores y sellos vinculados|elsalonenllamas]]
 
 Primer bolo documentado fuera de Euskadi. Con el sello Dirty Tapes de Valladolid.

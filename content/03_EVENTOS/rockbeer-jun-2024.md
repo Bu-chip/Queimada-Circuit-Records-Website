@@ -10,6 +10,6 @@ lugar: "Rockbeer, Bilbao"
 **Lugar:** Rockbeer, Bilbao
 **Tipo:** concierto
 **Participantes QCR:** [[cuerpo pensante]]
-**Colaboradores:** [[colaboradores/rockbeer]]
+**Colaboradores:** [[Colaboradores y sellos vinculados|rockbeer]]
 
 Sesión de conciertos en Rockbeer. Edit de datamoshing con audio generativo en Ableton sobre las grabaciones corrompidas.

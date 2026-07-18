@@ -10,6 +10,6 @@ lugar: "TBK Media Lab, Bilbao"
 **Lugar:** TBK Media Lab, Bilbao
 **Tipo:** taller
 **Participantes QCR:** [[555-kables]]
-**Colaboradores:** [[colaboradores/333modules]], [[colaboradores/tbkmedialab]]
+**Colaboradores:** [[Colaboradores y sellos vinculados|333modules]], [[Colaboradores y sellos vinculados|tbkmedialab]]
 
 Primera sesión del colectivo de síntesis organizado por @333modules. Encuentro con músicos de Euskadi con interés compartido en electrónica modular.
