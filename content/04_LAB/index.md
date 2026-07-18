@@ -61,19 +61,19 @@ title: Lab
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 0.7rem;">
 <div style="position: relative; border: 2px solid rgba(255,0,255,0.4);">
-<img src="FILES/Pasted%20image%2020260228052030.png" style="width: 100%; height: 170px; object-fit: cover; display: block;" />
+<img src="Pasted%20image%2020260228052030.png" style="width: 100%; height: 170px; object-fit: cover; display: block;" />
 <div style="position: absolute; bottom: 0; right: 0; background: #ff00ff; color: #000; padding: 0.2rem 0.5rem; font-family: 'Azeret Mono', monospace; font-size: 0.65rem; font-weight: 600;">01</div>
 </div>
 <div style="position: relative; border: 2px solid rgba(255,0,255,0.4);">
-<img src="FILES/Pasted%20image%2020260228052102.png" style="width: 100%; height: 170px; object-fit: cover; display: block;" />
+<img src="Pasted%20image%2020260228052102.png" style="width: 100%; height: 170px; object-fit: cover; display: block;" />
 <div style="position: absolute; bottom: 0; right: 0; background: #ff00ff; color: #000; padding: 0.2rem 0.5rem; font-family: 'Azeret Mono', monospace; font-size: 0.65rem; font-weight: 600;">02</div>
 </div>
 <div style="position: relative; border: 2px solid rgba(255,0,255,0.4);">
-<img src="FILES/Pasted%20image%2020260228052142.png" style="width: 100%; height: 170px; object-fit: cover; display: block;" />
+<img src="Pasted%20image%2020260228052142.png" style="width: 100%; height: 170px; object-fit: cover; display: block;" />
 <div style="position: absolute; bottom: 0; right: 0; background: #ff00ff; color: #000; padding: 0.2rem 0.5rem; font-family: 'Azeret Mono', monospace; font-size: 0.65rem; font-weight: 600;">03</div>
 </div>
 <div style="position: relative; border: 2px solid rgba(255,0,255,0.4);">
-<img src="FILES/Pasted%20image%2020260228052234.png" style="width: 100%; height: 170px; object-fit: cover; display: block;" />
+<img src="Pasted%20image%2020260228052234.png" style="width: 100%; height: 170px; object-fit: cover; display: block;" />
 <div style="position: absolute; bottom: 0; right: 0; background: #ff00ff; color: #000; padding: 0.2rem 0.5rem; font-family: 'Azeret Mono', monospace; font-size: 0.65rem; font-weight: 600;">04</div>
 </div>
 </div>
@@ -91,11 +91,11 @@ title: Lab
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 0.7rem;">
 <div style="position: relative; border: 2px solid rgba(0,255,255,0.4);">
-<video src="FILES/Grabación%20de%20pantalla%202026-02-28%20a%20las%205.23.56.mov" controls loop muted style="width: 100%; height: 170px; object-fit: cover; display: block;"></video>
+<video src="Grabación%20de%20pantalla%202026-02-28%20a%20las%205.23.56.mov" controls loop muted style="width: 100%; height: 170px; object-fit: cover; display: block;"></video>
 <div style="position: absolute; top: 0; left: 0; background: #00ffff; color: #000; padding: 0.2rem 0.5rem; font-family: 'Azeret Mono', monospace; font-size: 0.65rem; font-weight: 600;">01</div>
 </div>
 <div style="position: relative; border: 2px solid rgba(0,255,255,0.4);">
-<video src="FILES/Grabación%20de%20pantalla%202026-02-28%20a%20las%205.24.46.mov" controls loop muted style="width: 100%; height: 170px; object-fit: cover; display: block;"></video>
+<video src="Grabación%20de%20pantalla%202026-02-28%20a%20las%205.24.46.mov" controls loop muted style="width: 100%; height: 170px; object-fit: cover; display: block;"></video>
 <div style="position: absolute; top: 0; left: 0; background: #00ffff; color: #000; padding: 0.2rem 0.5rem; font-family: 'Azeret Mono', monospace; font-size: 0.65rem; font-weight: 600;">02</div>
 </div>
 </div>
