@@ -15,7 +15,7 @@ Encargo de banda sonora para un videoclip dirigido por **Juan**. Casi un año de
 
 **Composición y producción:** [[cuerpo pensante]]
 **Voz:** [[goikore]] 
-**Grabación de voces:** [[anarkoeneko|Eneko Barrena]]  
+**Grabación de voces:** [[Colaboradores y sellos vinculados|Eneko Barrena]]  
 **Dirección de vídeo:** Juan  
 **Año:** 2025  
 **Tipo:** Encargo · Banda sonora original
