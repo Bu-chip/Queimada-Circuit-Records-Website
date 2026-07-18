@@ -159,7 +159,7 @@ Tercera tanda tras revisar el resultado en local. Regla de oro vigente. Un commi
 ## Bloque 1 — Fechas del blog (BUG diagnosticado, NO era lo que parecía)
 La sospecha (que `82007bc` perdió el campo `date`) es **falsa**. Comparado el frontmatter de los 15 posts en `origin/main` vs actual: **ninguno tenía `date`** salvo `como hacer música` (`date: 2024-03-15`), que sigue **intacto**. Nada perdido; el frontmatter ya coincide con `origin/main`.
 Causa real: `defaultDateType: "modified"` con prioridad `frontmatter → git → filesystem`. Los 8 posts sin `date` caen a la **fecha de git**; producción muestra `20.03.26` (commit del lote en `main`) y local muestra hoy porque la limpieza los recommiteó. `como hacer música` sale bien justo porque es el único con `date` en frontmatter.
-**Restaurar valores de origin/main = no-op** (ya coinciden) y no arregla el síntoma. Arreglarlo requiere **añadir `date`**, que los originales no tenían → decisión del dueño pendiente (no se inventan fechas).
+**Restaurar valores de origin/main = no-op** (ya coinciden). **Decisión del dueño:** añadir `date` usando el MES que ya figura en `05_BLOG/index.md` (p.ej. `sep 2025` → `2025-09-01`). Aplicado a los 10 posts del listado; el **día `01` es placeholder** (el índice solo da mes/año). `como hacer música` ya tenía `date: 2024-03-15`, intacta. Los 3 borradores (draft) no están en el índice → sin `date`. Verificado: fecha mostrada = mes del índice. Commit `ceb577f`.
 
 ## Bloque 2 — Enlaces internos del índice del blog (BUG, arreglado)
 Los 11 enlaces de `05_BLOG/index.md` eran URLs absolutas a `https://queimadacircuitrecords.com/...` (se pintaban externos ↗; el de `como hacer música` daba 404 por faltarle el sufijo `_BLOG`). Convertidos a wikilinks `[[archivo|texto]]` (resolución `shortest`, nombre exacto). Verificado: 11 destinos internos, 0 externos, 0 rotos. Texto visible literal. Commit `d75d386`.
@@ -173,14 +173,21 @@ Los 11 enlaces de `05_BLOG/index.md` eran URLs absolutas a `https://queimadacirc
 ## Bloque 5 — "Un montón de links" destacado (hecho)
 `04_LAB/index.md`: flechas `<<<<<<<<<` junto al enlace (decisión puntual, no patrón). Texto del enlace intacto; flechas como decoración, sin caja. Commit `f9ed1eb`.
 
-## Bloque 3 — Pies de foto del LAB (PROPUESTA, NO aplicada)
-Descripciones técnicas propuestas para los 6 media (tabla en el chat). Pendiente de que el dueño apruebe/reescriba antes de aplicar. Hallazgo: el vídeo `...5.24.46.mov` **no es un shader**, es una captura de pantalla del perfil de Shadertoy del autor (dashboard con lista de shaders) — quizá convenga sustituirlo.
+## Bloque 3 — Pies de foto del LAB (aprobado, aplicado parcial)
+Pies técnicos (qué es + qué se ve, sin adjetivos valorativos) bajo los media. **Decisión del dueño:** aplicar los de confianza media/alta. Aplicados 5; el sketch p5 `Pasted...052142` se deja **sin pie** (no identificado, confianza baja) para que el dueño diga qué es. Hallazgo: el vídeo `...5.24.46.mov` **no es un shader**, es una captura de pantalla del perfil de Shadertoy del autor (dashboard con lista de shaders) — quizá convenga sustituirlo. Commit `1604049`.
 
-## Bloque 6b — Rediseño del bloque glitch de la 404 (PROPUESTA, NO aplicada)
-3 direcciones (A · Errata/misregistro de imprenta · B · Sigilo/sello oculto · C · Vacío/marca corrupta), renderizadas en un Artifact. Fuera neón; negro + hueso + un acento apagado; símbolos alquímicos/astrales/de imprenta; glitch desde el material. Referente: paleta y tipos reales del Random Genre Explorer (Barlow Condensed + IBM Plex Mono; grises casi-negros → hueso, acentos desaturados). Pendiente de que el dueño elija dirección.
+## Bloque 6b — Rediseño del bloque glitch de la 404 (aprobado, aplicado)
+Se presentaron 3 direcciones renderizadas en un Artifact (A · Errata/misregistro · B · Sigilo/sello oculto · C · Vacío/marca corrupta). **Decisión del dueño: dirección C.** Implementada en `404.tsx`: fuera el neón (404 lima/magenta/cian, glitch RGB, bloques ◢◣▓); negro casi puro + hueso + acento lavanda apagado; un solo signo de imprenta (manícula `☞`) que se desdobla con un fantasma lavanda (glitch desde el material); nº de catálogo en Space Mono, mensaje en Inter (ambas ya cargadas por el sitio); respeta `prefers-reduced-motion`. Referente: Random Genre Explorer. El símbolo es un cambio de una línea si se prefiere otro. Commit `478e940`.
 
 ## Verificación (Bloque V)
 - ✅ `npx quartz build` sin errores (62 entrada, 194 emitidos).
 - ✅ Los 6 `src` de media del LAB siguen **sin ruta, solo nombre** (idénticos a `origin/main`) — comprobado explícitamente (3ª vez).
 - ✅ Diff de texto plano del índice del blog: cero prosa perdida (solo cambió el destino del enlace).
-- ✅ Commit por bloque (2, 6a, 4, 5). Los bloques 3 y 6b no se commitean hasta aprobación. Sin push ni merge.
+- ✅ Commit por bloque: `d75d386` (2), `17f35fe` (6a), `156d0fe` (4), `f9ed1eb` (5), `ceb577f` (1), `1604049` (3), `478e940` (6b). Sin push ni merge.
+
+## Dudas / decisiones de la pasada 3 (revisar)
+1. **Fechas: el día es placeholder.** Todos los `date` nuevos son `AAAA-MM-01`; el índice solo daba mes. Corrige el día exacto de publicación si lo tienes. (Además, la fecha mostrada es la de `defaultDateType: "modified"`, que aquí toma la `date`; si algún día editas un post, seguirá mostrando esta fecha, no la de edición — es lo deseable.)
+2. **LAB — pie pendiente:** `Pasted...052142.png` (sketch p5 con tubos/formas de colores) quedó sin pie; dime qué es.
+3. **LAB — vídeo del perfil:** `...5.24.46.mov` es una captura del dashboard de Shadertoy, no un render. Valora sustituirlo por un shader real.
+4. **404 — símbolo:** la manícula `☞` es el signo elegido por defecto (dirección C); cambiable por otro (☉, †, glifo alquímico) en una línea.
+5. **MEU:** altura fijada en 820px sin poder verla en el preview (iframe externo sandboxeado); confirma en local que muestra cabecera + filtros + 2 filas.
