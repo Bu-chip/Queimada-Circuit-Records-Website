@@ -8,7 +8,7 @@ tags:
   - field-recording
   - cuerpo-pensante
 cover: /images/releases/buenos-dias-ansiedad.jpg
-artista: "[[cuerpo-pensante]]"
+artista: "[[cuerpo pensante]]"
 formato: album
 ---
 
