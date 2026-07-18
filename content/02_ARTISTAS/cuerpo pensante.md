@@ -27,7 +27,7 @@ El proceso de [[cuerpo pensante]] se basa en la exploración de formatos híbrid
 ## Discografía en Queimada
 
 ### Álbumes
-- [[Buenos días, Ansiedad|Buenos días, Ansiedad]] (2025) - Ambient + Fanzine
+- [[Buenos días, Ansiedad|Buenos días, Ansiedad]] (2026) - Ambient + Fanzine
 
 <iframe style="border: 0; width: 400px; height: 307px;" src="https://bandcamp.com/EmbeddedPlayer/album=3303771169/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/album/buenos-d-as-ansiedad-ambient-album">Buenos días, Ansiedad [Ambient Album] by cuerpo pensante</a></iframe>
 
@@ -48,10 +48,6 @@ El proceso de [[cuerpo pensante]] se basa en la exploración de formatos híbrid
 - [[txus-space|Txus Space]] (2024) - Dark Ambient + Video
 
 <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=3820930762/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/txus-space-dark-ambient-soundtrack">Txus space [dark ambient soundtrack] by cuerpo pensante</a></iframe>
-
-- [[breakmania|Breakmania]] (2024) - Jazz + Video
-
-<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/track=2505895169/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/track/breakmania-breakcore-jazz-single">Breakmania [Breakcore Jazz single] by cachalote mecánico</a></iframe>
 
 - [[guayaba-dondestas-tu|Guayaba — dondestas tu?]] (2024) - Session · Noise · Live
 
