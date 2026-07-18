@@ -44,7 +44,7 @@ El título, "Acto I: congreso" implica que hay más Actos por venir.
 ## Proyectos vinculados
 
 - [[cuerpo pensante]] — alias principal del mismo productor
-- [[Queimada Circuit Records]] — sello que publica los lanzamientos
+- [[queimada-circuit-records|Queimada Circuit Records]] — sello que publica los lanzamientos
 
 ## Conexiones externas
 

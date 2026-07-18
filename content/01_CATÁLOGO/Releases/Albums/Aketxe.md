@@ -36,7 +36,6 @@ Una toma continua de 40 minutos dividida en tres partes, sin cortes ni ediciones
 <iframe style="border: 0; width: 400px; height: 241px;" src="https://bandcamp.com/EmbeddedPlayer/album=1400213486/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://queimada-circuit-records.bandcamp.com/album/aketxe-live-jam">Aketxe [Live Jam] by 555 Kables</a></iframe>
 ## Enlaces
 
-- [Video completo en YouTube](LINK_CUANDO_LO_TENGAS)
 - [Bandcamp](https://queimadacircuitrecords.bandcamp.com/album/aketxe-live-jam)
 
 ---
