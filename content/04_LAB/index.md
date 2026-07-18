@@ -4,7 +4,10 @@ title: Lab
 
 ## Bilbao Underground Explorer
 
-Mapa interactivo del circuito underground → espacios, eventos, agentes. Red viva de conexiones bilbaínas.
+Con eso, la descripción de web te quedaría así:
+
+> **Mapa Euskadi Underground (MEU)**  
+> Una guía a la música independiente de Euskadi, hecha por Queimada. Discos de Bandcamp catalogados a mano — artistas, estilos, años — para encontrar lo que el algoritmo no enseña. Empezó por Bilbao y se está extendiendo a toda Euskal Herria. No es un censo: es la escena vista desde el sello, con criterio y firma.
 
 <iframe src="https://bu-chip.github.io/MEU/" width="100%" height="820px" style="border: none; display: block;"></iframe>
 
