@@ -53,36 +53,25 @@ const css = `
 }
 .nav-options {
   margin-top: 3rem;
-  display: grid;
-  gap: 2rem;
   max-width: 800px;
   width: 100%;
 }
 .nav-option {
-  border: 2px solid;
-  padding: 1.5rem;
-  transition: all 0.3s;
-  text-decoration: none;
   display: block;
+  text-decoration: none;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid #1a1a1a;
 }
-.nav-option:nth-child(1) { border-color: #ff00ff; }
-.nav-option:nth-child(1):hover { background: rgba(255,0,255,0.1); box-shadow: 4px 4px 0 rgba(255,0,255,0.3); }
-.nav-option:nth-child(2) { border-color: #00ffff; }
-.nav-option:nth-child(2):hover { background: rgba(0,255,255,0.1); box-shadow: 4px 4px 0 rgba(0,255,255,0.3); }
-.nav-option:nth-child(3) { border-color: #00ff00; }
-.nav-option:nth-child(3):hover { background: rgba(0,255,0,0.1); box-shadow: 4px 4px 0 rgba(0,255,0,0.3); }
-.nav-option:nth-child(4) { border-color: #ffff00; }
-.nav-option:nth-child(4):hover { background: rgba(255,255,0,0.1); box-shadow: 4px 4px 0 rgba(255,255,0,0.3); }
+.nav-option:hover .nav-title {
+  text-decoration: underline;
+}
 .nav-title {
   font-family: 'Azeret Mono', monospace;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  color: #e8e8e8;
+  margin-bottom: 0.3rem;
 }
-.nav-option:nth-child(1) .nav-title { color: #ff00ff; }
-.nav-option:nth-child(2) .nav-title { color: #00ffff; }
-.nav-option:nth-child(3) .nav-title { color: #00ff00; }
-.nav-option:nth-child(4) .nav-title { color: #ffff00; }
 .nav-desc {
   font-family: 'Syne', sans-serif;
   font-size: 0.95rem;
