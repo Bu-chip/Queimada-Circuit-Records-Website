@@ -6,7 +6,7 @@ title: Lab
 
 Mapa interactivo del circuito underground → espacios, eventos, agentes. Red viva de conexiones bilbaínas.
 
-<iframe src="https://bu-chip.github.io/MEU/" width="100%" height="300px" style="border: none; display: block;"></iframe>
+<iframe src="https://bu-chip.github.io/MEU/" width="100%" height="820px" style="border: none; display: block;"></iframe>
 
 [Versión completa](https://bu-chip.github.io/MEU/)
 
