@@ -8,13 +8,68 @@
 // ============================================
 
 // --------------------------------------------
+// FUENTES SELF-HOSTED (woff2 variables, subset latin)
+// Ficheros en quartz/static/fonts/ — sin Google Fonts.
+// --------------------------------------------
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url("/static/fonts/big-shoulders-display-latin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("/static/fonts/oswald-latin.woff2") format("woff2");
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/static/fonts/inter-latin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/static/fonts/inter-italic-latin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/static/fonts/jetbrains-mono-latin.woff2") format("woff2");
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+// --------------------------------------------
 // ROOT & GLOBAL OVERRIDES
+// Sistema: Big Shoulders (titulares) + Oswald (UI) + Inter (prosa).
+// La prosa NUNCA va en condensada.
 // --------------------------------------------
 :root {
-  --titleFont: "Space Mono", monospace;
-  --headerFont: "Space Mono", monospace;
+  --titleFont: "Oswald", "Arial Narrow", sans-serif;
+  --headerFont: "Big Shoulders Display", "Arial Narrow", sans-serif;
+  --uiFont: "Oswald", "Arial Narrow", sans-serif;
   --bodyFont: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --codeFont: "JetBrains Mono", monospace;
+
+  // Paleta Queimada
+  --bone: #e8e4da;
+  --acid: #8cc63f;
+  --acid-ink: #16260a; // texto sobre verde
+  --violet: #b026ff;
+  --violet-ink: #2a0a45; // texto sobre violeta
+  --inactive: #b3b3b3; // gris funcional mínimo (nunca #999)
 }
 
 html {
@@ -103,7 +158,7 @@ html {
   color: var(--secondary) !important;
   border: none !important;
   font-family: var(--headerFont) !important;
-  font-weight: 700 !important;
+  font-weight: 800 !important;
 
   h1 {
     margin: 0 !important;
@@ -127,13 +182,22 @@ body[data-slug="index"] .popover-hint {
   padding-top: 50px !important;
 }
 
-// Page Title - Horizontal in header (LIME GREEN)
+// En la landing el hero ya muestra "QUEIMADA CIRCUIT RECORDS" gigante:
+// ocultamos el título de la barra ahí para no duplicarlo. En interiores sí aparece.
+// Sin el título, las herramientas (◈ GRAFO / ◈ AL AZAR / lupa) quedan arriba
+// a la izquierda, encima del hero — que es como se quieren en la landing.
+body[data-slug="index"] .page-title {
+  display: none !important;
+}
+
+// Page Title - Horizontal in header (ACID GREEN, Oswald)
 .page-title {
+  font-family: var(--uiFont) !important;
   font-size: 0.9rem !important;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--tertiary) !important; // Forced lime green
-  font-weight: 700;
+  color: var(--tertiary) !important; // Forced acid green
+  font-weight: 600;
   white-space: nowrap; // Don't wrap the site title
   margin: 0;
   padding: 0;
@@ -323,11 +387,10 @@ article {
   }
 }
 
-// Add spacing before footer
+// Aire antes del footer (sin raya separadora: solo espacio)
 .page-footer {
   margin-top: 4rem !important;
   padding-top: 2rem;
-  border-top: 1px solid var(--lightgray);
 }
 
 // --------------------------------------------
@@ -379,6 +442,8 @@ h4,
 h5,
 h6 {
   font-family: var(--headerFont);
+  font-weight: 800;
+  letter-spacing: 0.02em;
   color: var(--dark);
 
   &::before {
@@ -388,18 +453,18 @@ h6 {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   border-bottom: 1px solid var(--lightgray);
   padding-bottom: 0.5rem;
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 1.6rem;
   color: var(--secondary);
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 // Article title
@@ -436,6 +501,7 @@ h3 {
     }
 
     h2 {
+      font-family: var(--uiFont);
       font-size: 0.85rem;
       color: var(--tertiary);
       font-weight: 600;
@@ -496,6 +562,7 @@ h3 {
       .folder-button {
         background: transparent;
         border: none;
+        font-family: var(--uiFont);
         color: var(--tertiary);
         font-weight: 600;
         font-size: 0.8rem;
@@ -687,7 +754,8 @@ h3 {
 .graph {
   h3 {
     color: var(--secondary);
-    font-family: var(--headerFont);
+    font-family: var(--uiFont);
+    font-weight: 500;
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -1050,7 +1118,8 @@ header .flex-component {
 // --------------------------------------------
 .toc {
   .toc-header {
-    font-family: var(--headerFont);
+    font-family: var(--uiFont);
+    font-weight: 500;
     color: var(--secondary);
     text-transform: uppercase;
     font-size: 0.85rem;
@@ -1089,7 +1158,8 @@ header .flex-component {
 .backlinks {
   h3 {
     color: var(--secondary);
-    font-family: var(--headerFont);
+    font-family: var(--uiFont);
+    font-weight: 500;
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -1143,56 +1213,9 @@ a.tag-link {
 }
 
 // --------------------------------------------
-// FOOTER - CONSISTENT FOR ALL PAGES
+// FOOTER — el estilo del footer de marca (3 columnas + cierre) vive en
+// quartz/components/styles/footer.scss (se carga con el componente Footer).
 // --------------------------------------------
-footer {
-  border-top: 1px solid var(--lightgray);
-  padding: 2rem 0;
-  margin-top: 3rem;
-  text-align: center;
-
-  p {
-    color: var(--gray);
-    font-size: 0.75rem;
-    font-family: var(--codeFont);
-    margin-bottom: 1rem;
-
-    // Hide "Created with Quartz" link
-    a[href*="quartz.jzhao.xyz"] {
-      display: none;
-    }
-
-    &::before {
-      content: "QUEIMADA CIRCUIT RECORDS // BILBAO ";
-    }
-  }
-
-  ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    a {
-      color: var(--secondary);
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      padding: 0.3rem 0.6rem;
-      border: 1px solid transparent;
-      border-radius: 3px;
-      transition: all 0.2s ease;
-
-      &:hover {
-        color: var(--tertiary);
-        border-color: var(--tertiary);
-      }
-    }
-  }
-}
 
 // --------------------------------------------
 // BREADCRUMBS
@@ -1301,9 +1324,10 @@ table {
   border-collapse: collapse;
 
   th {
-    background-color: rgba(168, 85, 247, 0.1);
+    background-color: rgba(176, 38, 255, 0.1);
     color: var(--secondary);
-    font-family: var(--headerFont);
+    font-family: var(--uiFont);
+    font-weight: 500;
     text-transform: uppercase;
     font-size: 0.85rem;
     letter-spacing: 0.03em;
@@ -1634,4 +1658,579 @@ header {
   padding: 0.5rem 0 !important;
   min-height: 3rem !important;
   line-height: 1 !important;
+}
+
+// ============================================
+// LANDING (index) — cabecera, cuadrícula-menú y discografía
+// Componentes en quartz/components/Landing.tsx.
+// Tarjeta ÚNICA .qz-tile compartida por las dos cuadrículas.
+// ============================================
+
+// ---- Layout del index: UNA columna centrada, sin sidebars ----
+// Los componentes de sidebar no renderizan en el index (ConditionalRender
+// en quartz.layout.ts); aquí reclamamos su espacio. Interiores intactas.
+body[data-slug="index"] {
+  .sidebar.left,
+  .sidebar.right {
+    display: none !important;
+  }
+
+  #quartz-body {
+    display: block !important;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+
+    @media (max-width: 800px) {
+      padding: 0 1rem;
+    }
+  }
+
+  // La barra superior comparte el MISMO contenedor: su contenido arranca
+  // y termina en las mismas verticales que el titular y el grid.
+  .page-header > header {
+    padding: 0 max(2rem, calc((100vw - 1100px) / 2 + 2rem)) !important;
+  }
+}
+
+// ---- 1. Cabecera: titular grande + columna de modos ----
+.landing-hero {
+  margin: 0.6rem 0 1rem;
+}
+
+.landing-hero__title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: var(--headerFont);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.88;
+  letter-spacing: 0.01em;
+  // "QUEIMADA CIRCUIT RECORDS" es largo: una palabra por línea (span block) y
+  // clamp que no desborda ni en 380px (min 2.4rem ≈ 38px, cabe la palabra más larga).
+  font-size: clamp(2.4rem, 11vw, 6.5rem);
+  color: var(--bone);
+
+  span {
+    display: block;
+  }
+
+  // Tratamiento de color por palabras con la paleta de la marca
+  .landing-hero__w2 {
+    color: var(--acid);
+  }
+
+  .landing-hero__w3 {
+    color: var(--violet);
+  }
+}
+
+// Metadato secundario bajo el titular — ficha en Oswald, tono hueso apagado
+.landing-hero__meta {
+  margin: 0.6rem 0 0;
+  font-family: var(--uiFont);
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bone);
+  opacity: 0.5;
+}
+
+// Scramble "desencriptado" del titular (JS en landingGlitch.inline).
+// Reserva alto de cada línea para que los huecos de la cascada no colapsen
+// el layout. La accesibilidad: reduced-motion desactiva el scramble en el JS.
+.landing-hero__title span {
+  min-height: 0.9em;
+}
+
+// Herramientas de exploración (en la barra superior, junto a la lupa):
+// texto plano, sin caja, glifo ◈ en su acento
+.landing-explore {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+// Mismo ritmo entre AL AZAR y la lupa que entre los enlaces
+header .flex-component {
+  gap: 1.1rem !important;
+}
+
+.landing-explore__link {
+  appearance: none;
+  font-family: var(--uiFont);
+  font-weight: 500;
+  font-size: 0.8125rem; // ~13px
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: var(--inactive);
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.15s ease;
+
+  &::before {
+    content: "◈ ";
+  }
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.landing-explore__link--grafo {
+  &::before {
+    color: var(--violet);
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--violet);
+  }
+}
+
+.landing-explore__link--azar {
+  &::before {
+    color: var(--acid);
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--acid);
+  }
+}
+
+// ---- Tarjeta reutilizable ÚNICA ----
+.qz-tile {
+  --tile-accent: var(--acid); // verde por defecto; .qz-tile--violet lo cambia
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background-color: #101010;
+  border: 1px solid #202020;
+  border-radius: 3px;
+  text-decoration: none !important;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+
+  &.qz-tile--violet {
+    --tile-accent: var(--violet);
+  }
+
+  // Foto EN COLOR en el origen. En reposo, DUOTONO oscuro→verde de marca:
+  // grayscale→sepia→hue-rotate tiñe TODO el rango tonal hacia #8CC63F
+  // (verde perceptible también en fotos oscuras), sin quemar luces.
+  // Un tinte multiply extra remata las luces hacia el verde exacto de marca.
+  .qz-tile__img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(1) sepia(1) hue-rotate(46deg) saturate(2) brightness(0.92)
+      contrast(1.05);
+    transition: filter 0.2s ease;
+  }
+
+  // Remate de luces hacia el verde exacto #8CC63F (multiply no quema).
+  &.qz-tile--img .qz-tile__img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--acid);
+    mix-blend-mode: multiply;
+    opacity: 0.35;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }
+
+  // Scrim SOLO en el tercio inferior — título siempre legible
+  &.qz-tile--img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(transparent 55%, rgba(0, 0, 0, 0.65));
+    pointer-events: none;
+  }
+
+  .qz-tile__title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 0.5rem 0.65rem 0.55rem;
+    font-family: var(--headerFont);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: clamp(1.05rem, 1.4vw, 1.3rem);
+    line-height: 0.95;
+    letter-spacing: 0.02em;
+    color: var(--bone);
+    overflow-wrap: anywhere;
+    transition: color 0.18s ease;
+  }
+
+  // Subtítulo (info extra estilo MEU) — oculto en reposo, aparece al hover
+  .qz-tile__sub {
+    display: block;
+    margin-top: 0.25rem;
+    font-family: var(--uiFont);
+    font-weight: 500;
+    font-size: 0.6875rem; // ~11px
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    text-transform: none;
+    color: var(--bone);
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(4px);
+    overflow: hidden;
+    transition: opacity 0.2s ease, transform 0.2s ease, max-height 0.2s ease;
+  }
+
+  // Hover y :focus-visible IDÉNTICOS: la foto revela su color + borde acento
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    border-color: var(--tile-accent);
+    box-shadow: 0 0 0 1px var(--tile-accent);
+
+    .qz-tile__img {
+      filter: none;
+    }
+
+    // Fuera el tinte: color real pleno
+    .qz-tile__img::after {
+      opacity: 0;
+    }
+
+    .qz-tile__sub {
+      opacity: 0.85;
+      max-height: 4rem;
+      transform: translateY(0);
+    }
+  }
+
+  // Sin foto: hover = borde + título en su acento
+  &.qz-tile--plain:hover .qz-tile__title,
+  &.qz-tile--plain:focus-visible .qz-tile__title {
+    color: var(--tile-accent);
+  }
+}
+
+// Respeta prefers-reduced-motion: el subtítulo aparece sin desplazamiento
+@media (prefers-reduced-motion: reduce) {
+  .qz-tile .qz-tile__sub {
+    transform: none;
+    transition: opacity 0.2s ease, max-height 0.2s ease;
+  }
+}
+
+// Tiles sólidos del raíl derecho (MEU violeta / Genre Explorer verde)
+.qz-tile.qz-tile--solid-violet {
+  background-color: var(--violet);
+
+  .qz-tile__title,
+  .qz-tile__sub {
+    color: var(--violet-ink);
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-color: var(--bone);
+    box-shadow: 0 0 0 1px var(--bone);
+  }
+}
+
+.qz-tile.qz-tile--solid-green {
+  background-color: var(--acid);
+
+  .qz-tile__title,
+  .qz-tile__sub {
+    color: var(--acid-ink);
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-color: var(--bone);
+    box-shadow: 0 0 0 1px var(--bone);
+  }
+}
+
+// ---- Tamaños de nombre según el peso del tile — escala GRANDE ----
+// Big Shoulders 800 uppercase; ningún nombre pequeño. Contraste grande↔mediano
+// pero con todo mucho mayor. clamp() vigila desborde en 1280 y 380.
+.landing-grid {
+  .lt-catalogo .qz-tile__title {
+    font-size: clamp(2.8rem, 6vw, 4.8rem); // ENORME (2×2)
+  }
+
+  .lt-artistas .qz-tile__title {
+    font-size: clamp(2.2rem, 4.4vw, 3.6rem); // ENORME (1×2)
+  }
+
+  .lt-meu .qz-tile__title,
+  .lt-rge .qz-tile__title {
+    font-size: clamp(1.4rem, 2.2vw, 1.9rem); // grandes (texto largo, envuelve)
+  }
+
+  .lt-lab .qz-tile__title,
+  .lt-blog .qz-tile__title,
+  .lt-eventos .qz-tile__title,
+  .lt-fanzines .qz-tile__title {
+    font-size: clamp(1.6rem, 2.8vw, 2.4rem); // un escalón entero más grandes
+  }
+}
+
+// ---- 2. La cuadrícula (menú) — 4 columnas escritorio ----
+.landing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 9.5rem;
+  gap: 10px;
+  margin: 0 0 3rem;
+}
+
+.lt-catalogo {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.lt-artistas {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+
+.lt-meu {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.lt-rge {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.lt-fanzines {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.lt-lab {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.lt-blog {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.lt-eventos {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+// ---- 3. Discografía ----
+.landing-disco__head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  margin: 0 0 1rem;
+}
+
+.landing-disco__title {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: var(--headerFont);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+  line-height: 1;
+  color: var(--bone);
+}
+
+.landing-disco__count {
+  font-family: var(--uiFont);
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--inactive);
+}
+
+.landing-disco__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 0 0 2.5rem;
+
+  .qz-tile {
+    aspect-ratio: 1 / 1;
+  }
+
+  .qz-tile__title {
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+  }
+
+  // Covers SIEMPRE a color pleno: sin duotono, sin tinte (decisión cerrada).
+  .qz-tile__img {
+    filter: none;
+  }
+
+  .qz-tile--img .qz-tile__img::after {
+    opacity: 0;
+  }
+}
+
+// ---- Móvil (≤600px) ----
+@media (max-width: 600px) {
+  .landing-hero {
+    margin-top: 0.5rem;
+  }
+
+  .landing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 7.25rem;
+
+    // Reset de posiciones explícitas: fluye en orden de DOM
+    > .qz-tile {
+      grid-column: auto;
+      grid-row: auto;
+    }
+
+    // Catálogo y Artistas a ancho completo; MEU/RGE quedan en fila de 2
+    > .lt-catalogo {
+      grid-column: 1 / -1;
+      grid-row: span 2;
+    }
+
+    > .lt-artistas {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .landing-disco__grid {
+    grid-template-columns: repeat(3, 1fr);
+
+    .qz-tile__title {
+      font-size: 0.78rem;
+    }
+  }
+}
+
+// ---- Barra superior en móvil ----
+// Título a la izquierda; herramientas (◈ GRAFO ◈ AL AZAR 🔍) agrupadas a la derecha.
+@media (max-width: 800px) {
+  .page-header > header {
+    justify-content: space-between !important;
+    gap: 0.75rem !important;
+  }
+
+  header .flex-component {
+    flex: 0 0 auto !important;
+  }
+
+  .landing-explore__link {
+    font-size: 0.72rem;
+  }
+}
+
+// ≤600px no cabe el texto: los enlaces quedan solo con su glifo ◈
+@media (max-width: 600px) {
+  .landing-explore {
+    gap: 0.7rem;
+  }
+
+  .landing-explore__link {
+    font-size: 1rem;
+
+    .landing-explore__txt {
+      display: none;
+    }
+  }
+}
+
+// En el index no hay hamburguesa del explorer: padding simétrico
+@media (max-width: 800px) {
+  body[data-slug="index"] .page-header > header {
+    padding: 0 1rem !important;
+  }
+}
+
+// =====================================================================
+// PÁGINA /grafo — el grafo GLOBAL a pantalla completa
+// Reutiliza el componente Graph nativo (montado en beforeBody con depth -1);
+// aquí solo lo agrandamos, ocultamos sidebars y le damos el fondo negro.
+// =====================================================================
+body[data-slug="grafo"] {
+  // Una sola columna: sin sidebars, el grafo ocupa el área principal a lo grande
+  & #quartz-body {
+    grid-template-columns: 1fr !important;
+    grid-template-areas:
+      "grid-header"
+      "grid-center"
+      "grid-footer" !important;
+  }
+
+  .sidebar {
+    display: none !important;
+  }
+
+  // Título de sección GIGANTE en Big Shoulders, centrado y con opacidad baja
+  // (titular especial: sin breadcrumb encima). El global lo fija en 1.75rem
+  // !important, así que aquí hay que forzarlo también.
+  .article-title {
+    font-family: var(--headerFont) !important;
+    font-size: clamp(3rem, 8vw, 6rem) !important;
+    line-height: 0.9;
+    letter-spacing: 0.01em;
+    margin: 0.2rem 0;
+    text-align: center;
+    opacity: 0.55;
+  }
+
+  // El meta de lectura ("· 1min") no aplica a un grafo
+  .content-meta {
+    display: none;
+  }
+
+  // El recuadro del grafo pasa de 250px de sidebar a lienzo completo
+  .graph {
+    // Fuera el "h3" del componente (el título de la página ya dice GRAFO)
+    & > h3 {
+      display: none;
+    }
+
+    & > .graph-outer {
+      height: 80vh;
+      min-height: 480px;
+      margin: 1rem 0 0;
+      border: 1px solid #202020;
+      border-radius: 3px;
+      background-color: #050505; // negro coherente con la landing
+
+      // El container interior debe rellenar el alto: renderGraph lee su
+      // offsetHeight para dimensionar el lienzo (si no, se queda en 250px)
+      & > .graph-container {
+        height: 100%;
+      }
+
+      // El icono de "expandir" (abre el mismo grafo en modal) sobra aquí
+      & > .global-graph-icon {
+        display: none;
+      }
+    }
+  }
 }

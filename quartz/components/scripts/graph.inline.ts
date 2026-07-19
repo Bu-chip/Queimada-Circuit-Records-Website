@@ -161,6 +161,17 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       })),
   }
 
+  // grado (nº de enlaces) por nodo — define los "hubs" y el tamaño del nodo.
+  // Debe calcularse ANTES de la simulación: forceCollide llama a nodeRadius al crearse.
+  const degree = new Map<SimpleSlug, number>()
+  for (const l of graphData.links) {
+    degree.set(l.source.id, (degree.get(l.source.id) ?? 0) + 1)
+    degree.set(l.target.id, (degree.get(l.target.id) ?? 0) + 1)
+  }
+  // umbral de hub: el ~10% de nodos más conectados (mínimo 4 enlaces) se pintan verde
+  const sortedDegrees = [...degree.values()].sort((a, b) => b - a)
+  const hubThreshold = Math.max(4, sortedDegrees[Math.floor(sortedDegrees.length * 0.1)] ?? 4)
+
   const width = graph.offsetWidth
   const height = Math.max(graph.offsetHeight, 250)
 
@@ -184,6 +195,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     "--dark",
     "--darkgray",
     "--bodyFont",
+    "--uiFont",
   ] as const
   const computedStyleMap = cssVars.reduce(
     (acc, key) => {
@@ -193,12 +205,11 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     {} as Record<(typeof cssVars)[number], string>,
   )
 
-  // calculate color
+  // calculate color: página actual → violeta (acento); hub → verde; resto → gris
   const color = (d: NodeData) => {
-    const isCurrent = d.id === slug
-    if (isCurrent) {
+    if (d.id === slug) {
       return computedStyleMap["--secondary"]
-    } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
+    } else if ((degree.get(d.id) ?? 0) >= hubThreshold || d.id.startsWith("tags/")) {
       return computedStyleMap["--tertiary"]
     } else {
       return computedStyleMap["--gray"]
@@ -206,9 +217,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   }
 
   function nodeRadius(d: NodeData) {
-    const numLinks = graphData.links.filter(
-      (l) => l.source.id === d.id || l.target.id === d.id,
-    ).length
+    const numLinks = degree.get(d.id) ?? 0
     return 2 + Math.sqrt(numLinks)
   }
 
@@ -383,7 +392,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       style: {
         fontSize: fontSize * 15,
         fill: computedStyleMap["--dark"],
-        fontFamily: computedStyleMap["--bodyFont"],
+        fontFamily: computedStyleMap["--uiFont"], // Oswald, coherente con la UI
       },
       resolution: window.devicePixelRatio * 4,
     })

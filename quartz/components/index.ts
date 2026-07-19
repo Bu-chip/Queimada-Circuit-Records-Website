@@ -26,6 +26,12 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import RandomPage from "./RandomPage"
 import BackToTop from "./BackToTop"
+import {
+  LandingHeroComponent as LandingHero,
+  LandingGridComponent as LandingGrid,
+  LandingDiscographyComponent as LandingDiscography,
+  LandingExploreComponent as LandingExplore,
+} from "./Landing"
 
 export {
   ArticleTitle,
@@ -56,4 +62,8 @@ export {
   ConditionalRender,
   RandomPage,
   BackToTop,
+  LandingHero,
+  LandingGrid,
+  LandingDiscography,
+  LandingExplore,
 }
